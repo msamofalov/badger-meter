@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_RMA_Email__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Use_Suggested_Return__c = FALSE,
+
+CASE(Return_Location__c,
+&quot;Neuffen&quot;,&quot;a1z3t000007qroDAAQ&quot;,
+&quot;Milwaukee&quot;,&quot;a1z3t000006izrJAAQ&quot;, 
+&quot;Racine&quot;,&quot;a1z3t000006izrIAAQ&quot;, 
+&quot;Tulsa&quot;,&quot;a1z3t000006izrIAAQ&quot;, 
+&quot;a1z3t000006izrJAAQ&quot;),
+
+CASE(Product_Industry__c, 
+&quot;Utility&quot;,&quot;a1z3t000006izrJAAQ&quot;, 
+&quot;Industrial&quot;,&quot;a1z3t000006izrIAAQ&quot;, 
+&quot;Wyco&quot;,&quot;a1z3t000006izrNAAQ&quot;, 
+&quot;a1z3t000006izrJAAQ&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Call RMA Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

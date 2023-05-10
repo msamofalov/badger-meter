@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CaseCustomerShippingLocation__c</fullName>
+    <externalId>false</externalId>
+    <formula>Account.Name+BR()+
+&quot;Attn: &quot;+Contact.FirstName+&quot; &quot;+Contact.LastName+BR()+
+Address__c+BR()+
+City__c+&quot;, &quot;+ State_Province__c+BR()+
+Zip_Postal_Code__c+BR()</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CaseCustomerShippingLocation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

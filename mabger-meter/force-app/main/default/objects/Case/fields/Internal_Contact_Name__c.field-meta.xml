@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internal_Contact_Name__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Internal Contact / Badger Meter Employee associated with the Case</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Internal Contact / Badger Meter Employee associated with the Case</inlineHelpText>
+    <label>Internal Contact Name</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Cases4</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

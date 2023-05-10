@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BEACON_Loyalty_System__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>All accounts were pre-populated if they had a Connect or ReadCenter system.</inlineHelpText>
+    <label>Loyalty System</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CONNECT</fullName>
+                <default>false</default>
+                <label>CONNECT</label>
+            </value>
+            <value>
+                <fullName>MVRS</fullName>
+                <default>false</default>
+                <label>MVRS</label>
+            </value>
+            <value>
+                <fullName>RC</fullName>
+                <default>false</default>
+                <label>RC</label>
+            </value>
+            <value>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+                <label>OTHER</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

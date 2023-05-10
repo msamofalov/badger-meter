@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Selections_MUST_have_an_Email</fullName>
+    <active>true</active>
+    <description>When making reporting Email Selections, validate there the Contact has a VALID Email Address.</description>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(Email_Selections__c)),
+Email = &apos;&apos;
+)</errorConditionFormula>
+    <errorDisplayField>Email</errorDisplayField>
+    <errorMessage>You MUST enter an Email address for this Contact when making Email Selections.  Either enter a VALID Email address or remove the Email Selections.</errorMessage>
+</ValidationRule>

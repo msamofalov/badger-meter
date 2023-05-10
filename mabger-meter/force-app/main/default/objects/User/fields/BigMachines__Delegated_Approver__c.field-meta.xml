@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BigMachines__Delegated_Approver__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field allows you to specify a delegated approver in Oracle CPQ Cloud.  The delegated approver feature was introduced in Oracle CPQ Cloud 11.1.  Therefore, this field should be left blank if you are using an earlier version of Oracle CPQ Cloud.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If you&apos;d like to have a delegated approver in BigMachines, select that user here.  Please note that the user you select must already be provisioned in BigMachines.</inlineHelpText>
+    <label>Oracle CPQ Cloud Delegated Approver</label>
+    <relationshipName>Approval_Delegator</relationshipName>
+    <restrictedAdminField>false</restrictedAdminField>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Hierarchy</type>
+</CustomField>

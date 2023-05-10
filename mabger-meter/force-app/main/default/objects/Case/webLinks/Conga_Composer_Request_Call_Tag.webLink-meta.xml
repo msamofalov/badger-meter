@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conga_Composer_Request_Call_Tag</fullName>
+    <availability>online</availability>
+    <description>Originally created by Conga Solution Manager. Date of last use of Update Button from Conga Solution record: https://badgermeter--test--apxtconga4.cs77.visual.force.com/a260t0000009wkVAAQ
+30-Apr-2018 09:35:12 AM</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>660</height>
+    <linkType>url</linkType>
+    <masterLabel>Request Call Tag</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_370}
+&amp;Id={!Case.Id}
+
+&amp;QueryId=[PL]a2038000004S0yu
+&amp;cetid=a1z38000005s1kk
+
+&amp;DS3=1
+&amp;SC0=1
+&amp;SC1=SalesforceFile</url>
+</WebLink>

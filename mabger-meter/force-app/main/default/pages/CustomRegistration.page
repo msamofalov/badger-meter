@@ -1,0 +1,171 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" standardController="User" extensions="CustomRegistrationController" doctype="html-5.0" lightningstylesheets="true">
+    
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <apex:stylesheet value="{!$Resource.BadgeMeterCss}"/>
+    </head>
+    
+    <body>
+        
+        <div class="page ">
+        
+            <c:CustomSiteHeader />
+            
+            <main class="content-wrapper">
+                <div class="page-section-gray page-section-separator-top">
+                    <div class="page-frame">
+                        <div class="layout-sidebar-quarter contact-us-layout" id="content-container">
+                            <section class="lsq-main contact-us-form">
+                                <div id="contactUs-app" class="contact-us-form-child">
+                                    <apex:form styleClass="form-frame">
+                                        <apex:pageMessages />
+                                        <div valdr-type="Data">
+                                            <h1 class="heading1">Registration</h1>
+                                            <p class="heading2-registration">
+                                                The Badger Meter Extranet is only available for authorized Badger Meter employees, distributors and representatives.  
+                                                By registering, you will automatically begin to receive eNews emails from Badger Meter to help keep you up to date with product and company news.
+                                            </p>
+                                            <div class="controls-group">
+                                                <div class="field-row">
+                                                    <div class="field-col-register half-width full-on-tablet">
+                                                        <label for="contact-firstName">First Name</label>
+                                                        <div class="field-holder form-group">
+                                                            <apex:inputText id="contact-firstName" value="{!objNewProtalUser.FirstName}" maxlength="18" styleClass="text-field"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="field-col-register half-width full-on-tablet">
+                                                        <label for="contact-lastName">Last Name *</label>
+                                                        <div class="field-holder form-group" >
+<!--                                                             <apex:inputField id="contact-lastName" value="{!objNewProtalUser.LastName}" styleClass="text-field"/> -->
+                                                            <div class="requiredInput">
+                                                                <div class="requiredBlock"></div>
+                                                                <input class="text-field" id="contact-lastName" required="required" type="text" maxlength="18" onblur="document.getElementById('{!$Component.hdnLastName}').value = this.value;"/>
+                                                            </div>
+                                                            <apex:inputHidden id="hdnLastName" value="{!objNewProtalUser.LastName}"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="field-row">
+                                                    <div class="field-col two-thirds full-on-tablet">
+                                                        <label for="contact-email">Email *</label>
+                                                        <div class="field-holder form-group" >
+                                                            <apex:inputField id="contact-email" value="{!objNewProtalUser.Email}" styleClass="text-field"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="field-col one-third two-thirds-on-tablet full-on-small-mobile">
+                                                        <label for="contact-phone">Phone</label>
+                                                        <div class="field-holder form-group" >
+                                                            <apex:inputText id="contact-phone" value="{!objNewProtalUser.Phone}" styleClass="text-field" maxlength="11"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="field-row">
+                                                    <div class="field-col-register half-width full-on-tablet">
+                                                        <label for="contact-Password">Password *</label>
+                                                        <a href="#" class="info">?<span>Password must be at least 8 characters long and a mix of numbers and letters.</span></a>
+                                                        <div class="field-holder form-group" >
+<!--                                                             <apex:inputSecret id="password" value="{!password}" required="true" styleClass="text-field"/> -->
+                                                            <div class="requiredInput">
+                                                                <div class="requiredBlock"></div>
+                                                                <input class="text-field" id="password" required="required" type="password" onblur="document.getElementById('{!$Component.hdnPassword}').value = this.value;"/>
+                                                            </div>
+                                                            <apex:inputHidden id="hdnPassword" value="{!password}"/>  
+                                                        </div>
+                                                    </div>
+                                                    <div class="field-col-register half-width full-on-tablet">
+                                                        <label for="contact-Confirm-Password">Confirm Password *</label>
+                                                        <div class="field-holder form-group" >
+<!--                                                             <apex:inputSecret id="contact-Confirm-Password" value="{!confirmPassword}" styleClass="text-field"/> -->
+                                                            <div class="requiredInput">
+                                                                <div class="requiredBlock"></div>
+                                                                <input class="text-field" id="confirmPassword" required="required" type="password" onblur="document.getElementById('{!$Component.hdnCnfPassword}').value = this.value;"/>
+                                                            </div>
+                                                            <apex:inputHidden id="hdnCnfPassword" value="{!confirmPassword}"/>  
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="separator-registration"></div>
+                                                <div class="field-row">
+                                                    <div class="field-col-register half-width full-on-tablet">
+                                                        <label for="contact-Title">Title</label>
+                                                        <div class="field-holder form-group" >
+                                                            <apex:inputField id="contact-Title" value="{!objNewProtalUser.Title}" styleClass="text-field"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="field-col-register half-width full-on-tablet">
+                                                        <label for="contact-Company">Company</label>
+                                                        <div class="field-holder form-group">
+                                                            <apex:inputField id="contact-Company" value="{!objNewProtalUser.CompanyName}" styleClass="text-field"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="field-row">
+                                                    <div class="field-col two-thirds full-on-tablet">
+                                                        <label for="contact-Address">Address</label>
+                                                        <div class="field-holder form-group">
+                                                            <apex:inputField id="contact-Address" value="{!objNewProtalUser.Street}" styleClass="text-field"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="field-col one-third full-on-tablet">
+                                                        <label for="contact-City">City</label>
+                                                        <div class="field-holder form-group">
+                                                            <apex:inputField id="contact-City" value="{!objNewProtalUser.City}" styleClass="text-field"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="field-row">
+                                                    <div class="field-col one-third full-on-tablet">
+                                                        <label for="contact-Country">Country</label>
+                                                        <div class="field-holder form-group">
+                                                            <apex:inputField id="contact-Country" value="{!objNewProtalUser.CountryCode}" styleClass="select-main"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="field-col one-third full-on-tablet">
+                                                        <label for="contact-State">State/Province</label>
+                                                        <div class="field-holder form-group">
+                                                            <apex:inputField id="contact-State" value="{!objNewProtalUser.StateCode}" styleClass="select-main"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="field-col one-third full-on-tablet">
+                                                        <label for="contact-PostalCode">Postal Code</label>
+                                                        <div class="field-holder form-group">
+                                                            <apex:inputField id="contact-PostalCode" value="{!objNewProtalUser.PostalCode}" styleClass="text-field"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="field-row">
+                                                    <div class="field-col-register half-width full-on-tablet">
+                                                        <label for="contact-WorkPhone">Work Phone</label>
+                                                        <div class="field-holder form-group">
+                                                            <apex:input id="contact-WorkPhone" styleClass="text-field"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="field-col-register half-width full-on-tablet">
+                                                        <label for="contact-Fax">Fax</label>
+                                                        <div class="field-holder form-group">
+                                                            <apex:inputField id="contact-Fax" value="{!objNewProtalUser.Fax}" styleClass="text-field"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="field-holder mobile-modal-footer">
+                                                    <apex:commandButton value="Register" action="{!registerUser}" styleClass="button-action"/>
+                                                    <label class="label-desktop-tablet-only" style="padding-left: 23px;" >Already have an account?</label><a class="label-desktop-tablet-only" style="padding-left: 13px;" href="/CustomLogin">Sign In   ></a>
+                                                    <div class="line-brk-mobile-only" style="text-align: center;"><br></br><label >Already have an account?</label><a href="/CustomLogin">Sign In   ></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </apex:form>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+        </div>
+        
+        <c:CustomSiteFooter />
+        
+    </body>
+</apex:page>

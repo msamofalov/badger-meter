@@ -1,0 +1,250 @@
+<apex:page controller="NewQuoteCreateForCaseCntr" tabStyle="BigMachines__Quotes__tab" id="pg" lightningStylesheets="true" action="{!continueOn}">
+    <apex:slds ></apex:slds>
+    
+    <style>
+        p {
+            font-size: 16px; 
+            font-weight: 700;           
+            
+        }
+        
+        li {
+            color: red;
+        }    
+        
+        table {
+            margin-bottom: 30px;
+        }               
+        
+
+        .hideListButton{
+            display:none;
+        }
+        .pbSubheader {
+            background-image: url('/img/alohaSkin/opacity75.png');
+            padding: 4px 16px;
+        }
+        
+        .apexp .bPageBlock.apexDefaultPageBlock .pbBody .pbSubheader h3 {
+            font-family: Arial,Helvetica,sans-serif;
+            font-weight: bold;
+            color: #000;
+        }
+    </style>
+    
+    <apex:form id="display">
+        <apex:outputPanel rendered="{!forwardingURL != ''}">
+            <script>
+                location.href = "{!forwardingURL}";
+            </script>
+        </apex:outputPanel>
+
+        <apex:variable var="isCompanyBME"   value="{! companyNumber == '14 - BADGER METER EUROPA GmbH (Germany)' }"/>
+        <apex:variable var="isCurrencyEuro" value="{! accountCurrency == 'EUR' }"   />
+
+        <!-- This is just for debugging. --> 
+        <apex:pageBlock rendered="false">
+                
+            Is 14 Company Number: {!isCompanyBME}
+            <br/>
+            <br/>    
+            
+            Has Existing Quotes: {!hasExistingQuotes}
+            <br/>
+            <br/>            
+            
+            Is Euro ?: {!isCurrencyEuro}
+            <br/>
+            <br/>
+            
+            Company Number:{!companyNumber}
+            <br/>
+            <br/>
+            
+            Account Currency: {!accountCurrency}            
+            <br/>
+            <br/>
+            
+            forwardingURL:{!forwardingURL}
+            <br/>
+            <br/>
+            
+        </apex:pageBlock>
+
+        <!-- 
+            US company with existing quotes OR 
+            BME company with EURO currency and has existing quotes.
+            
+            Warns user about existing quote(s) and lets the user to proceed with quote creation 
+        -->
+        <apex:outputPanel rendered="{! hasExistingQuotes == true && (isCompanyBME == false || (isCompanyBME == true && isCurrencyEuro == true)) }">
+            <apex:sectionHeader title="Create Quote" subtitle="New Quote"/>
+            <apex:pageBlock >
+                <br/>
+                <br/> 
+                Warning: PO Number for Account Name already exists.
+                
+                <br/>
+                <br/>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Created On</th>
+                            <th>Created By</th>
+                            <th>Status</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <apex:repeat value="{!existingQuotes}" var="quote">
+                            <tr>
+                                <td>
+                                    <a href="/{!quote.Id}">{!quote.Name}</a>
+                                </td>
+                                <td>{!quote.CreatedDate}</td>
+                                <td>{!quote.CreatedBy.Name}</td>
+                                <td>{!quote.BigMachines__Status__c}</td>
+                                <td>${!quote.BigMachines__Total_Amount__c}</td>
+                            </tr>
+                        </apex:repeat>
+                    </tbody>
+                </table>
+                <br/>
+                <br/>
+                
+                If you still want to proceed with creating the order, click on Create Quote below.  Otherwise click on Cancel to return to the case.
+                
+                
+                <br/>
+                <br/>
+                <apex:pageBlockButtons location="bottom">
+                    <apex:commandButton id="btnCreate" disabled="false" status="idActionStatus" value="Create Quote" action="{!createQuote}"  rerender="display"/>
+                    <apex:commandButton action="{!returnToCase}" value="Cancel"/>
+                </apex:pageBlockButtons>
+            </apex:pageBlock>
+        </apex:outputPanel>
+        
+        <!--
+            BME company with no quotes and currency is non-EURO.
+            
+            Warns create quote using order opportunity
+        -->
+        <apex:outputPanel rendered="{! hasExistingQuotes == false && isCompanyBME == true && isCurrencyEuro == false }">
+            <apex:sectionHeader title="Warning" subtitle="Account Currency is not EURO"/>
+            <apex:pageBlock >
+         
+                 <ul>
+                
+                    <li><p>Account Currency is not EURO</p></li>
+                    
+                </ul>
+                
+                <br/>      
+
+                        Account Currency:      
+                        {! accountCurrency } 
+                        <br/>
+                        Account Company Number: 
+                        {! companyNumber }
+                        <br/>
+                        <br/>
+
+                 <ul>
+                
+                    <li><p>Use Order Opportunity to create Quote with Account's Currency.</p></li>
+                    
+                </ul>
+
+  
+                <br/>
+                <br/>
+                
+                <apex:pageBlockButtons location="bottom">
+                    <apex:commandButton action="{!returnToCase}" value="Back to Case"/>
+                </apex:pageBlockButtons>
+            </apex:pageBlock>
+        </apex:outputPanel>
+        
+        <!--
+            BME company with existing quotes and currency is non-EURO.
+            
+            Warns user about existing quote(s) and informs user to create quote using order opportunity 
+        -->
+        <apex:outputPanel rendered="{! hasExistingQuotes == true && isCompanyBME == true && isCurrencyEuro == false }">
+            <apex:sectionHeader title="Warnings" subtitle="PO Number already exists and Account Currency is not EURO"/>
+            <apex:pageBlock >
+                <ul>
+                
+                    <li><p>PO Number for Account Name already exists.</p></li>
+
+                    
+                </ul>
+                
+                <br/>
+                
+                <p>PO Details</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Created On</th>
+                            <th>Created By</th>
+                            <th>Status</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <apex:repeat value="{!existingQuotes}" var="quote">
+                            <tr>
+                                <td>
+                                    <a href="/{!quote.Id}">{!quote.Name}</a>
+                                </td>
+                                <td>{!quote.CreatedDate}</td>
+                                <td>{!quote.CreatedBy.Name}</td>
+                                <td>{!quote.BigMachines__Status__c}</td>
+                                <td>${!quote.BigMachines__Total_Amount__c}</td>
+                            </tr>
+                        </apex:repeat>
+                    </tbody>
+                </table>
+                
+                 <ul>
+                
+                    <li><p>Account Currency is not EURO</p></li>
+                    
+                </ul>
+                
+                <br/>      
+
+                        Account Currency:      
+                        {! accountCurrency } 
+                        <br/>
+                        Account Company Number: 
+                        {! companyNumber }
+                        <br/>
+                        <br/>
+
+                 <ul>
+                
+                    <li><p>Use Order Opportunity to create Quote with Account's Currency.</p></li>
+                    
+                </ul>
+
+             <!--   
+                    <li><b>Use Order Opportunity to create Quote with Account's Currency.</b></li>
+              -->
+                    
+                <br/>
+                <br/>
+                
+                <apex:pageBlockButtons location="bottom">
+                    <apex:commandButton action="{!returnToCase}" value="Back to Case"/>
+                </apex:pageBlockButtons>
+            </apex:pageBlock>
+        </apex:outputPanel>
+
+        
+
+    </apex:form>
+</apex:page>

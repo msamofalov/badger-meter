@@ -1,0 +1,5 @@
+<apex:page showHeader="false" sidebar="false" cache="false" lightningstylesheets="true">
+<script>
+window.location.replace("https://www.badgermeter.com/login-sso");
+</script>
+</apex:page>

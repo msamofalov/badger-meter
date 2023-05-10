@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ship_To_Number_3_Validation</fullName>
+    <active>true</active>
+    <description>Validate CERT Ship To Number 3.  Must be 4 numbers with leading zeros OR BLANK.</description>
+    <errorConditionFormula>ISBLANK(CERT_Shipto_3__c) ==  False &amp;&amp; (LEN(CERT_Shipto_3__c) &lt;&gt; 4 || ISNUMBER(CERT_Shipto_3__c) &lt;&gt; true)</errorConditionFormula>
+    <errorDisplayField>CERT_Shipto_3__c</errorDisplayField>
+    <errorMessage>Ship To Number 3 must be 4 numbers with leading zeros.</errorMessage>
+</ValidationRule>

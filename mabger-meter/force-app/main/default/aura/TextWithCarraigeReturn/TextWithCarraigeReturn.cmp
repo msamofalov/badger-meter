@@ -1,0 +1,12 @@
+<aura:component access="global" implements="lightning:availableForFlowScreens" >
+	
+    <aura:attribute name="varLabel" type="String"/>
+    <aura:attribute name="varinput1value" type="String"/>
+    
+    <span onkeypress="{!c.keyCheck}" class="slds-size--11-of-12">
+        <lightning:input aura:id="input1value" required="true" name="input1" type="text" label="{!v.varLabel}" value="{!v.varinput1value}" />
+    </span>
+    
+	<aura:handler name="init" value="{!this}" action="{!c.init}"/>
+ 	
+</aura:component>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CERT_Content_Layout_2__c</fullName>
+    <description>Typically used for providing S/N lists of Endpoints.
+
+501 is the skinny version identifying Endpoint S/N and Encoder S/N, only.
+
+502 is for the modified version including the Meter:Endpoint S/N, Meter S/N, Encoder S/N, only.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Typically used for providing S/N lists of Endpoints.
+
+501 is the skinny version identifying Endpoint S/N and Encoder S/N, only.
+
+502 is for the modified version including the Meter:Endpoint S/N, Meter S/N, Encoder S/N, only.</inlineHelpText>
+    <label>Content/Layout #2</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

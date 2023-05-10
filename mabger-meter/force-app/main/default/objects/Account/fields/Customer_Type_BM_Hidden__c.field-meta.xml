@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Type_BM_Hidden__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(Organization_Type__c) = &quot;DC-Distributor Customer&quot;, &quot;DC&quot;, 
+    IF(TEXT(Organization_Type__c) = &quot;FE-Flow End Customer&quot;, &quot;FE&quot;, 
+       IF(TEXT(Organization_Type__c) = &quot;OD-Flow Open Distribution&quot;, &quot;OD&quot;, 
+          IF(TEXT(Organization_Type__c) = &quot;ED-End Compass Program Distributor&quot;, &quot;ED&quot;, 
+             IF(TEXT(Organization_Type__c) = &quot;FM-Skid Manufacturer/OEM&quot;, &quot;FM&quot;, 
+                IF(TEXT(Organization_Type__c) = &quot;HA-Flow House Account&quot;, &quot;HA&quot;, 
+                   IF(TEXT(Organization_Type__c) = &quot;TD-Turf Distributor&quot;, &quot;TD&quot;, 
+                     IF(TEXT(Organization_Type__c) = &quot;IR-Flow Industrial/Commercial Rep&quot;, &quot;IR&quot;, 
+                       IF(TEXT(Organization_Type__c) = &quot;WD-WYCO Distributor&quot;, &quot;WD&quot;, 
+                         IF(TEXT(Organization_Type__c) = &quot;WE-WYCO End Customer/Contractor&quot;, &quot;WE&quot;, 
+                           IF(TEXT(Organization_Type__c) = &quot;WM-WYCO OEM&quot;, &quot;WM&quot;, 
+                             IF(TEXT(Organization_Type__c) = &quot;UC-Utility Customer&quot;, &quot;UC&quot;, 
+                               IF(TEXT(Organization_Type__c) = &quot;UD-Utility Distributor&quot;, &quot;UD&quot;, 
+                                 IF(TEXT(Organization_Type__c) = &quot;UO-Utility Other&quot;, &quot;UO&quot;, 
+                                  IF(TEXT(Organization_Type__c) = &quot;ID-International Distributor&quot;, &quot;ID&quot;, 
+&quot;UO&quot;) ) ) ) ) ) ) ) ) ) ) ) ) ))</formula>
+    <label>Customer Type BM Hidden</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

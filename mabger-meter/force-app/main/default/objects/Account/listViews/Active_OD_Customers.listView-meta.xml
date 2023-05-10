@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_OD_Customers</fullName>
+    <columns>PARENT_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Customer_Number__c</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>Organization_Type__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Sales_Credit_Name__c</columns>
+    <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Direct_End_Customer</value>
+    </filters>
+    <filters>
+        <field>Customer_Number__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Organization_Type__c</field>
+        <operation>contains</operation>
+        <value>OD-Flow Open Distribution</value>
+    </filters>
+    <label>Active OD Customers</label>
+</ListView>

@@ -1,0 +1,1039 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Line__c</fullName>
+    <externalId>false</externalId>
+    <label>Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Product</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>WYCO</controllingFieldValue>
+            <valueName>Electric Vibrators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WYCO</controllingFieldValue>
+            <valueName>Flex Shafts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WYCO</controllingFieldValue>
+            <valueName>Vibrator Heads</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WYCO</controllingFieldValue>
+            <valueName>Back Pack Vibrator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WYCO</controllingFieldValue>
+            <valueName>EZ HandHeld Vibe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WYCO</controllingFieldValue>
+            <valueName>EZ Vibe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WYCO</controllingFieldValue>
+            <valueName>High Cycle Generators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WYCO</controllingFieldValue>
+            <valueName>Cycle Converter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WYCO</controllingFieldValue>
+            <valueName>Screed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WYCO</controllingFieldValue>
+            <valueName>Hydraulic Vibrator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WYCO</controllingFieldValue>
+            <controllingFieldValue>Dynasonics Ultrasonic</controllingFieldValue>
+            <controllingFieldValue>Encoder</controllingFieldValue>
+            <controllingFieldValue>E-Series Ultrasonic</controllingFieldValue>
+            <controllingFieldValue>Fire Hydrant</controllingFieldValue>
+            <controllingFieldValue>Fire Series</controllingFieldValue>
+            <controllingFieldValue>Flow Calibrators</controllingFieldValue>
+            <controllingFieldValue>Flo-Tech</controllingFieldValue>
+            <controllingFieldValue>Galaxy</controllingFieldValue>
+            <controllingFieldValue>Gas</controllingFieldValue>
+            <controllingFieldValue>Gateway</controllingFieldValue>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <controllingFieldValue>Blancett</controllingFieldValue>
+            <controllingFieldValue>Compound</controllingFieldValue>
+            <controllingFieldValue>Concrete</controllingFieldValue>
+            <controllingFieldValue>Coriolis</controllingFieldValue>
+            <controllingFieldValue>Hedland</controllingFieldValue>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <controllingFieldValue>Industrial Oval Gear</controllingFieldValue>
+            <controllingFieldValue>Oscillating Piston</controllingFieldValue>
+            <controllingFieldValue>ITRON</controllingFieldValue>
+            <controllingFieldValue>Meter Reading Equipment</controllingFieldValue>
+            <controllingFieldValue>M-Series Electromagnetic</controllingFieldValue>
+            <controllingFieldValue>ORION</controllingFieldValue>
+            <controllingFieldValue>Preso</controllingFieldValue>
+            <controllingFieldValue>Recordall Disc</controllingFieldValue>
+            <controllingFieldValue>Recordall Test Equipment</controllingFieldValue>
+            <controllingFieldValue>Turbo</controllingFieldValue>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <controllingFieldValue>Research Control Valve</controllingFieldValue>
+            <controllingFieldValue>Strainers</controllingFieldValue>
+            <controllingFieldValue>Vortex</controllingFieldValue>
+            <valueName>OBSOLETE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Turbine</controllingFieldValue>
+            <valueName>Exact Flow</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Turbine</controllingFieldValue>
+            <valueName>OE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Turbine</controllingFieldValue>
+            <valueName>Blancett</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Turbine</controllingFieldValue>
+            <valueName>COX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BEACON</controllingFieldValue>
+            <controllingFieldValue>AquaCUE</controllingFieldValue>
+            <controllingFieldValue>ORION</controllingFieldValue>
+            <valueName>Orion Cellular LTE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BEACON</controllingFieldValue>
+            <controllingFieldValue>AquaCUE</controllingFieldValue>
+            <controllingFieldValue>ORION</controllingFieldValue>
+            <valueName>Orion Cellular LTE-M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BEACON</controllingFieldValue>
+            <controllingFieldValue>AquaCUE</controllingFieldValue>
+            <controllingFieldValue>ORION</controllingFieldValue>
+            <valueName>Orion Cellular CDMA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BEACON</controllingFieldValue>
+            <controllingFieldValue>AquaCUE</controllingFieldValue>
+            <controllingFieldValue>ORION</controllingFieldValue>
+            <valueName>Orion Cellular HSPA+</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BEACON</controllingFieldValue>
+            <controllingFieldValue>AquaCUE</controllingFieldValue>
+            <valueName>Orion Cellular GSM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BEACON</controllingFieldValue>
+            <controllingFieldValue>AquaCUE</controllingFieldValue>
+            <valueName>Orion Mobile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BEACON</controllingFieldValue>
+            <controllingFieldValue>AquaCUE</controllingFieldValue>
+            <valueName>Gateway Orion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BEACON</controllingFieldValue>
+            <controllingFieldValue>AquaCUE</controllingFieldValue>
+            <valueName>Gateway Galaxy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BEACON</controllingFieldValue>
+            <controllingFieldValue>AquaCUE</controllingFieldValue>
+            <valueName>Manual</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BEACON</controllingFieldValue>
+            <valueName>Interface</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BEACON</controllingFieldValue>
+            <controllingFieldValue>AquaCUE</controllingFieldValue>
+            <valueName>Invoicing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BEACON</controllingFieldValue>
+            <controllingFieldValue>AquaCUE</controllingFieldValue>
+            <valueName>Asset Status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ReadCenter</controllingFieldValue>
+            <valueName>Mobile Reading System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ReadCenter</controllingFieldValue>
+            <valueName>Fixed Network System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ReadCenter</controllingFieldValue>
+            <valueName>Install/Update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ReadCenter</controllingFieldValue>
+            <valueName>Reports</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CONNECT</controllingFieldValue>
+            <valueName>Connect -obs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Quality</controllingFieldValue>
+            <controllingFieldValue>Water Quality - UK</controllingFieldValue>
+            <valueName>PortaSens III</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Quality</controllingFieldValue>
+            <controllingFieldValue>Water Quality - UK</controllingFieldValue>
+            <valueName>H10 Sensor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Quality</controllingFieldValue>
+            <controllingFieldValue>Water Quality - UK</controllingFieldValue>
+            <valueName>GasSens</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Quality</controllingFieldValue>
+            <controllingFieldValue>Water Quality - UK</controllingFieldValue>
+            <valueName>B12</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Quality</controllingFieldValue>
+            <controllingFieldValue>Water Quality - UK</controllingFieldValue>
+            <valueName>D12</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Quality</controllingFieldValue>
+            <controllingFieldValue>Water Quality - UK</controllingFieldValue>
+            <valueName>F12</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Quality</controllingFieldValue>
+            <controllingFieldValue>Water Quality - UK</controllingFieldValue>
+            <valueName>Q45 WQ Monitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Quality</controllingFieldValue>
+            <controllingFieldValue>Water Quality - UK</controllingFieldValue>
+            <valueName>Q46 WQ Monitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Quality</controllingFieldValue>
+            <controllingFieldValue>Water Quality - UK</controllingFieldValue>
+            <valueName>Q52 Metrinet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Quality</controllingFieldValue>
+            <controllingFieldValue>Water Quality - UK</controllingFieldValue>
+            <valueName>Con Cube</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Quality</controllingFieldValue>
+            <controllingFieldValue>Water Quality - UK</controllingFieldValue>
+            <valueName>Con Lyte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Quality</controllingFieldValue>
+            <controllingFieldValue>Water Quality - UK</controllingFieldValue>
+            <valueName>Spectrolyzer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Quality</controllingFieldValue>
+            <valueName>s::can Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dynasonics Ultrasonic</controllingFieldValue>
+            <valueName>TFX5000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dynasonics Ultrasonic</controllingFieldValue>
+            <valueName>TFX500W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dynasonics Ultrasonic</controllingFieldValue>
+            <valueName>TFX Ultra: Clamp-on Ultrasonic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dynasonics Ultrasonic</controllingFieldValue>
+            <valueName>TFXL: Clamp-on Transit Time Ultrasonic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dynasonics Ultrasonic</controllingFieldValue>
+            <valueName>DFX: Doppler Ultrasonic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dynasonics Ultrasonic</controllingFieldValue>
+            <valueName>UFX: Handheld Doppler Ultrasonic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dynasonics Ultrasonic</controllingFieldValue>
+            <valueName>DXN: Portable Hybrid Ultrasonic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encoder</controllingFieldValue>
+            <valueName>HR E-LCD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encoder</controllingFieldValue>
+            <valueName>HRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encoder</controllingFieldValue>
+            <valueName>ADE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-Series Ultrasonic</controllingFieldValue>
+            <valueName>North America</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-Series Ultrasonic</controllingFieldValue>
+            <valueName>DN sizes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fire Hydrant</controllingFieldValue>
+            <valueName>Turbo-Series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fire Hydrant</controllingFieldValue>
+            <controllingFieldValue>Turbo</controllingFieldValue>
+            <valueName>Turbo II -obs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fire Series</controllingFieldValue>
+            <valueName>Fire Service Meter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fire Series</controllingFieldValue>
+            <valueName>Fire Service Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fire Series</controllingFieldValue>
+            <controllingFieldValue>Strainers</controllingFieldValue>
+            <valueName>Fire Service Strainers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flow Calibrators</controllingFieldValue>
+            <valueName>PDLC 10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flow Calibrators</controllingFieldValue>
+            <valueName>PDLC 60</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flow Calibrators</controllingFieldValue>
+            <valueName>PDLC 400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flow Calibrators</controllingFieldValue>
+            <valueName>Automotive Body Leak Tester</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flow Calibrators</controllingFieldValue>
+            <valueName>Flow Gator Portable Flow Transfer Standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flow Calibrators</controllingFieldValue>
+            <valueName>Flo-Cal Calibration Software</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flo-Tech</controllingFieldValue>
+            <valueName>Flo-Check</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flo-Tech</controllingFieldValue>
+            <valueName>PFM6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flo-Tech</controllingFieldValue>
+            <valueName>PFM6BD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flo-Tech</controllingFieldValue>
+            <valueName>PFM8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flo-Tech</controllingFieldValue>
+            <valueName>Activa Sensor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flo-Tech</controllingFieldValue>
+            <valueName>Ultima Sensor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flo-Tech</controllingFieldValue>
+            <valueName>Classic Turbine Sensors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flo-Tech</controllingFieldValue>
+            <valueName>Quad Series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Galaxy</controllingFieldValue>
+            <valueName>TR-2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Galaxy</controllingFieldValue>
+            <valueName>TR-3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gas</controllingFieldValue>
+            <controllingFieldValue>Gateway</controllingFieldValue>
+            <controllingFieldValue>Hedland</controllingFieldValue>
+            <controllingFieldValue>ORION</controllingFieldValue>
+            <valueName>ORION CE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gas</controllingFieldValue>
+            <controllingFieldValue>ORION</controllingFieldValue>
+            <valueName>ORION ME</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gas</controllingFieldValue>
+            <controllingFieldValue>Gateway</controllingFieldValue>
+            <controllingFieldValue>ORION</controllingFieldValue>
+            <valueName>ORION SE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gas</controllingFieldValue>
+            <valueName>OEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gas</controllingFieldValue>
+            <valueName>Gas-RT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gateway</controllingFieldValue>
+            <controllingFieldValue>Hedland</controllingFieldValue>
+            <valueName>Galaxy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Fluid Management System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Pistol Grip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Pistol Grip Batch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Oval Gear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Electronic Preset Meter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Universal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Blancett</controllingFieldValue>
+            <valueName>1100 Turbine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Blancett</controllingFieldValue>
+            <valueName>1200 Turbine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Blancett</controllingFieldValue>
+            <valueName>1500 Meter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Blancett</controllingFieldValue>
+            <valueName>900 PD Flood Meter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Blancett</controllingFieldValue>
+            <valueName>B20 Series Turbine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Blancett</controllingFieldValue>
+            <valueName>QuikSert in-line Turbine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Blancett</controllingFieldValue>
+            <valueName>3-A FloClean Sanitary Turbine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Blancett</controllingFieldValue>
+            <valueName>B1750 PD Gear Meter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Blancett</controllingFieldValue>
+            <valueName>B2800 Flow Monitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Blancett</controllingFieldValue>
+            <valueName>B2900_Flow_Monitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Blancett</controllingFieldValue>
+            <valueName>B3000 Flow Monitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Calibration Services</controllingFieldValue>
+            <valueName>Fluid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Calibration Services</controllingFieldValue>
+            <valueName>Gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compound</controllingFieldValue>
+            <valueName>Compound Series Meter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compound</controllingFieldValue>
+            <valueName>Combo Series Meter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compound</controllingFieldValue>
+            <valueName>Recordall Compound -obs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Concrete</controllingFieldValue>
+            <valueName>Vibrators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Concrete</controllingFieldValue>
+            <valueName>Batch Meters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Concrete</controllingFieldValue>
+            <valueName>Skreeds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coriolis</controllingFieldValue>
+            <valueName>RCT1000 Coriolis mass flow</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coriolis</controllingFieldValue>
+            <valueName>RCT Console Software</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hedland</controllingFieldValue>
+            <valueName>Petroleum Fluid Meters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hedland</controllingFieldValue>
+            <valueName>Phosphate Ester Fluid Meters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hedland</controllingFieldValue>
+            <valueName>Water Based Fluid Meters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hedland</controllingFieldValue>
+            <valueName>API Oil/Caustic and Corrosive Liquid Meters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hedland</controllingFieldValue>
+            <valueName>Air/Caustic and Corrosive Gas Meters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hedland</controllingFieldValue>
+            <valueName>Air and Compressed Gas Meters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hedland</controllingFieldValue>
+            <valueName>EZ View Flow Meters Digital Display</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>200 Sensor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>228-250 Sensor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>220 Sensor Irrigation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>SDI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>380 BTU Series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>PVC Tee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>4000 Sensor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>735 Sensor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>Wireless Sensor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>3000/3100 Flow Monitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>3050 BTU Monitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>330 Relay Transmitters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>340 BTU Transmitters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>320 Pulse Transmitters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>310 Analog Transmitters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>THT Temperature Sensor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>3700 Data Acquisition Server</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>FC5000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impeller</controllingFieldValue>
+            <valueName>FC5000BTU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Oval Gear</controllingFieldValue>
+            <valueName>Stainless Steel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Oval Gear</controllingFieldValue>
+            <valueName>Aluminum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oscillating Piston</controllingFieldValue>
+            <valueName>Chemical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oscillating Piston</controllingFieldValue>
+            <valueName>Sanitary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ITRON</controllingFieldValue>
+            <valueName>Itron 60W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ITRON</controllingFieldValue>
+            <valueName>Itron 100W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ITRON</controllingFieldValue>
+            <valueName>Itron 100 +</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Syrinix</controllingFieldValue>
+            <valueName>Pipeminder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter Reading Equipment</controllingFieldValue>
+            <valueName>Laptop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter Reading Equipment</controllingFieldValue>
+            <valueName>Tablet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter Reading Equipment</controllingFieldValue>
+            <valueName>Trimble HH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter Reading Equipment</controllingFieldValue>
+            <valueName>Radix HH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter Reading Equipment</controllingFieldValue>
+            <valueName>Metre Pro -obs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter Reading Equipment</controllingFieldValue>
+            <valueName>Versa-Probe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter Reading Equipment</controllingFieldValue>
+            <valueName>Orion CE Receiver</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter Reading Equipment</controllingFieldValue>
+            <valueName>Orion ME Receiver</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter Reading Equipment</controllingFieldValue>
+            <valueName>Orion Dual Read Receiver</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter Reading Equipment</controllingFieldValue>
+            <valueName>Mini-Mobile  Trace -obs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter Reading Equipment</controllingFieldValue>
+            <valueName>Latitude 7220</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter Reading Equipment</controllingFieldValue>
+            <valueName>BATTERY CHARGER - DELL LATITUDE 7220</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M-Series Electromagnetic</controllingFieldValue>
+            <valueName>M1000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M-Series Electromagnetic</controllingFieldValue>
+            <valueName>M2000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M-Series Electromagnetic</controllingFieldValue>
+            <valueName>M3000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M-Series Electromagnetic</controllingFieldValue>
+            <valueName>M4000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M-Series Electromagnetic</controllingFieldValue>
+            <valueName>M5000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M-Series Electromagnetic</controllingFieldValue>
+            <valueName>M7500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M-Series Electromagnetic</controllingFieldValue>
+            <valueName>Field Verification Device</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ORION</controllingFieldValue>
+            <valueName>Orion HLA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ORION</controllingFieldValue>
+            <valueName>Orion C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ORION</controllingFieldValue>
+            <valueName>Orion LTE CAN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ORION</controllingFieldValue>
+            <valueName>Orion LTE MS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ORION</controllingFieldValue>
+            <valueName>Orion LTE MP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preso</controllingFieldValue>
+            <valueName>Pitot Tube</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preso</controllingFieldValue>
+            <valueName>Venturi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preso</controllingFieldValue>
+            <valueName>COIN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preso</controllingFieldValue>
+            <valueName>Gemini</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preso</controllingFieldValue>
+            <valueName>DP Gauges</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preso</controllingFieldValue>
+            <valueName>Transmitter?</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preso</controllingFieldValue>
+            <valueName>FM (Fire Pump System) Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preso</controllingFieldValue>
+            <valueName>Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recordall Disc</controllingFieldValue>
+            <valueName>M25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recordall Disc</controllingFieldValue>
+            <valueName>M35</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recordall Disc</controllingFieldValue>
+            <valueName>M40</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recordall Disc</controllingFieldValue>
+            <valueName>M55</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recordall Disc</controllingFieldValue>
+            <valueName>M70</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recordall Disc</controllingFieldValue>
+            <valueName>M120</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recordall Disc</controllingFieldValue>
+            <valueName>M170</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recordall Test Equipment</controllingFieldValue>
+            <valueName>Portable Large Meter Tester</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recordall Test Equipment</controllingFieldValue>
+            <valueName>Portable Small Meter Tester</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turbo</controllingFieldValue>
+            <valueName>Turbo Series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turbo</controllingFieldValue>
+            <valueName>Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>RCDL (Local)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>RTR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>RED</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>RET-obs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>AR/T</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>ER-6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>ER-7-obs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>ER-8-obs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>ER-9</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>ER-10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>OGT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>258HW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>ECA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>MS-ER1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>ILR-700</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>ILR-710</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>ILR-720</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>ILR-730</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>ILR-740</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>ILR-741</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>ER-420</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>ER-500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>PC-200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>AR/E-obs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>PRC-20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>FT-1E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>PFT-2E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>PFT-3E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>FT-1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>FT-2XP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>RST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>RST6P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>FT-420</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>PFT-420</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>PFT-420-2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>PFT-420B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>RST_420</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>PFT-1E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>PFT-4E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registers</controllingFieldValue>
+            <valueName>Dual RTR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Research Control Valve</controllingFieldValue>
+            <valueName>Research</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Research Control Valve</controllingFieldValue>
+            <valueName>9000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Research Control Valve</controllingFieldValue>
+            <valueName>9100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Research Control Valve</controllingFieldValue>
+            <valueName>RCV Calc</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Strainers</controllingFieldValue>
+            <valueName>Plate Strainers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vortex</controllingFieldValue>
+            <valueName>RVL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vortex</controllingFieldValue>
+            <valueName>VC - VN2000 Compact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vortex</controllingFieldValue>
+            <valueName>VF - VN2000 Hot Tap</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vortex</controllingFieldValue>
+            <valueName>VT - VN2000 Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vortex</controllingFieldValue>
+            <valueName>RNG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vortex</controllingFieldValue>
+            <valueName>RWG/RWBG</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

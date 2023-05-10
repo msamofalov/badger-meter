@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flow_Instrumentation_Inside_Sales_Queue</fullName>
+    <booleanFilter>(1 AND 2) OR (1 AND 3)</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Account_Owner__c</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Email_to_Case_Address__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Response_Received__c</columns>
+    <columns>Product_Industry__c</columns>
+    <columns>Product_Type__c</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>Inquiry_Reason__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.PRIORITY</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Inquiry,Case.Invoice_Analysis,Case.Return</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>RMA Completed,Closed_Resolved,Closed - Resolved,Closed - Unresolved,Action Completed,Closed</value>
+    </filters>
+    <filters>
+        <field>Response_Received__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Flow Instrumentation Inside Sales Queue</label>
+    <queue>Flow_Instrumentation_Inside_Sales</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

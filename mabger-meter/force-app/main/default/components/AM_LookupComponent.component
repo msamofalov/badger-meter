@@ -1,0 +1,86 @@
+<!-- 
+
+Copyright (c) 2011, salesforce.com, Inc.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, 
+are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice, 
+    this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright notice, 
+    this list of conditions and the following disclaimer in the documentation 
+    and/or other materials provided with the distribution.
+    * Neither the name of the salesforce.com, Inc. nor the names of its contributors 
+    may be used to endorse or promote products derived from this software 
+    without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, 
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE 
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
+OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+
+<apex:component controller="AM_LookUpComponentController">
+  <apex:attribute name="p_objType" description="Object Type for controller" assignTo="{!lookupObjectName}" type="String" required="true"/>
+  <apex:attribute name="p_assetstatus" description="Asset status" assignTo="{!assetStatus}" type="String" required="false"/>
+  <apex:attribute name="p_recType" description="Asset record type (required for Assets)" assignTo="{!assetRecordType}" type="String" required="false"/>
+  <div class="lookup-container">
+    <apex:form id="form" >  
+       <div style="width 100%">
+          <apex:pageBlock title="Lookup" id="block">
+                <div class="input-set">
+                  <label>Search</label>
+                  <apex:inputText value="{!lookupQuery}" id="query" html-placeholder="search"/> 
+                  <apex:commandButton value="Go" action="{!runQuery}" rerender="form"/>
+                </div>
+          </apex:pageBlock>
+
+          <div id="resultBox">
+              <apex:pageBlock id="resultBlock" rendered="{!showAsset}"> <!-- Asset Result Table-->
+               <table>
+                    <tr>
+                        <th>Asset</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                        <th>Type</th>
+                        <th>Product</th>
+                    </tr>
+
+                    <apex:repeat var="asset" value="{!assetLookupValues}">
+                    <tr>
+                        <td>
+                          <apex:outputLink value="#" onclick="fillInAsset('{!JSINHTMLENCODE(asset.Name)}', '{!JSINHTMLENCODE(asset.id)}', '{!JSINHTMLENCODE(asset.Status)}', '{!JSINHTMLENCODE(asset.Address__r.Name)}', '{!JSINHTMLENCODE(asset.RecordType.name)}')">{!asset.Name}</apex:outputLink>
+                        </td>
+                        <td>{!asset.Address__r.Name}</td>
+                        <td>{!asset.Status}</td>
+                        <td>{!asset.RecordType.name}</td>
+                        <td>{!asset.product2.name}</td>
+                    </tr>
+                    </apex:repeat> 
+                </table>                               
+              </apex:pageBlock>
+             
+            <apex:pageBlock rendered="{!showContact}"> <!-- Contact Result Table-->
+              <apex:pageBlockTable value="{!contactLookupValues}" var="contact">
+                <apex:column headerValue="Name">
+                  <apex:outputLink value="#" onclick="fillInContact('{!JSINHTMLENCODE(contact.Name)}', '{!JSINHTMLENCODE(contact.id)}', '{!JSINHTMLENCODE(contact.Email)}', '{!JSINHTMLENCODE(contact.Phone)}')">{!contact.Name}</apex:outputLink>       
+                </apex:column>
+                <apex:column headerValue="Email" value="{!contact.Email}"/>
+                <apex:column headerValue="Phone" value="{!contact.Phone}"/>
+                 <apex:column headerValue="Account" value="{!contact.Account.name}"/>
+              </apex:pageBlockTable>  
+            </apex:pageBlock>
+            <button id="lookup-close" type="button" onclick="hideLookUp('{!p_objType}');">Close</button>         
+          </div>
+       </div>
+     </apex:form>
+   </div>
+</apex:component>

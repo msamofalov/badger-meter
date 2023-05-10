@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsHoliday__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TODAY()=DATE(2021,12,24),1, 
+IF(TODAY()=DATE(2021,12,25),1, 
+IF(TODAY()=DATE(2021,12,31),1, 
+IF(TODAY()=DATE(2021,11,24),1, 
+IF(TODAY()=DATE(2021,11,25),1,
+IF(TODAY()=DATE(2021,11,26),1,
+IF(TODAY()=DATE(2021,10,28),1,
+0
+)))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>IsHoliday</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

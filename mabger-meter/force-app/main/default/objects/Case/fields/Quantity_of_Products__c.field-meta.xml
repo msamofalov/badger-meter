@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quantity_of_Products__c</fullName>
+    <description>Rollup Summary totals the Quantity field on the Product Line</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sum of Quantity on all product lines</inlineHelpText>
+    <label>Quantity of Products</label>
+    <summarizedField>Product_Line__c.Quantity__c</summarizedField>
+    <summaryForeignKey>Product_Line__c.Case__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

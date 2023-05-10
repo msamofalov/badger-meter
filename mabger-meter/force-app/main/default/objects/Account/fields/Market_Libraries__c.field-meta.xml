@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market_Libraries__c</fullName>
+    <description>Text must match Public Group Label exactly. Custom metadata record must be set up for each group as well.</description>
+    <externalId>false</externalId>
+    <label>Market Libraries</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Utility Water Partner Library</fullName>
+                <default>false</default>
+                <label>Utility Water Partner Library</label>
+            </value>
+            <value>
+                <fullName>Concrete Finishing Partner Library</fullName>
+                <default>false</default>
+                <label>Concrete Finishing Partner Library</label>
+            </value>
+            <value>
+                <fullName>Process Valve Partner Library</fullName>
+                <default>false</default>
+                <label>Process Valve Partner Library</label>
+            </value>
+            <value>
+                <fullName>Flow Instrumentation Partner Library</fullName>
+                <default>false</default>
+                <label>Flow Instrumentation Partner Library</label>
+            </value>
+            <value>
+                <fullName>Open Distribution Partner Library</fullName>
+                <default>false</default>
+                <label>Open Distribution Partner Library</label>
+            </value>
+            <value>
+                <fullName>Flow Default and Test Measure Library</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Flow Default and Test Measure Library</label>
+            </value>
+            <value>
+                <fullName>Open Distribution Products Library</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Open Distribution Products Library</label>
+            </value>
+            <value>
+                <fullName>Partner Central Library</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Partner Central Library</label>
+            </value>
+            <value>
+                <fullName>Process-Valve and Test Measure Library</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Process-Valve and Test Measure Library</label>
+            </value>
+            <value>
+                <fullName>Utility Library</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Utility Library</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

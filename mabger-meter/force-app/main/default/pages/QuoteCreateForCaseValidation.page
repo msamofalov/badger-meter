@@ -1,0 +1,77 @@
+<apex:page standardController="Case" extensions="QuoteCreateForCaseValidationController" lightningStylesheets="true">
+    
+    <apex:slds />
+    
+    <apex:pageBlock rendered="{!hasPONumber == false}">
+        
+        <br/><br/> 
+    
+        Please enter PO Number before Creating Quote.
+        
+        <br/><br/> 
+        
+        <apex:form >
+            <apex:commandButton action="{!cancel}" value="Return to Case"/>
+        </apex:form>
+        
+    </apex:pageBlock>
+    
+    <apex:pageBlock rendered="{!hasPONumber == true && hasExistingQuotes == false}">
+        <apex:form >
+        	<apex:actionFunction action="{!ok}" name="goToBigMachines"/>
+        </apex:form>        
+        
+        <script>
+        	goToBigMachines();
+        </script>
+        
+    </apex:pageBlock>
+    
+    <apex:pageBlock rendered="{!hasPONumber == true && hasExistingQuotes == true}">
+        
+    	<br/><br/> 
+    
+        Warning: PO Number for Account Name already exists.
+        
+        <br/><br/> 
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Created On</th>
+                    <th>Created By</th>
+                    <th>Status</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                 <apex:repeat value="{!quotes}" var="quote">
+                    <tr>
+                        <td><a href="/{!quote.Id}">{!quote.Name}</a></td>
+                        <td>{!quote.CreatedDate}</td>
+                        <td>{!quote.CreatedBy.Name}</td>
+                        <td>{!quote.BigMachines__Status__c}</td>
+                        <td>${!quote.BigMachines__Total_Amount__c}</td>
+                    </tr>
+                </apex:repeat>
+            </tbody>
+        </table>
+        
+        <br/><br/>
+        
+        Do you still want to create the order?
+        
+        <br/><br/>
+        
+        <apex:form >
+            <apex:commandButton action="{!cancel}" value="Cancel"/>
+            <apex:commandButton action="{!ok}" value="OK"/>
+        </apex:form>
+        
+    </apex:pageBlock>
+    
+    
+    
+    
+</apex:page>

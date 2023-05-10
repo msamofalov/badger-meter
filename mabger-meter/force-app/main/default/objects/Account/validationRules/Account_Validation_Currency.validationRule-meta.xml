@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Validation_Currency</fullName>
+    <active>true</active>
+    <description>Currency cannot be edited once a Customer Number has been assigned. Currency can only be maintained in Infor ERPLX by Credit once a Customer Number has been assigned.</description>
+    <errorConditionFormula>ISCHANGED(CurrencyIsoCode) &amp;&amp; NOT(ISBLANK(Customer_Number__c)) &amp;&amp;
+(NOT($Profile.Name = &apos;Interface User&apos;))</errorConditionFormula>
+    <errorDisplayField>CurrencyIsoCode</errorDisplayField>
+    <errorMessage>Currency cannot be edited once a Customer Number has been assigned. Currency can only be maintained in Infor ERPLX by Credit once a Customer Number has been assigned.</errorMessage>
+</ValidationRule>

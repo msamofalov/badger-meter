@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MyOpenCases</fullName>
+    <booleanFilter>(1 AND NOT(3 AND 4 AND 5)) OR (2 AND (6 OR 7))</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Response_Received__c</columns>
+    <columns>Most_Recent_Response_Received__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>Inquiry_Reason__c</columns>
+    <columns>Potential_Dollar_Value__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed_Resolved,Closed - Resolved,Closed - Unresolved,Action Completed,Closed,Canceled</value>
+    </filters>
+    <filters>
+        <field>Response_Received__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Awaiting Customer</value>
+    </filters>
+    <filters>
+        <field>Response_Received__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Return</value>
+    </filters>
+    <filters>
+        <field>Most_Recent_Response_Received__c</field>
+        <operation>greaterThan</operation>
+        <value>7/1/2021 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Most_Recent_Response_Received__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>My Open Cases</label>
+</ListView>

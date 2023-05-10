@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Products_CSV_for_Extranet_3__c</fullName>
+    <description>In general, do not manually edit! (Contains list of products. Quoted and Comma-Separated-Values. E.g. &quot;ABC&quot;, &quot;EFG, &quot;XYZ&quot;. Updated via triggers on Account, Contact. Used by User formula field Assertion_Data_For_Extranet__c.)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>In general, do not manually edit! (Contains list of products. Quoted and Comma-Separated-Values. E.g. &quot;ABC&quot;, &quot;EFG, &quot;XYZ&quot;. Updated via triggers on Account, Contact. Used by User formula field Assertion_Data_For_Extranet__c.)</inlineHelpText>
+    <label>Products CSV for Extranet 3</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

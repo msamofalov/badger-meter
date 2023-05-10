@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BigMachines__BigMachines_Login</fullName>
+    <active>true</active>
+    <description>Oracle CPQ Cloud generates a login for users based on the Username field.  In order for the Oracle CPQ Cloud login to be valid, it must begin with a letter.  Check out the Oracle CPQ Cloud Login field for more information on how the login is generated.</description>
+    <errorConditionFormula>AND(OR(LEN(BigMachines__Login__c) = 0, ISNUMBER(LEFT( BigMachines__Login__c, 1))),  BigMachines__Provisioned__c = true)</errorConditionFormula>
+    <errorDisplayField>Username</errorDisplayField>
+    <errorMessage>This user cannot be provisioned in Oracle CPQ Cloud because the username is not being converted into a valid Oracle CPQ Cloud login.  Oracle CPQ Cloud logins are based on the part of the username before the &apos;@&apos; symbol and must begin with a letter.</errorMessage>
+</ValidationRule>

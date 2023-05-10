@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training_Activity</fullName>
+    <active>true</active>
+    <description>Training Activity</description>
+    <label>Training Activity</label>
+    <picklistValues>
+        <picklist>Data_Source__c</picklist>
+        <values>
+            <fullName>ACT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BPCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BigMachines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FourthShift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pivotal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>TDF</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Direction__c</picklist>
+        <values>
+            <fullName>Incoming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outgoing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interface - Technical Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interface Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lunch %26 Learn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity - Executive Summary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity - Perform Demo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity - Perform Pilot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity - Product Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity - Send References</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity - Send Specifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity - Send sample%2FConditional PO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity - Subcontractor Questionnaire or Approved Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity - Valve Sizing %2F Special Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Outreach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Quote</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

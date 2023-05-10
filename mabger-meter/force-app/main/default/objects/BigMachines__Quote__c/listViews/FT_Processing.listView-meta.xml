@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FT_Processing</fullName>
+    <booleanFilter>(1 AND (2 OR 3) AND 4) OR ((2 OR 3) AND 5 AND 6)</booleanFilter>
+    <columns>BigMachines__Account__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>NAME</columns>
+    <columns>Quote_Type__c</columns>
+    <columns>BigMachines__Total_Amount__c</columns>
+    <columns>LX_Error_Message__c</columns>
+    <columns>BigMachines__Description__c</columns>
+    <columns>BigMachines__Status__c</columns>
+    <columns>Order_Number__c</columns>
+    <columns>BigMachines__Transaction_Id__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Order_Create_Date__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Quote_Type__c</field>
+        <operation>equals</operation>
+        <value>Credit</value>
+    </filters>
+    <filters>
+        <field>Quote_Type__c</field>
+        <operation>equals</operation>
+        <value>Order</value>
+    </filters>
+    <filters>
+        <field>BigMachines__Status__c</field>
+        <operation>equals</operation>
+        <value>Processing</value>
+    </filters>
+    <filters>
+        <field>BigMachines__Status__c</field>
+        <operation>equals</operation>
+        <value>Order Submitted</value>
+    </filters>
+    <filters>
+        <field>Order_Number__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Fast-Track PROCESSING</label>
+</ListView>

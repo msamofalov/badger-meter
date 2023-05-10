@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Survey_Email_Selections__c</fullName>
+    <description>Various Survey Email Selections</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the desired Survey Email Selection(s)</inlineHelpText>
+    <label>Survey Email Selections</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Order Survey</fullName>
+                <default>false</default>
+                <label>Order Survey</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_RMA_Analysis_Form</fullName>
+    <availability>online</availability>
+    <description>Create RMA Analysis data in selected document in Conga Composer</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Attach RMA Analysis</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>https://composer.congamerge.com
+?serverUrl={!API.Partner_Server_URL_370}
+&amp;id={!Case.Id}
+
+&amp;QueryID=[PL]a2038000004ojQl
+&amp;TemplateId={!Case.Choose_Analysis_Sheet__c}
+
+&amp;DS7=1
+&amp;SC0=1
+&amp;SC1=SalesforceFile</url>
+</WebLink>

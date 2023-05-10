@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flow_RMAs</fullName>
+    <booleanFilter>1 AND 2 AND ((3 AND 4) OR (5 AND 6))</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Response_Received__c</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>Inquiry_Reason__c</columns>
+    <columns>Product_Type__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.PRIORITY</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Product_Type__c</field>
+        <operation>notContain</operation>
+        <value>Precision Turbine,Preso,Research Control Valve</value>
+    </filters>
+    <filters>
+        <field>Inquiry_Reason__c</field>
+        <operation>equals</operation>
+        <value>Broken/Repair,Calibration,Damaged/Faulty,Delivery Issue,Hardware Application,Restock,Return Case,RMA Status,Warranty Evaluation,Wrong Order Fulfillment</value>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>Product / Technical</value>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>notEqual</operation>
+        <value>Product / Technical</value>
+    </filters>
+    <filters>
+        <field>Product_Type__c</field>
+        <operation>equals</operation>
+        <value>Calibration Services</value>
+    </filters>
+    <label>Flow - RMAs</label>
+    <queue>Flow_Instrumentation_Orders_Queue</queue>
+</ListView>

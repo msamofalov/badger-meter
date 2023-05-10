@@ -1,0 +1,400 @@
+<apex:page standardController="Account" extensions="BeaconReportingAccountController" docType="html-5.0" showHeader="false">
+   
+    <apex:outputPanel rendered="{!userHasPermissionSet}">
+        <apex:stylesheet value="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"  />
+        <apex:includeScript value="https://code.jquery.com/jquery-1.9.1.js" />
+        <apex:includeScript value="https://code.jquery.com/ui/1.10.3/jquery-ui.js" />
+
+        <script type="text/javascript">
+            // Provides a non-conflicting variable for jQuery to operate with.
+            j$ = jQuery.noConflict();
+
+            // Ensures that the enter key doesn't trigger a form submission to the server, we want to control that.
+            j$(document).ready(function () {
+                j$('input,select').keypress(function(event) { return event.keyCode != 13; });
+            });
+
+            // Add an event listener for when to stop the lighthouse loading animation.
+            // It listens for an event sent from the iframe content when it finishes loading.
+            if (typeof window.addEventListener != 'undefined') {
+                window.addEventListener('message', function(e) {
+                    if (e.data.length == 2 && e.data[0] == "stopLoading") {
+                        //alert("Updating report controls: "+ e.data[1]);
+                        stopLoading();
+                    }
+                }, false);
+            }
+        </script>
+        
+        <script type="text/javascript">
+            function initializeDatePicker (datePickerClassName, initialDate) {
+                var thisDatePicker = j$(datePickerClassName).datepicker({
+                    changeMonth: true,
+                    changeYear: true,
+                    showButtonPanel: true,
+                    numberOfMonths: 1,
+                    dateFormat:"yy-mm",
+                    showAnim: "slide",
+                    onClose: function(dateText, inst) {
+                        j$(this).datepicker('setDate', new Date(inst.selectedYear, inst.selectedMonth, 1));
+                        updateReport();
+                    },
+                    beforeShow : function(input, inst) {
+                        j$(this).datepicker('option','defaultDate', new Date(inst.selectedYear, inst.selectedMonth, 1));
+                        //j$(this).datepicker('setDate', new Date(inst.selectedYear, inst.selectedMonth, 1));
+                    }
+                });
+
+                thisDatePicker.datepicker("setDate", initialDate);
+                thisDatePicker.attr("autocomplete", "off");               
+            }
+            
+            j$(document).ready(function() {
+
+                // Initialize the start date picker.
+                var startOfCurrentMonth = new Date();
+                startOfCurrentMonth.setMonth(startOfCurrentMonth.getMonth()-11);
+                startOfCurrentMonth.setMonth(startOfCurrentMonth.getMonth(), 1);
+                initializeDatePicker(".reportDatePickerStart", startOfCurrentMonth);
+
+                // Initialize the end date picker.
+                var endOfCurrentMonth = new Date();
+                endOfCurrentMonth.setMonth(endOfCurrentMonth.getMonth(), 0);
+                initializeDatePicker(".reportDatePickerEnd", endOfCurrentMonth);                
+            });
+        </script>
+
+        <script>
+            function updateDynamicDateRanges () {
+                //console.log("Updating dynamic date ranges.");
+                var startDate = new Date();
+                var endDate = new Date();
+
+                var reportType              = j$("#reportType").val();
+                var interval                = j$("#interval").val();
+                var display                 = j$("#display").val();
+                var assetSerialNumberFilter = j$("#assetSerialNumberFilter").val();
+
+                if (reportType == "consumption") {
+                    if (display == "chart") {
+                        if (interval == "month") {
+                            // 2016-04 thru (current month - 1)
+                            startDate.setFullYear(2016, 3, 1);
+                            endDate.setMonth(endDate.getMonth(), 0);
+                        }
+                        else if (interval == "quarter") {
+                            // 2016-07 thru (end of last quarter)
+                            startDate.setFullYear(2016, 6, 1);
+                            var lastQuarterMonth = (Math.floor((endDate.getMonth()-1)/3)*3);
+                            endDate.setMonth(lastQuarterMonth, 0);
+                        }
+                        else if (interval == "annual") {
+                            // 2017-01 thru (end of last year)
+                            startDate.setFullYear(2017, 0, 1);
+                            endDate = new Date(new Date().getFullYear()-1, 11, 31);
+                        }
+                    }
+                    else if (display == "table") {
+                        if (interval == "month") {
+                            // (current month - 13) thru (current month - 1)
+                            startDate.setMonth(startDate.getMonth()-13, 1);
+                            endDate.setMonth(endDate.getMonth(), 0);
+                        }
+                        else if (interval == "quarter") {
+                            // (end of last quarter - 24 months) thru (end of last quarter)
+                            startDate.setMonth(startDate.getMonth()-24, 1);
+                            var quarterMonthStart = (Math.floor((startDate.getMonth()-1)/3)*3);
+                            startDate.setMonth(quarterMonthStart, 1);
+                            var lastQuarterMonthEnd = (Math.floor((endDate.getMonth()-1)/3)*3);
+                            endDate.setMonth(lastQuarterMonthEnd, 0);
+                        }
+                        else if (interval == "annual") {
+                            // 2017-01 thru (end of last year)
+                            startDate.setFullYear(2017, 0, 1);
+                            endDate = new Date(new Date().getFullYear()-1, 11, 31);
+                        }
+                    }
+                }
+                else if (reportType == "consumptionDetail") {
+                    if (assetSerialNumberFilter != null && assetSerialNumberFilter != "") {
+                        // 2016-04 thru (current month - 1)
+                        startDate.setFullYear(2016, 3, 1);
+                        endDate.setMonth(endDate.getMonth(), 0);
+                    }
+                    else {
+                        // (current month - 1) thru (current month - 1)
+                        startDate.setMonth(startDate.getMonth()-1, 1);
+                        endDate.setMonth(endDate.getMonth(), 0);
+                    }
+                }
+                else if (reportType == "purchaseHistory") {
+                    // (current month - 25) thru (current month - 1)
+                    startDate.setMonth(startDate.getMonth()-25, 1);
+                    endDate.setMonth(endDate.getMonth(), 0);
+                }
+                else if (reportType == "purchaseHistoryDistributorUD,IR") {
+                    // (current month - 25) thru (current month - 1)
+                    startDate.setMonth(startDate.getMonth()-25, 1);
+                    endDate.setMonth(endDate.getMonth(), 0);
+                }
+
+                
+                j$("#reportStartDate").datepicker("setDate", startDate);
+                j$("#reportEndDate").datepicker("setDate", endDate);
+
+                //console.log("Done.");
+            }
+        </script>
+        
+        <script type="text/javascript">
+            j$(document).ready(function() {
+                updateReportControls();
+
+                j$(".reportUpdater").change(function(){
+                    updateReport();
+                });
+
+                j$(".reportTypeUpdater").change(function(){
+                    updateReport(true);
+                });
+                
+                j$(".reportUpdaterFilter").change(function(){
+                    updateReportViaFilter();
+                });
+
+                updateReport();
+            });
+        </script>
+        
+        <script type="text/javascript">
+            function updateReportViaFilter () {
+                var assetSerialNumberFilter = j$("#assetSerialNumberFilter").val();
+                
+                if (assetSerialNumberFilter.length >= 9) assetSerialNumberFilter = "";
+                
+                updateReport();
+            }
+        </script>
+        
+        <script type="text/javascript">
+            function updateReport () {
+                updateReport(false);
+            }
+            function updateReport (updateDateRanges) {
+                
+                updateReportControls();
+                if (updateDateRanges) updateDynamicDateRanges();
+
+                var reportType              = j$("#reportType").val();
+                var interval                = j$("#interval").val();
+                var display                 = j$("#display").val();
+                var startDate               = j$("#reportStartDate").val();
+                var endDate                 = j$("#reportEndDate").val();
+                var assetSerialNumberFilter = j$("#assetSerialNumberFilter").val();
+                var pageNumber              = j$("#pageNumber").val();
+                var pageSize                = j$("#pageSize").val();
+                var chartWidth              = j$("#reportIFrame").width();
+                var chartHeight             = j$("#reportIFrame").height();
+                
+                if (assetSerialNumberFilter.length < 9) assetSerialNumberFilter = "";
+
+                updateReportFrame(reportType, interval, display, startDate, endDate, assetSerialNumberFilter, pageNumber, pageSize, chartWidth, chartHeight);
+            }
+        </script>
+
+        <script>
+            function updateReportControls () {
+                var reportType  = j$("#reportType").val();
+
+                if (reportType == "consumption") {
+                    j$(".control-reportInterval").show();
+                    j$(".control-reportDisplay").show();
+                    j$(".control-assetSerialNumberFilter").hide();
+                    j$(".control-pageNumber").hide();
+                    j$(".control-pageSize").hide();
+                    j$(".control-exportReport").show();
+                    j$(".control-exportBigReport").hide();
+                }
+                else if (reportType == "consumptionDetail") {
+                    j$(".control-reportInterval").hide();
+                    j$(".control-reportDisplay").hide();
+                    j$(".control-assetSerialNumberFilter").show();
+                    j$(".control-pageNumber").show();
+                    j$(".control-pageSize").show();
+                    j$(".control-exportReport").hide();
+                    j$(".control-exportBigReport").show();
+                }
+                else if (reportType == "purchaseHistory") {
+                    j$(".control-reportInterval").hide();
+                    j$(".control-reportDisplay").hide();
+                    j$(".control-assetSerialNumberFilter").hide();
+                    j$(".control-pageNumber").hide();
+                    j$(".control-pageSize").hide();
+                    j$(".control-exportReport").show();
+                    j$(".control-exportBigReport").hide();
+                }
+                else if (reportType == "purchaseHistoryDistributorUD,IR") {
+                    j$(".control-reportInterval").hide();
+                    j$(".control-reportDisplay").hide();
+                    j$(".control-assetSerialNumberFilter").hide();
+                    j$(".control-pageNumber").hide();
+                    j$(".control-pageSize").hide();
+                    j$(".control-exportReport").show();
+                    j$(".control-exportBigReport").hide();
+                }
+            }
+        </script>
+        
+        <style>
+            .ui-datepicker-calendar {
+                display: none;
+            }
+        </style>
+        
+        <apex:form >
+            <apex:actionFunction name="updateReportFrame" action="{!updateReportFrame}" rerender="reportFrame,loadingIcon">
+                <apex:param name="reportType"                   assignTo="{!reportType}"                    value="{!reportType}"/>
+                <apex:param name="interval"                     assignTo="{!interval}"                      value="{!interval}"/>
+                <apex:param name="display"                      assignTo="{!display}"                       value="{!display}"/>
+                <apex:param name="startDate"                    assignTo="{!startDate}"                     value="{!startDate}"/>
+                <apex:param name="endDate"                      assignTo="{!endDate}"                       value="{!endDate}"/>
+                <apex:param name="assetSerialNumberFilter"      assignTo="{!assetSerialNumberFilter}"       value="{!assetSerialNumberFilter}"/>
+                <apex:param name="pageNumber"                   assignTo="{!pageNumber}"                    value="{!pageNumber}"/>
+                <apex:param name="pageSize"                     assignTo="{!pageSize}"                      value="{!pageSize}"/>
+                <apex:param name="chartWidth"                   assignTo="{!chartWidth}"                    value="{!chartWidth}"/>
+                <apex:param name="chartHeight"                  assignTo="{!chartHeight}"                   value="{!chartHeight}"/>
+            </apex:actionFunction>
+
+            <apex:actionFunction name="updatePageCount" action="{!updatePageCount}" rerender="PageNumber">
+                <apex:param name="pageCount" assignTo="{!pageCount}" value="{!pageCount}"/>
+            </apex:actionFunction>
+
+            <apex:actionFunction name="stopLoading" action="{!stopLoading}" rerender="loadingIcon"/>
+        
+            <input type="text" style="height: 0px; width: 0px; margin: 0px; padding: 0px; position: fixed; left: -10px; top: -10px;"/>
+            <table>
+                <tr>
+                    <td>
+                        <apex:outputPanel id="loadingIcon">
+                            <apex:outputPanel rendered="{!isLoading}">
+                                <apex:image url="{!URLFOR($Resource.Beacon_Lighthouse, 'Lighthouse_Animation.gif')}"/>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!NOT(isLoading)}">
+                                <apex:image url="{!URLFOR($Resource.Beacon_Lighthouse, 'Lighthouse_Static.png')}"/>
+                            </apex:outputPanel>
+                        </apex:outputPanel>
+                    </td>
+                    <td>
+                        <div style="font-weight: bold; font-size: 18pt; color: red;">
+                            BEACON Reporting
+                        </div>
+                        
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="control-reportType">
+                                        Report
+                                    </th>
+                                    <th class="control-startMonth">
+                                        Start Month
+                                    </th>
+                                    <th class="control-endMonth">
+                                        End Month
+                                    </th>
+                                    <th class="control-reportInterval">
+                                        Interval
+                                    </th>
+                                    <th class="control-reportDisplay">
+                                        Display
+                                    </th>
+                                    <th class="control-assetSerialNumberFilter">
+                                        Asset Serial Number Filter
+                                    </th>
+                                    <th class="control-pageNumber">
+                                        Page Number
+                                    </th>
+                                    <th class="control-pageSize">
+                                        Page Size
+                                    </th>
+                                    <th class="control-exportDetail">
+                                        
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="control-reportType">
+                                        <select id="reportType" class="reportTypeUpdater">
+                                            <option value="consumption">Consumption</option>
+                                            <option value="consumptionDetail">Consumption Detail</option>
+                                            <option value="purchaseHistory">Purchase History</option>
+                                            <option value="purchaseHistoryDistributorUD,IR">Purchase History Distributor UD, IR</option>
+                                        </select>
+                                    </td>
+                                    <td class="control-startMonth">
+                                        <input type="text" id="reportStartDate" class="reportDatePickerStart reportUpdater"/>
+                                    </td>
+                                    <td class="control-endMonth">
+                                        <input type="text" id="reportEndDate" class="reportDatePickerEnd reportUpdater"/>
+                                    </td>
+                                    <td class="control-reportInterval">
+                                        <select id="interval" class="reportTypeUpdater">
+                                            <option value="month">Monthly</option>
+                                            <option value="quarter">Quarterly</option>
+                                            <option value="annual">Annually</option>
+                                        </select>
+                                    </td>
+                                    <td class="control-reportDisplay">
+                                        <select id="display" class="reportTypeUpdater">
+                                            <option value="chart">Chart</option>
+                                            <option value="table">Table</option>
+                                        </select>
+                                    </td>
+                                    <td class="control-assetSerialNumberFilter">
+                                        <input type="text" id="assetSerialNumberFilter" class="reportUpdaterFilter"/>
+                                    </td>
+                                    <td class="control-pageNumber">
+                                        <!--apex:outputPanel id="PageNumber" -->
+                                            <!--apex:selectList value="{!pageNumber}" size="1" multiselect="false" styleClass="indicatedPageNumber reportUpdater" onchange="updateReport();">
+                                                <apex:selectOptions value="{!pageNumberOptions}"/>
+                                            </apex:selectList-->
+                                            <input type="text" id="pageNumber" value="1" class="reportUpdater" style="width: 50px;" onchange="updateReport();"/>
+                                        <!-- /apex:outputPanel -->
+                                    </td>
+                                    <td class="control-pageSize">
+                                        <select id="pageSize" class="reportTypeUpdater">
+                                            <option value="100">100</option>
+                                            <option value="500">500</option>
+                                            <option value="1000">1000</option>
+                                        </select>
+                                    </td>
+                                    <td class="control-exportReport">
+                                        <apex:commandLink value="Export" action="{!exportReport}" styleClass="btn" immediate="true" target="_blank" style="text-decoration:none" />
+                                    </td>
+                                    <td class="control-exportBigReport">
+                                        <apex:commandButton value="Export" action="{!exportBigReport}" rerender="reportFrame,loadingIcon"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+            
+
+            <div style="height: 15px;"></div>
+            
+            <apex:outputPanel id="reportFrame" >
+                <apex:iframe src="{!reportURL}" id="reportIFrame" scrolling="true" width="100%" height="600px"/>
+            </apex:outputPanel>
+            
+            <div style="height: 15px;"></div>
+                
+        </apex:form>
+    </apex:outputPanel>
+
+    <apex:outputPanel rendered="{!NOT(userHasPermissionSet)}">
+        You do not have permission to view this resource.
+    </apex:outputPanel>
+</apex:page>

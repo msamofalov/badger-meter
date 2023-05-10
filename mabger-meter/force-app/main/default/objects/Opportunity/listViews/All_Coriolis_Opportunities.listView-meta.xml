@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Coriolis_Opportunities</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Original_Value__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Primary_Product_Solutions__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Primary_Product_Solutions__c</field>
+        <operation>includes</operation>
+        <value>Coriolis</value>
+    </filters>
+    <label>All Coriolis Opportunities</label>
+</ListView>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Special_Requirements__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please include any special requirements.</inlineHelpText>
+    <label>Special Requirements</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Calibration Services</fullName>
+                <default>false</default>
+                <label>Calibration Services</label>
+            </value>
+            <value>
+                <fullName>Extended Warranty</fullName>
+                <default>false</default>
+                <label>Extended Warranty</label>
+            </value>
+            <value>
+                <fullName>Installation</fullName>
+                <default>false</default>
+                <label>Installation</label>
+            </value>
+            <value>
+                <fullName>Maintenance Agreements (Includes Technical Support)</fullName>
+                <default>false</default>
+                <label>Maintenance Agreements (Includes Technical Support)</label>
+            </value>
+            <value>
+                <fullName>Meter Testing</fullName>
+                <default>false</default>
+                <label>Meter Testing</label>
+            </value>
+            <value>
+                <fullName>Mobilization</fullName>
+                <default>false</default>
+                <label>Mobilization</label>
+            </value>
+            <value>
+                <fullName>Nonrecurring engineering</fullName>
+                <default>false</default>
+                <label>Nonrecurring engineering</label>
+            </value>
+            <value>
+                <fullName>Project Management Fees</fullName>
+                <default>false</default>
+                <label>Project Management Fees</label>
+            </value>
+            <value>
+                <fullName>Propagation studies</fullName>
+                <default>false</default>
+                <label>Propagation studies</label>
+            </value>
+            <value>
+                <fullName>Rebates</fullName>
+                <default>false</default>
+                <label>Rebates</label>
+            </value>
+            <value>
+                <fullName>Royalties</fullName>
+                <default>false</default>
+                <label>Royalties</label>
+            </value>
+            <value>
+                <fullName>Service Units</fullName>
+                <default>false</default>
+                <label>Service Units</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>Variable (Volume Based) Pricing</fullName>
+                <default>false</default>
+                <label>Variable (Volume Based) Pricing</label>
+            </value>
+            <value>
+                <fullName>Turnkey</fullName>
+                <default>false</default>
+                <label>Turnkey</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

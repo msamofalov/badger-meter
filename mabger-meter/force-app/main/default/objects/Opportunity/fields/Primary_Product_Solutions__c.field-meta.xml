@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Product_Solutions__c</fullName>
+    <externalId>false</externalId>
+    <label>Primary Product Solution(s)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Expected_Sales_Approach__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automotive Fluid Products</fullName>
+                <default>false</default>
+                <label>Automotive Fluid Products</label>
+            </value>
+            <value>
+                <fullName>BEACON AMA</fullName>
+                <default>false</default>
+                <label>BEACON AMA</label>
+            </value>
+            <value>
+                <fullName>Blancett</fullName>
+                <default>false</default>
+                <label>Blancett</label>
+            </value>
+            <value>
+                <fullName>Concrete Fluid Products</fullName>
+                <default>false</default>
+                <label>Concrete Fluid Products</label>
+            </value>
+            <value>
+                <fullName>Coriolis</fullName>
+                <default>false</default>
+                <label>Coriolis</label>
+            </value>
+            <value>
+                <fullName>Cox</fullName>
+                <default>false</default>
+                <label>Cox</label>
+            </value>
+            <value>
+                <fullName>Data Acquisition / Management</fullName>
+                <default>false</default>
+                <label>Data Acquisition / Management</label>
+            </value>
+            <value>
+                <fullName>Dynasonics</fullName>
+                <default>false</default>
+                <label>Dynasonics</label>
+            </value>
+            <value>
+                <fullName>E-Series Electronic</fullName>
+                <default>false</default>
+                <label>E-Series Electronic</label>
+            </value>
+            <value>
+                <fullName>Flo-tech</fullName>
+                <default>false</default>
+                <label>Flo-tech</label>
+            </value>
+            <value>
+                <fullName>Flow Dynamics Calibration Services</fullName>
+                <default>false</default>
+                <label>Flow Dynamics Calibration Services</label>
+            </value>
+            <value>
+                <fullName>Flow Dynamics Calibrator Products</fullName>
+                <default>false</default>
+                <label>Flow Dynamics Calibrator Products</label>
+            </value>
+            <value>
+                <fullName>GALAXY</fullName>
+                <default>false</default>
+                <label>GALAXY</label>
+            </value>
+            <value>
+                <fullName>Hedland</fullName>
+                <default>false</default>
+                <label>Hedland</label>
+            </value>
+            <value>
+                <fullName>HR-E</fullName>
+                <default>false</default>
+                <label>HR-E</label>
+            </value>
+            <value>
+                <fullName>Impeller</fullName>
+                <default>false</default>
+                <label>Impeller</label>
+            </value>
+            <value>
+                <fullName>Industrial Oval Gear (IOG)</fullName>
+                <default>false</default>
+                <label>Industrial Oval Gear (IOG)</label>
+            </value>
+            <value>
+                <fullName>Industrial Turbo</fullName>
+                <default>false</default>
+                <label>Industrial Turbo</label>
+            </value>
+            <value>
+                <fullName>ModMAG/M-Series</fullName>
+                <default>false</default>
+                <label>ModMAG/M-Series</label>
+            </value>
+            <value>
+                <fullName>Monitors / Accessories</fullName>
+                <default>false</default>
+                <label>Monitors / Accessories</label>
+            </value>
+            <value>
+                <fullName>ORION</fullName>
+                <default>false</default>
+                <label>ORION</label>
+            </value>
+            <value>
+                <fullName>Preso</fullName>
+                <default>false</default>
+                <label>Preso</label>
+            </value>
+            <value>
+                <fullName>ReadCenter</fullName>
+                <default>false</default>
+                <label>ReadCenter</label>
+            </value>
+            <value>
+                <fullName>Recordall</fullName>
+                <default>false</default>
+                <label>Recordall</label>
+            </value>
+            <value>
+                <fullName>Research Control Valves (RCV)</fullName>
+                <default>false</default>
+                <label>Research Control Valves (RCV)</label>
+            </value>
+            <value>
+                <fullName>Services / Technical Field Support</fullName>
+                <default>false</default>
+                <label>Services / Technical Field Support</label>
+            </value>
+            <value>
+                <fullName>Vision</fullName>
+                <default>false</default>
+                <label>Vision</label>
+            </value>
+            <value>
+                <fullName>Vortex</fullName>
+                <default>false</default>
+                <label>Vortex</label>
+            </value>
+            <value>
+                <fullName>Wyco Tool</fullName>
+                <default>false</default>
+                <label>Wyco Tool</label>
+            </value>
+            <value>
+                <fullName>Connectivity - Itron</fullName>
+                <default>false</default>
+                <label>Connectivity - Itron</label>
+            </value>
+            <value>
+                <fullName>Connectivity - Generic</fullName>
+                <default>false</default>
+                <label>Connectivity - Generic</label>
+            </value>
+            <value>
+                <fullName>E-Series</fullName>
+                <default>false</default>
+                <label>E-Series</label>
+            </value>
+            <value>
+                <fullName>HRE</fullName>
+                <default>false</default>
+                <label>HRE</label>
+            </value>
+            <value>
+                <fullName>HRE/LCD</fullName>
+                <default>false</default>
+                <label>HRE/LCD</label>
+            </value>
+            <value>
+                <fullName>Managed Solution</fullName>
+                <default>false</default>
+                <label>Managed Solution</label>
+            </value>
+            <value>
+                <fullName>ORION CE</fullName>
+                <default>false</default>
+                <label>ORION CE</label>
+            </value>
+            <value>
+                <fullName>ORION ME</fullName>
+                <default>false</default>
+                <label>ORION ME</label>
+            </value>
+            <value>
+                <fullName>ORION SE</fullName>
+                <default>false</default>
+                <label>ORION SE</label>
+            </value>
+            <value>
+                <fullName>ORION Cellular</fullName>
+                <default>false</default>
+                <label>ORION Cellular</label>
+            </value>
+            <value>
+                <fullName>Traditional Fixed Reading System</fullName>
+                <default>false</default>
+                <label>Traditional Fixed Reading System</label>
+            </value>
+            <value>
+                <fullName>Traditional Mobile Reading System</fullName>
+                <default>false</default>
+                <label>Traditional Mobile Reading System</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Connectivity - Itron</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Connectivity - Generic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>E-Series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>HRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>HRE/LCD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Managed Solution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>ORION CE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>ORION ME</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>ORION SE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>ORION Cellular</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Traditional Fixed Reading System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Traditional Mobile Reading System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Automotive Fluid Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>BEACON AMA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Blancett</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Concrete Fluid Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Coriolis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Cox</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Data Acquisition / Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Dynasonics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>E-Series Electronic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Flo-tech</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Flow Dynamics Calibration Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Flow Dynamics Calibrator Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>GALAXY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Hedland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>HR-E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Impeller</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Industrial Oval Gear (IOG)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Industrial Turbo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>ModMAG/M-Series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Monitors / Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>ORION</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Preso</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>ReadCenter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Recordall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Research Control Valves (RCV)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Services / Technical Field Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Vision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Vortex</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Cross-Sell</controllingFieldValue>
+            <valueName>Wyco Tool</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

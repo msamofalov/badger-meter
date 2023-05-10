@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry__c</fullName>
+    <externalId>false</externalId>
+    <label>Industry</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automotive Aftermarket</fullName>
+                <default>false</default>
+                <label>Automotive Aftermarket</label>
+            </value>
+            <value>
+                <fullName>Aviation &amp; Aerospace</fullName>
+                <default>false</default>
+                <label>Aviation &amp; Aerospace</label>
+            </value>
+            <value>
+                <fullName>Building Automation/HVAC</fullName>
+                <default>false</default>
+                <label>Building Automation/HVAC</label>
+            </value>
+            <value>
+                <fullName>Chemical</fullName>
+                <default>false</default>
+                <label>Chemical</label>
+            </value>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>Concrete Finishing</fullName>
+                <default>false</default>
+                <label>Concrete Finishing</label>
+            </value>
+            <value>
+                <fullName>Concrete Production</fullName>
+                <default>false</default>
+                <label>Concrete Production</label>
+            </value>
+            <value>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+                <label>Industrial</label>
+            </value>
+            <value>
+                <fullName>Irrigation</fullName>
+                <default>false</default>
+                <label>Irrigation</label>
+            </value>
+            <value>
+                <fullName>Oil &amp; Gas</fullName>
+                <default>false</default>
+                <label>Oil &amp; Gas</label>
+            </value>
+            <value>
+                <fullName>Process Industries</fullName>
+                <default>false</default>
+                <label>Process Industries</label>
+            </value>
+            <value>
+                <fullName>Refining &amp; Petrochemical</fullName>
+                <default>false</default>
+                <label>Refining &amp; Petrochemical</label>
+            </value>
+            <value>
+                <fullName>Test &amp; Measurement</fullName>
+                <default>false</default>
+                <label>Test &amp; Measurement</label>
+            </value>
+            <value>
+                <fullName>Water/Wastewater Treatment</fullName>
+                <default>false</default>
+                <label>Water/Wastewater Treatment</label>
+            </value>
+            <value>
+                <fullName>Water Distribution</fullName>
+                <default>false</default>
+                <label>Water Distribution</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

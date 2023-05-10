@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contractor_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STREET</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+    <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>SubType__c</columns>
+    <columns>Organization_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SubType__c</field>
+        <operation>contains</operation>
+        <value>Contractor</value>
+    </filters>
+    <label>Contractor Accounts</label>
+</ListView>

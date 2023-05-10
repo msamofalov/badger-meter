@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Return_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>5-Point</fullName>
+                <default>false</default>
+                <label>5-Point</label>
+            </value>
+            <value>
+                <fullName>10-Point</fullName>
+                <default>false</default>
+                <label>10-Point</label>
+            </value>
+            <value>
+                <fullName>20-Point</fullName>
+                <default>false</default>
+                <label>20-Point</label>
+            </value>
+            <value>
+                <fullName>Clean &amp; Test</fullName>
+                <default>false</default>
+                <label>Clean &amp; Test</label>
+            </value>
+            <value>
+                <fullName>Estimate</fullName>
+                <default>false</default>
+                <label>Estimate</label>
+            </value>
+            <value>
+                <fullName>Fee Based</fullName>
+                <default>false</default>
+                <label>Fee Based</label>
+            </value>
+            <value>
+                <fullName>Field Scrap</fullName>
+                <default>false</default>
+                <label>Field Scrap</label>
+            </value>
+            <value>
+                <fullName>Goodwill</fullName>
+                <default>false</default>
+                <label>Goodwill</label>
+            </value>
+            <value>
+                <fullName>Incorrect Product</fullName>
+                <default>false</default>
+                <label>Incorrect Product</label>
+            </value>
+            <value>
+                <fullName>Loyalty</fullName>
+                <default>false</default>
+                <label>Loyalty</label>
+            </value>
+            <value>
+                <fullName>New Product</fullName>
+                <default>false</default>
+                <label>New Product</label>
+            </value>
+            <value>
+                <fullName>NIST</fullName>
+                <default>false</default>
+                <label>NIST</label>
+            </value>
+            <value>
+                <fullName>Repair &amp; Test</fullName>
+                <default>false</default>
+                <label>Repair &amp; Test</label>
+            </value>
+            <value>
+                <fullName>Reprogram</fullName>
+                <default>false</default>
+                <label>Reprogram</label>
+            </value>
+            <value>
+                <fullName>Restock</fullName>
+                <default>false</default>
+                <label>Restock</label>
+            </value>
+            <value>
+                <fullName>Review - Verify</fullName>
+                <default>true</default>
+                <label>Review - Verify</label>
+            </value>
+            <value>
+                <fullName>Software - Firmware</fullName>
+                <default>false</default>
+                <label>Software - Firmware</label>
+            </value>
+            <value>
+                <fullName>Used Meter</fullName>
+                <default>false</default>
+                <label>Used Meter</label>
+            </value>
+            <value>
+                <fullName>NVLAP Calibration</fullName>
+                <default>false</default>
+                <label>NVLAP Calibration</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Calibration - Before and After</controllingFieldValue>
+            <controllingFieldValue>Calibration</controllingFieldValue>
+            <valueName>5-Point</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Calibration - Before and After</controllingFieldValue>
+            <controllingFieldValue>Calibration</controllingFieldValue>
+            <valueName>10-Point</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Calibration - Before and After</controllingFieldValue>
+            <controllingFieldValue>Calibration</controllingFieldValue>
+            <valueName>20-Point</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Calibration - Before and After</controllingFieldValue>
+            <controllingFieldValue>Calibration</controllingFieldValue>
+            <valueName>Clean &amp; Test</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Calibration - Before and After</controllingFieldValue>
+            <controllingFieldValue>Calibration</controllingFieldValue>
+            <valueName>NIST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Calibration - Before and After</controllingFieldValue>
+            <controllingFieldValue>Calibration</controllingFieldValue>
+            <valueName>NVLAP Calibration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rework</controllingFieldValue>
+            <controllingFieldValue>Repair</controllingFieldValue>
+            <valueName>Repair &amp; Test</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Calibration</controllingFieldValue>
+            <valueName>Reprogram</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit</controllingFieldValue>
+            <valueName>Field Scrap</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit</controllingFieldValue>
+            <valueName>Incorrect Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit</controllingFieldValue>
+            <valueName>Restock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit</controllingFieldValue>
+            <valueName>Used Meter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exchange/Upgrade</controllingFieldValue>
+            <valueName>Loyalty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exchange/Upgrade</controllingFieldValue>
+            <valueName>New Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exchange/Upgrade</controllingFieldValue>
+            <valueName>Software - Firmware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Repair</controllingFieldValue>
+            <valueName>Estimate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Scrap - Disposal</controllingFieldValue>
+            <valueName>Fee Based</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Scrap - Disposal</controllingFieldValue>
+            <valueName>Goodwill</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Warranty</controllingFieldValue>
+            <valueName>Review - Verify</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

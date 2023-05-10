@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delete_Queue_Lead</fullName>
+    <columns>mkto_si__Last_Interesting_Moment__c</columns>
+    <columns>Form_Comments__c</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>Send_to_LeadMethod__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE_CODE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Queue</filterScope>
+    <label>Delete Queue</label>
+    <queue>Delete_Queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

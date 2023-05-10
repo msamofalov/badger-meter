@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inquiry Process</fullName>
+    <description>Used for cases of the Inquiry Record Type</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Action Completed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Awaiting BAFA Approval</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Awaiting Customer</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Awaiting cash</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Confirming Cell Coverage</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Delay in Delivery</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>In Review</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Need Cost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>New</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Open Engineering Request</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Waiting on Pricing Approval</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

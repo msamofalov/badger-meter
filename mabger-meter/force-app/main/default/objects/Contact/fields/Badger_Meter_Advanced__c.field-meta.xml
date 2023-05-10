@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Badger_Meter_Advanced__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used to put in logic in the SSO string on the user record to append “, Badger Meter Advanced” to the end of the product groups if this box is checked</description>
+    <externalId>false</externalId>
+    <label>Badger Meter Advanced</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

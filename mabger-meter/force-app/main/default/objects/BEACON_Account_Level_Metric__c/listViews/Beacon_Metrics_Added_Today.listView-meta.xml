@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Beacon_Metrics_Added_Today</fullName>
+    <columns>OBJECT_ID</columns>
+    <columns>Account_ID__c</columns>
+    <columns>Account_Number__c</columns>
+    <columns>Item_Number__c</columns>
+    <columns>Product__c</columns>
+    <columns>Product_Type__c</columns>
+    <columns>Total_Assets__c</columns>
+    <columns>Service_Units_Consumed__c</columns>
+    <columns>Billing_Units_Remaining__c</columns>
+    <columns>Status__c</columns>
+    <columns>Upload_Error__c</columns>
+    <columns>Processed__c</columns>
+    <columns>BEACON_Account_Level_Metric_ID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Beacon Metrics Added Today</label>
+</ListView>

@@ -1,0 +1,6 @@
+<apex:page standardController="Opportunity" recordSetVar="opportunities" extensions="OpportunitySetAssign" action="{!UpdateOwnership}">
+   <script>
+        window.location.href = '/lightning/o/Opportunity/home';
+        //window.history.back();
+   </script>
+</apex:page>

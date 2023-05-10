@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Customer_Number__c</columns>
+    <columns>Month__c</columns>
+    <columns>Product__c</columns>
+    <columns>Product_Name__c</columns>
+    <columns>Quantity__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Number__c</field>
+        <operation>contains</operation>
+        <value>280252</value>
+    </filters>
+    <label>All</label>
+</ListView>

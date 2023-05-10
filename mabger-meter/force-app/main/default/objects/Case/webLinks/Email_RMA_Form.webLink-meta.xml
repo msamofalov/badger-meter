@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_RMA_Form</fullName>
+    <availability>online</availability>
+    <description>Emails Conga Composer RMA form with RMA email template</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Email RMA Form</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>https://composer.congamerge.com
+?serverUrl={!API.Partner_Server_URL_370}
+&amp;id={!Case.Id}
+
+&amp;QueryId=[PL]a2038000004S0yu
+&amp;EmailToId={!Contact.Id}
+&amp;EmailFromID=0D238000000CdG2
+&amp;EmailRelatedToId={!Case.Id}
+&amp;EmailTemplateId={!Case.Call_RMA_Email__c}
+&amp;TemplateId={!Case.Call_RMA_Document__c} 
+
+&amp;DefaultPDF=1
+&amp;DS7=2
+&amp;SC0=1
+&amp;SC1=SalesforceFile</url>
+</WebLink>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reference_Products__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please only select products that this account will provide a reference for.</inlineHelpText>
+    <label>Reference Products</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Turnkey (Supply &amp; Install)</fullName>
+                <default>false</default>
+                <label>Turnkey (Supply &amp; Install)</label>
+            </value>
+            <value>
+                <fullName>BEACON AMA Managed Solution</fullName>
+                <default>false</default>
+                <label>BEACON AMA Managed Solution</label>
+            </value>
+            <value>
+                <fullName>BEACON AMA Traditional Fixed Network</fullName>
+                <default>false</default>
+                <label>BEACON AMA Traditional Fixed Network</label>
+            </value>
+            <value>
+                <fullName>BEACON AMA Mobile Solution</fullName>
+                <default>false</default>
+                <label>BEACON AMA Mobile Solution</label>
+            </value>
+            <value>
+                <fullName>BEACON AMA Consumer Engagement</fullName>
+                <default>false</default>
+                <label>BEACON AMA Consumer Engagement</label>
+            </value>
+            <value>
+                <fullName>ORION Cellular</fullName>
+                <default>false</default>
+                <label>ORION Cellular</label>
+            </value>
+            <value>
+                <fullName>ORION SE</fullName>
+                <default>false</default>
+                <label>ORION SE</label>
+            </value>
+            <value>
+                <fullName>ORION ME</fullName>
+                <default>false</default>
+                <label>ORION ME</label>
+            </value>
+            <value>
+                <fullName>ORION CE</fullName>
+                <default>false</default>
+                <label>ORION CE</label>
+            </value>
+            <value>
+                <fullName>GALAXY</fullName>
+                <default>false</default>
+                <label>GALAXY</label>
+            </value>
+            <value>
+                <fullName>HR-E LCD</fullName>
+                <default>false</default>
+                <label>HR-E LCD</label>
+            </value>
+            <value>
+                <fullName>HR-E</fullName>
+                <default>false</default>
+                <label>HR-E</label>
+            </value>
+            <value>
+                <fullName>RTR</fullName>
+                <default>false</default>
+                <label>RTR</label>
+            </value>
+            <value>
+                <fullName>RECORDALL Disc Series - Lead Free Bronze Alloy</fullName>
+                <default>false</default>
+                <label>RECORDALL Disc Series - Lead Free Bronze Alloy</label>
+            </value>
+            <value>
+                <fullName>RECORDALL Disc Series - Engineered Polymer</fullName>
+                <default>false</default>
+                <label>RECORDALL Disc Series - Engineered Polymer</label>
+            </value>
+            <value>
+                <fullName>E-SERIES Ultrasonic - Stainless Steel</fullName>
+                <default>false</default>
+                <label>E-SERIES Ultrasonic - Stainless Steel</label>
+            </value>
+            <value>
+                <fullName>E-SERIES Ultrasonic - Engineered Polymer</fullName>
+                <default>false</default>
+                <label>E-SERIES Ultrasonic - Engineered Polymer</label>
+            </value>
+            <value>
+                <fullName>RECORDALL Turbo Series</fullName>
+                <default>false</default>
+                <label>RECORDALL Turbo Series</label>
+            </value>
+            <value>
+                <fullName>RECORDALL Compound Series</fullName>
+                <default>false</default>
+                <label>RECORDALL Compound Series</label>
+            </value>
+            <value>
+                <fullName>RECORDALL Fire Series Meter (FSMA) &amp; Fire Series Assemblies (FSAA)</fullName>
+                <default>false</default>
+                <label>RECORDALL Fire Series Meter (FSMA) &amp; Fire Series Assemblies (FSAA)</label>
+            </value>
+            <value>
+                <fullName>ModMAG M-Series</fullName>
+                <default>false</default>
+                <label>ModMAG M-Series</label>
+            </value>
+            <value>
+                <fullName>ORION SE Gas</fullName>
+                <default>false</default>
+                <label>ORION SE Gas</label>
+            </value>
+            <value>
+                <fullName>ORION CE Gas</fullName>
+                <default>false</default>
+                <label>ORION CE Gas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

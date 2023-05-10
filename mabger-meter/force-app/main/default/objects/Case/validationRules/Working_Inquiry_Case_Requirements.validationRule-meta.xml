@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Working_Inquiry_Case_Requirements</fullName>
+    <active>true</active>
+    <description>Issue Type and Inquiry Reason must be provided to begin working on an Inquiry case.</description>
+    <errorConditionFormula>OR(
+ISCHANGED(Status),
+ISNEW() &amp;&amp; ISPICKVAL(Status, &quot;In Progress&quot;)
+)
+
+&amp;&amp;
+OR(ISBLANK(TEXT(Type)), ISBLANK(TEXT(Inquiry_Reason__c)))
+&amp;&amp;
+RecordType.Name=&quot;Inquiry&quot;</errorConditionFormula>
+    <errorMessage>Issue Type and Inquiry Reason must be provided to begin working on an Inquiry case.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Child_Opportunity_U</fullName>
+    <availability>online</availability>
+    <description>This button is used on the Utility Opportunity Page Layout within the Child Opportunities Related List.  It will prepopulate the child Opportunity with data from the parent Opportunity while maintaining the Utility record type.</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Child Opportunity (U)</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/006/e?opp3=Populated%20by%20workflow.%20Do%20not%20 edit.&amp;opp4={!Opportunity.Account}&amp;opp4_lkid={!Opportunity.AccountId}&amp;CF00N50000002tuZ4={!Opportunity.Name}&amp;CF00N50000002tuZ4_lkid={!Opportunity.Id}&amp;CF00N50000003VmiF={!Opportunity.End_Customer__c}&amp;CF00N50000003VmiF_lkid={!Opportunity.End_CustomerId__c}&amp;opp5={!Opportunity.Type}&amp;00N50000002tuYy={!Opportunity.Meter_Type__c}&amp;00N50000002tuYv={!Opportunity.Expected_Sales_Approach__c}&amp;00N50000002tuZG={!Opportunity.Proposal_Type__c}&amp;opp7={!Opportunity.Amount}&amp;opp9={!Opportunity.CloseDate}&amp;00N50000002tuZ3={!Opportunity.Original_Value__c}&amp;opp11={!Opportunity.StageName}&amp;00N50000002QcUx={!Opportunity.Win_Loss_Reason__c}&amp;00N50000002tuZ5={!Opportunity.Bid_Number__c}&amp;retURL=%2F{!Opportunity.Id}&amp;RecordType=01250000000USYb&amp;ent=Opportunity&amp;retURL={!Opportunity.Id}</url>
+</WebLink>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>A_6XX_SERVICES_PRICING</fullName>
+    <booleanFilter>1 OR 2 OR 3 OR 4 OR 5</booleanFilter>
+    <columns>Account_Customer_Number__c</columns>
+    <columns>Bill_To_Number__c</columns>
+    <columns>Ship_To_Number__c</columns>
+    <columns>Account_ID__c</columns>
+    <columns>Item_Number__c</columns>
+    <columns>Item_Description__c</columns>
+    <columns>Price__c</columns>
+    <columns>Increment__c</columns>
+    <columns>Effective__c</columns>
+    <columns>Expiring__c</columns>
+    <columns>Sales_Credit_Number__c</columns>
+    <columns>Commission_Percent__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Item_Number__c</field>
+        <operation>equals</operation>
+        <value>68886-601</value>
+    </filters>
+    <filters>
+        <field>Item_Number__c</field>
+        <operation>equals</operation>
+        <value>68886-602</value>
+    </filters>
+    <filters>
+        <field>Item_Number__c</field>
+        <operation>equals</operation>
+        <value>68886-603</value>
+    </filters>
+    <filters>
+        <field>Item_Number__c</field>
+        <operation>equals</operation>
+        <value>68886-604</value>
+    </filters>
+    <filters>
+        <field>Item_Number__c</field>
+        <operation>equals</operation>
+        <value>68886-605</value>
+    </filters>
+    <label>6XX_SERVICES_PRICING</label>
+</ListView>

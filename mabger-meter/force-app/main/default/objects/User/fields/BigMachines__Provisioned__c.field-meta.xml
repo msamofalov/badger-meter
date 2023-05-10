@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BigMachines__Provisioned__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field indicates that there is a Oracle CPQ Cloud user that has been linked to this Salesforce user.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box to establish a link between this Salesforce user and BigMachines.  Linked users will not be prompted to enter login credentials when accessing BigMachines to create and edit quotes.</inlineHelpText>
+    <label>Synchronize with Oracle CPQ Cloud</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

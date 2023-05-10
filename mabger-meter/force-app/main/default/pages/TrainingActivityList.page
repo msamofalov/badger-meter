@@ -1,0 +1,309 @@
+<apex:page standardController="Training_Request__c" 
+           tabStyle="Training_Request__c" extensions="TrainingActivityRelatedListController" sidebar="false" lightningstylesheets="true">
+    
+    <apex:slds />
+    
+
+    
+        <div class="slds-scope">
+            
+    <style> 
+        
+        
+        .headerRow .TableTitle {
+            background-color: #F0F8FF !important;
+            background-image: none !important; //This is needed if you want to overwrite the header background
+            color: #CC0000 !important; 
+            font-size:100% !important; 
+            text-align:center;
+            width:20px;
+            border-radius: 3px !important;
+        }    
+        .customPopup2{
+            background-color: #F0FFFF;
+            border-style: solid;
+            border-width: 2px;
+            left: 50%;
+            padding: 10px;
+            position: absolute;
+            z-index: 9999; 
+            width: 840px;
+            margin-left: -400px;
+            top: 250px;
+            filter: alpha(opacity=100);
+            opacity: 0.95;
+            -moz-opacity: 0.95;
+            -khtml-opacity: 0.95;
+        }
+
+        .selectListWidth {
+            width: 135px;
+            border-radius: 3px;
+        } 
+        
+        .commandLinkColor {
+            color:#000000 !important;
+        }
+        
+        .roundedCorners {
+            border-radius: 3px !important;
+        }
+        
+        .essentialPadding {
+            padding-top: 10px !important;
+            padding-right: 10px !important;
+            padding-bottom: 10px !important;
+            padding-left: 10px !important;
+        }
+        
+        .btnFontSize {
+            font-size: 1.22em !important;
+        }
+        
+    </style>
+            
+     <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />-->
+     
+
+    <div class="slds-form" role="list">
+    
+    <apex:form >
+        <div class="container">
+        <apex:pageMessages />
+        <apex:pageBlock rendered="{!CaseStatus== 'Open'|| CaseStatus== 'Scheduled' || CaseStatus== 'On Hold'}" >
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Update Selected Tasks" action="{!processSelected}" rerender="table"/>
+                <apex:commandlink styleClass="commandLinkColor" action="{!createNew}" target="_blank">
+                <!-- <apex:commandButton value="Create New Task" action="{!createNew}"/> -->
+                <apex:commandButton value="Create New Task"/>
+                </apex:commandlink>
+            </apex:pageBlockButtons>
+            <!-- In our table we are displaying the cContact records -->
+            <apex:pageBlockTable value="{!activities}" var="c" id="table">
+                
+                <div class="slds-form__row"> <!-- HERE-->
+                  
+                    
+                 <div class="slds-form__item" role="listitem"> <!-- CHECKBOX-->
+                     <div class="slds-form-element slds-form-element_horizontal slds-is-editing ">
+                         <div class="slds-form-element__control">
+                <apex:column headerValue="" headerClass="TableTitle" title="Multi Select">
+                    <!-- This is our selected Boolean property in our wrapper class -->
+                    <div class="slds-p-around_x-small">
+                    <apex:inputCheckbox value="{!c.selected}"/>
+                    </div>
+                </apex:column>
+                         </div></div></div>
+                    
+                 <div class="slds-form__item" role="listitem"> <!--SUBJECT-->
+                     <div class="slds-form-element slds-form-element_horizontal slds-is-editing">
+                         <div class="slds-form-element__control">                     
+                <!-- This is how we access the contact values within our cContact container/wrapper -->
+                <apex:column width="10%" headerValue="Subject" headerClass="TableTitle" title="Owner" >
+                    <div class="slds-p-around_x-small">
+                    <apex:inputText styleClass="roundedCorners" size="14" value="{!c.con.Subject__c}"> 
+                    </apex:inputText>
+                    </div>
+                </apex:column>
+                         </div></div></div>                            
+                   
+                 <div class="slds-form__item" role="listitem"> <!--DATE-->
+                     <div class="slds-form-element slds-form-element_horizontal slds-is-editing">
+                         <div class="slds-form-element__control">                    
+                <apex:column headerValue="Date" headerClass="TableTitle" title="Activity Date">
+                    <div class="slds-p-around_x-small">
+                    <apex:inputfield styleClass="roundedCorners" value="{!c.con.Activity_Date__c}">  </apex:inputfield>
+                    </div>
+                </apex:column>
+                         </div></div></div>
+                             
+                             
+                <!-- 
+                <apex:column headerValue="Training Time"  headerClass="TableTitle" title="Time HH:SS AM/PM">
+                    <apex:inputfield value="{!c.con.Training_Time__c}">  </apex:inputfield>
+                </apex:column>     
+                          
+                <apex:column headerValue="Owner" headerClass="TableTitle" title="Owner">
+                    <apex:inputfield value="{!c.con.OwnerId}">  </apex:inputfield>
+                </apex:column> 
+                -->  
+                    
+                    
+                 <div class="slds-form__item" role="listitem"> <!--ASSIGNED EMPLOYEE/PARTNER-->
+                     <div class="slds-form-element slds-form-element_horizontal slds-is-editing">
+                         <div class="slds-form-element__control">                    
+                <apex:column headerValue="Assigned (Employee/Partner)" headerClass="TableTitle" title="Owner">
+                    <div class="slds-p-around_x-small slds-p-right_medium">
+                    <apex:inputfield styleClass="roundedCorners" style="width: 100px" value="{!c.con.Owner_2__c}">
+                    </apex:inputfield>
+                    </div>
+                </apex:column>
+                         </div></div></div>                           
+                             
+                             
+                <!--  
+                <apex:column headerValue="Partner Visible" headerClass="TableTitle" title="Partner Visible">
+                    <apex:inputfield value="{!c.con.IsVisibleInSelfService}">  </apex:inputfield>
+                </apex:column>  
+                -->
+                    
+                    
+                <div class="slds-form__item" role="listitem"> <!--STATUS-->
+                     <div class="slds-form-element slds-form-element_horizontal slds-is-editing">
+                         <div class="slds-form-element__control">                    
+                <apex:column headerValue="Status" headerClass="TableTitle" title="Status">
+                    <div class="slds-p-around_x-small">
+                    <apex:selectList styleClass="selectListWidth" value="{!c.con.Status__c}" size="1" rendered="{!c.con.Interface_Analysis__c==TRUE}">
+                        <apex:selectOptions value="{!IFItems}" />
+                        <apex:selectOptions value="{!NonIFItems}" rendered="{!c.con.Interface_Analysis__c<>TRUE}"/>
+                    </apex:selectList> 
+                    <apex:selectList styleClass="selectListWidth"  value="{!c.con.Status__c}" size="1" rendered="{!c.con.Interface_Analysis__c==FALSE}">
+                        <apex:selectOptions value="{!NonIFItems}" />
+                    </apex:selectList> 
+                    </div>
+                </apex:column>  
+                         </div></div></div>    
+                             
+                             
+                             
+                <div class="slds-form__item" role="listitem"> <!--COMMENTS-->
+                     <div class="slds-form-element slds-form-element_horizontal slds-is-editing">
+                         <div class="slds-form-element__control">                    
+                <apex:column headerValue="Comments" headerClass="TableTitle" title="Comments">
+                    <div class="slds-p-around_x-small">
+                    <apex:inputfield style="width:190px !important;" styleClass="roundedCorners" value="{!c.con.Comments__c}">  </apex:inputfield>
+                    </div>
+                </apex:column>
+                         </div></div></div>
+                    
+                    
+                    
+                <div class="slds-form__item" role="listitem"> <!--TASK DETAILS-->
+                     <div class="slds-form-element slds-form-element_horizontal slds-is-editing">
+                         <div class="slds-form-element__control">                              
+                <apex:column headerClass="headerColStyle" style="font-size:12px;" > 
+                    <div class="slds-p-around_x-small">
+                        <apex:outputLink StyleClass="btn" value="/{!c.con.id}" target="_top">
+                         <apex:outputText styleClass="btnFontSize" value="Task Details">
+                            </apex:outputText>
+                        </apex:outputLink>                                          
+        <!--   Edit button         
+                    <apex:commandLink value="Edit" title="Edit Task" action="{!showPopup}" reRender="TaskDetails"  >
+                      <apex:param name="rPgName" id="rPgName" value="{!$CurrentPage.URL}"/>
+                    </apex:commandLink>                 
+                    <apex:outputPanel id="TaskDetails" style="height:100%"> 
+                        <apex:outputPanel id="taskdetailinner" rendered="{!taskrender}" layout="block" styleClass="customPopup2" style="height:50%" >
+                            <apex:CommandLink title="Click to Close" value="Close" action="{!closePopup}" rerender="TaskDetails"/>
+                                 <apex:iframe src="/apex/TaskEdit?Id={!c.con.Id}" scrolling="true" id="theAllTaskIframe" height="50%" width="100%"/>
+                            <apex:commandButton title="Click to Close" value="Close" action="{!closePopup}" rerender="TaskDetails"/>             
+                        </apex:outputPanel>   
+                        <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!taskrender}"></apex:outputPanel>
+                   </apex:outputPanel>
+        -->      
+                    </div>
+                </apex:column>  
+                         </div></div></div> 
+                    
+                </div>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        <apex:pageBlock rendered="{!CaseStatus<> 'Open'|| CaseStatus<> 'Scheduled' || CaseStatus<> 'On Hold'}" >
+            <!-- In our table we are displaying the cContact records -->
+            <apex:pageBlockTable value="{!activities}" var="c" id="table">
+                
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                <!-- This is how we access the contact values within our cContact container/wrapper -->
+                <apex:column width="10%" headerValue="Subject" headerClass="TableTitle" title="Owner" >
+                    <div class="slds-m-around_small">
+                    <apex:outputText value="{!c.con.Subject__c}">  </apex:outputText>
+                    </div>
+                </apex:column>
+                        </div></div></div>
+                    
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                <apex:column width="7%" headerValue="Date" headerClass="TableTitle" title="Activity Date">
+                    <div class="slds-m-around_small">
+                    <apex:outputfield value="{!c.con.Activity_Date__c}">  </apex:outputfield>
+                    </div>
+                </apex:column>
+                        </div></div></div>
+                
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                <apex:column width="7%" headerValue="Training Time"  headerClass="TableTitle" title="Time HH:SS AM/PM">
+                    <div class="slds-m-around_small">
+                    <apex:outputfield value="{!c.con.Training_Time__c}">  </apex:outputfield>
+                    </div>
+                </apex:column> 
+                        </div></div></div>
+                
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">              
+                <apex:column width="7%" headerValue="Owner" headerClass="TableTitle" title="Owner">
+                    <div class="slds-m-around_small">
+                    <apex:outputfield value="{!c.con.Owner_2__c}">  </apex:outputfield>
+                    </div>
+                </apex:column>
+                        </div></div></div>
+                
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                <apex:column width="15%" headerValue="Comments" headerClass="TableTitle" title="Comments">
+                    <div class="slds-m-around_small">
+                    <apex:outputfield style="width:190px !important;" value="{!c.con.Comments__c}">  </apex:outputfield>
+                    </div>
+                </apex:column>               
+                        </div></div></div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">                
+                <apex:column width="10%" headerValue="Status" headerClass="TableTitle" title="Status">    
+                    <div class="slds-m-around_small">
+                    <apex:outputText value="{!c.con.Status__c}">  </apex:outputText>
+                    </div>
+                </apex:column>      
+                        </div></div></div>
+                
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                <apex:column headerClass="headerColStyle" style="font-size:12px;" > 
+                        <div class="slds-m-around_small">
+                        <apex:outputLink StyleClass="btn" value="/{!c.con.id}" target="_top">
+                         <apex:outputText styleClass="btnFontSize" value="Task Details">
+                            </apex:outputText>
+                        </apex:outputLink>   
+                        </div>
+              <!--   Edit button       
+                    <apex:commandLink value="Edit" title="Edit Task - {!c.con.Subject}" action="{!showPopup}" reRender="TaskDetails"  > 
+                    <apex:commandLink value="Edit" title="Edit Task" action="{!showPopup}" reRender="TaskDetails">
+                      <apex:param name="rPgName" id="rPgName" value="{!$CurrentPage.URL}"/>
+                    </apex:commandLink>                 
+                    <apex:outputPanel id="TaskDetails" style="height:100%"> 
+                        <apex:outputPanel id="taskdetailinner" rendered="{!taskrender}" layout="block" styleClass="customPopup2" style="height:50%" >
+                            <apex:CommandLink title="Click to Close" value="Close" action="{!closePopup}" rerender="TaskDetails"/>
+                                 <apex:iframe src="/apex/TaskEdit?Id={!c.con.Id}" scrolling="true" id="theAllTaskIframe" height="50%" width="100%"/>
+                            <apex:commandButton title="Click to Close" value="Close" action="{!closePopup}" rerender="TaskDetails"/>             
+                        </apex:outputPanel>   
+                        <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!taskrender}"></apex:outputPanel>
+                   </apex:outputPanel>
+            -->                    
+                </apex:column>    
+                        </div></div></div>
+                            
+            </apex:pageBlockTable>
+        </apex:pageBlock> 
+        </div>
+    </apex:form>
+    </div>    
+    </div>
+</apex:page>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Return_Case_Cannot_be_closed</fullName>
+    <active>false</active>
+    <description>In Return Case type, if the Response Received checkbox is checked the user should not be allowed to close the Case or change status to &quot;Closed Resolved&quot; and Closed Unresolved until the checkbox is cleared.</description>
+    <errorConditionFormula>AND(
+
+ISCHANGED( Status ) ,
+
+OR(
+
+
+ISPICKVAL( Status , &quot;Closed_Resolved&quot;),
+
+ISPICKVAL( Status , &quot;Closed - Unresolved&quot;),
+
+
+Response_Received__c = TRUE,
+
+RecordType.DeveloperName = &quot;Return&quot;
+
+))</errorConditionFormula>
+    <errorDisplayField>Response_Received__c</errorDisplayField>
+    <errorMessage>Uncheck Response Received before closing a Case.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default_Acct_Rel_Ship_To_Number__c</fullName>
+    <description>Ship to Number on the Default Account Relationship</description>
+    <externalId>false</externalId>
+    <formula>Default_Account_Relationship__r.Ship_To_Number__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Ship to Number on the Default Account Relationship</inlineHelpText>
+    <label>Default Acct Rel Ship To Number</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

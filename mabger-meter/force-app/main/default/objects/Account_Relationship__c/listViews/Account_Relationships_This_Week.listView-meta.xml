@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Relationships_This_Week</fullName>
+    <booleanFilter>1</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Active__c</columns>
+    <columns>Customer_Number__c</columns>
+    <columns>Partner_1__c</columns>
+    <columns>End_Customer_Number__c</columns>
+    <columns>Ship_To_Name__c</columns>
+    <columns>Partner_2_Shipping_Street__c</columns>
+    <columns>Partner_2_Shipping_City__c</columns>
+    <columns>Partner_2_Shipping_State__c</columns>
+    <columns>Ship_To_Number__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>Phone_Number__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_WEEK</value>
+    </filters>
+    <label>Account Relationships - This Week</label>
+</ListView>

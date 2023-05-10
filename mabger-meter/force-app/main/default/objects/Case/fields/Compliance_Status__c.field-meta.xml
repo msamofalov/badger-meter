@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compliance_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Compliance Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Under ICS review</fullName>
+                <default>false</default>
+                <label>Under ICS review</label>
+            </value>
+            <value>
+                <fullName>Under US Trade Compliance review</fullName>
+                <default>false</default>
+                <label>Under US Trade Compliance review</label>
+            </value>
+            <value>
+                <fullName>Under Legal review</fullName>
+                <default>false</default>
+                <label>Under Legal review</label>
+            </value>
+            <value>
+                <fullName>Under Management review</fullName>
+                <default>false</default>
+                <label>Under Management review</label>
+            </value>
+            <value>
+                <fullName>Awaiting US License Approval</fullName>
+                <default>false</default>
+                <label>Awaiting US License Approval</label>
+            </value>
+            <value>
+                <fullName>Export control – Dual use</fullName>
+                <default>false</default>
+                <label>Export control – Dual use</label>
+            </value>
+            <value>
+                <fullName>Under EU Trade Compliance review</fullName>
+                <default>false</default>
+                <label>Under EU Trade Compliance review</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

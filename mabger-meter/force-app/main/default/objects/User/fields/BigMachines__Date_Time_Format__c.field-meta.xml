@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BigMachines__Date_Time_Format__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This picklist contains the possible date/time format options that are available to Oracle CPQ Cloud users.  Do not modify this list.</description>
+    <externalId>false</externalId>
+    <label>Date/Time Format</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MM/dd/yyyy h:mm a</fullName>
+                <default>true</default>
+                <label>MM/dd/yyyy h:mm a</label>
+            </value>
+            <value>
+                <fullName>MM/dd/yyyy HH:mm</fullName>
+                <default>false</default>
+                <label>MM/dd/yyyy HH:mm</label>
+            </value>
+            <value>
+                <fullName>dd/MM/yyyy HH:mm</fullName>
+                <default>false</default>
+                <label>dd/MM/yyyy HH:mm</label>
+            </value>
+            <value>
+                <fullName>dd.MM.yyyy HH:mm</fullName>
+                <default>false</default>
+                <label>dd.MM.yyyy HH:mm</label>
+            </value>
+            <value>
+                <fullName>yyyy/MM/dd HH:mm</fullName>
+                <default>false</default>
+                <label>yyyy/MM/dd HH:mm</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

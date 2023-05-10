@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Validation_Language</fullName>
+    <active>true</active>
+    <description>Language cannot be edited once a Customer Number has been assigned. Language can only be maintained in Infor ERPLX by Credit once a Customer Number has been assigned.</description>
+    <errorConditionFormula>ISCHANGED(Language__c) &amp;&amp; NOT(ISBLANK(Customer_Number__c)) &amp;&amp; (NOT($Profile.Name = &apos;Interface User&apos;))</errorConditionFormula>
+    <errorDisplayField>Language__c</errorDisplayField>
+    <errorMessage>Language cannot be edited once a Customer Number has been assigned. Language can only be maintained in Infor ERPLX by Credit once a Customer Number has been assigned.</errorMessage>
+</ValidationRule>

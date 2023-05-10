@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market_Libraries_Required_for_Partners</fullName>
+    <active>true</active>
+    <description>Market Libraries must be indicated before you can enable an Account as a Partner.</description>
+    <errorConditionFormula>NOT(ISBLANK(Partnership_Enabled_Date__c)) 
+&amp;&amp; 
+ISBLANK(Market_Libraries__c)</errorConditionFormula>
+    <errorDisplayField>Market_Libraries__c</errorDisplayField>
+    <errorMessage>Market Libraries must be indicated before you can enable an Account as a Partner.</errorMessage>
+</ValidationRule>

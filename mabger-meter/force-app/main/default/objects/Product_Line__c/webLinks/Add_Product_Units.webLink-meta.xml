@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Add_Product_Units</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Add Product Units</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)} 
+
+var newRecords = []; 
+
+var query = &quot;SELECT Id,case__c FROM Product_Line__c WHERE Id = &apos;{!Product_Line__c.Id}&apos; LIMIT 1&quot;; 
+var result = sforce.connection.query(query); 
+var record = result.getArray(&quot;records&quot;); 
+var productLines = record[0]; 
+
+var pu = new sforce.SObject(&quot;Product_Units__c&quot;); 
+
+pu.Case__c = productLines.case__c; 
+pu.Product_Line__c = productLines.id; 
+
+newRecords.push(pu); 
+
+result = sforce.connection.update([pu]); 
+
+window.location.reload();</url>
+</WebLink>

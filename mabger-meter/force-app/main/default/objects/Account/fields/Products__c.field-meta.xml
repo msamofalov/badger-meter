@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Products__c</fullName>
+    <description>List of Products used to control access to Product specific areas of Extranet</description>
+    <externalId>false</externalId>
+    <inlineHelpText>List of Products used to control access to Product specific areas of Extranet</inlineHelpText>
+    <label>Extranet Product Groups</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&quot;AquaCUE&quot;</fullName>
+                <default>false</default>
+                <label>&quot;AquaCUE&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;Automotive Oval Gear&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Automotive Oval Gear&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;Concrete&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Concrete&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;Coriolis&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Coriolis&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;Cox&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Cox&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;Dynasonics&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Dynasonics&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;Flow Dynamics&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Flow Dynamics&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;Impeller/Data Industrial&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Impeller/Data Industrial&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;Industrial MKE M.M.&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Industrial MKE M.M.&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;ModMAG M Series&quot;</fullName>
+                <default>false</default>
+                <label>&quot;ModMAG M Series&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;NMAAI Only&quot;</fullName>
+                <default>false</default>
+                <label>&quot;NMAAI Only&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;Preso&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Preso&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;Research Control Valves (RCV)&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Research Control Valves (RCV)&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;Sales Policies&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Sales Policies&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;Utility&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Utility&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;Utility - Latin America&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Utility - Latin America&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;Utility Sub-Distributors&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Utility Sub-Distributors&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;Vortex&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Vortex&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;Wyco&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Wyco&quot;</label>
+            </value>
+            <value>
+                <fullName>&quot;Wyco - Latin America&quot;</fullName>
+                <default>false</default>
+                <label>&quot;Wyco - Latin America&quot;</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

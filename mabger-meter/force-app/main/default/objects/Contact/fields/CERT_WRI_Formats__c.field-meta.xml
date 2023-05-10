@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CERT_WRI_Formats__c</fullName>
+    <description>Legacy WRI Formats - Expires Q4 2020</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Legacy WRI Formats - Expires Q4 2020</inlineHelpText>
+    <label>CERT WRI Formats</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 Standard/MRT</fullName>
+                <default>false</default>
+                <label>1 Standard/MRT</label>
+            </value>
+            <value>
+                <fullName>2 Huntsville</fullName>
+                <default>false</default>
+                <label>2 Huntsville</label>
+            </value>
+            <value>
+                <fullName>3 Philly/Itron</fullName>
+                <default>false</default>
+                <label>3 Philly/Itron</label>
+            </value>
+            <value>
+                <fullName>4 Milwaukee FieldTech</fullName>
+                <default>false</default>
+                <label>4 Milwaukee FieldTech</label>
+            </value>
+            <value>
+                <fullName>5 Houston</fullName>
+                <default>false</default>
+                <label>5 Houston</label>
+            </value>
+            <value>
+                <fullName>6 Chicago</fullName>
+                <default>false</default>
+                <label>6 Chicago</label>
+            </value>
+            <value>
+                <fullName>8 Duke</fullName>
+                <default>false</default>
+                <label>8 Duke</label>
+            </value>
+            <value>
+                <fullName>9 Custom</fullName>
+                <default>false</default>
+                <label>9 Custom</label>
+            </value>
+            <value>
+                <fullName>10 Default CSV</fullName>
+                <default>false</default>
+                <label>10 Default CSV</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

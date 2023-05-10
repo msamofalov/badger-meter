@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BEACON_Invoice_Notes__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Format:   SALES CREDIT # XXXXXX, INVOICE FOR BEACON SERVICES, PRIMARY CONTACT is NAME &amp; e-mail.
+THIS PRINTS ON EVERY BEACON INVOICE!</inlineHelpText>
+    <label>External Invoice Notes</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

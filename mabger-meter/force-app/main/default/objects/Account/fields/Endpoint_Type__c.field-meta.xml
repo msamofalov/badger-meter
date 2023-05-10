@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Endpoint_Type__c</fullName>
+    <description>By Kavya - As per Kyle Kolhouse&apos;s request , the field is Set for History tracking on 08/05/19 .</description>
+    <externalId>false</externalId>
+    <label>Endpoint Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Endpoint_Type</valueSetName>
+    </valueSet>
+</CustomField>

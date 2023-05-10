@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default_Ship_To_Number_validation</fullName>
+    <active>true</active>
+    <description>The Default Ship To Number must be 4 characters with leading zeros.</description>
+    <errorConditionFormula>AND(OR(LEN( Default_Ship_To__c ) &lt;&gt; 4, 
+NOT(ISNUMBER(Default_Ship_To__c ))),
+NOT(ISBLANK(Default_Ship_To__c )))</errorConditionFormula>
+    <errorMessage>The Default Ship To Number must be 4 characters with leading zeros.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Endpoint_Review_Type__c</fullName>
+    <description>By Kavya - As per Kyle Kolhouse&apos;s request , the field is Set for History tracking on 08/05/19 .</description>
+    <externalId>false</externalId>
+    <label>Endpoint Review Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cell Coverage/Field Analysis</fullName>
+                <default>false</default>
+                <label>Cell Coverage/Field Analysis</label>
+            </value>
+            <value>
+                <fullName>Coverage Map</fullName>
+                <default>false</default>
+                <label>Coverage Map</label>
+            </value>
+            <value>
+                <fullName>Administrative Approval</fullName>
+                <default>false</default>
+                <label>Administrative Approval</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

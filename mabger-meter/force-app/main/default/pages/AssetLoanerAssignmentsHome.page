@@ -1,0 +1,77 @@
+<apex:page controller="LoanerAssignmentsController" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false">
+
+<apex:stylesheet value="{!URLFOR($Resource.Asset_Manager_Resources, 'CSS/style.css')}"/>
+<apex:includeScript value="{!URLFOR($Resource.Asset_Manager_Resources, 'JS/jquery.min.js')}"/>
+<apex:includeScript value="{!URLFOR($Resource.Asset_Manager_Resources, 'JS/d3.v3.min.js')}"/>
+<apex:includeScript value="{!URLFOR($Resource.Asset_Manager_Resources, 'JS/donuts.js')}"/>
+<script>
+    //Load Donut Charts
+    $(function(){
+        $('.vf_donut').each(function(){
+            var thisData = $(this).data('var');
+            drawDonutChart(
+              '[data-var=' + thisData + ']',
+              parseFloat($('[data-var=' + thisData + ']').data('donut')), //Added parseFloat to ensure that percent is float
+              250,
+              250,
+              "-20%"
+            );
+        });
+
+    });
+</script>
+<apex:outputLink value="/home/home.jsp">Back to Salesforce Home</apex:outputLink>
+        <header>
+            <h1>BadgerMeter Loaner Program</h1>
+            <h2>Asset Loaner MANAGEMENT</h2>
+        </header>
+
+        <div id="donutBox">
+            <div class="vf_donut" data-var="Available" data-count="{!availableCount}" data-donut="{!availablePercentage}" >
+                <span class='innerType'>Inventory</span>
+                <span class='innerCount'>{!availableCount}</span>
+            </div>
+            <div class="vf_donut" data-var="Assigned" data-count="{!assignedCount}" data-donut="{!assignedPercentage}" >
+                <span class='innerType'>Loaned</span>
+                <span class='innerCount'>{!assignedCount}</span>
+            </div>   
+        </div>
+        <div id="navBox">
+            <ul>
+                <li onclick="                    
+                    if( (typeof sforce != 'undefined') && (sforce != null) ) {
+                        sforce.one.navigateToURL('/apex/AssetLoanAssignments');
+                    }
+                    else {
+                        window.location.href = 
+                            '/apex/AssetLoanAssignments';
+                    }"
+                ><span>{!assetLabel} Assignment</span></li>
+
+                <li onclick="                    
+                    if( (typeof sforce != 'undefined') && (sforce != null) ) {
+                        sforce.one.navigateToURL('/apex/AssetLoanAssignments');
+                    }
+                    else {
+                        window.location.href = 
+                            '/apex/AssetLoanAssignments';
+                    }"><span>{!assetLabel} List</span></li>
+                <li onclick="                    
+                    if( (typeof sforce != 'undefined') && (sforce != null) ) {
+                        sforce.one.navigateToURL('/home/home.jsp');
+                    }
+                    else {
+                        window.location.href = 
+                            '/home/home.jsp';
+                    }"><span>Back To Home Page</span></li>
+                <li onclick="                    
+                    if( (typeof sforce != 'undefined') && (sforce != null) ) {
+                        sforce.one.navigateToURL('/00O/o');
+                    }
+                    else {
+                        window.location.href = 
+                            '/00O/o';
+                    }"><span>Reports</span></li>                    
+            </ul>
+        </div><!-- Nav Box -->     
+</apex:page>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LM_Contact_ID__c</fullName>
+    <description>Used when a Contact goes MQL and creates an Opportunity.  Needed to pass Contact ID to Contact Roles object for Lead Method field mappings.</description>
+    <externalId>false</externalId>
+    <label>LM Contact ID</label>
+    <length>40</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

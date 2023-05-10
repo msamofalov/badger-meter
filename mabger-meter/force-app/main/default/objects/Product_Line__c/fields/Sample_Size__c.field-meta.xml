@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sample_Size__c</fullName>
+    <description>Indicates the sample size of units that should be automated created for the product line.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the sample size of units that should be automated created for the product line.</inlineHelpText>
+    <label>Sample Size</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

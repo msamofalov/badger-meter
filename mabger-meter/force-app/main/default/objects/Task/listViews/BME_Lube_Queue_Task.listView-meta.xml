@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BME_Lube_Queue_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>BME Lube Queue</label>
+    <queue>BME_Lube_Queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

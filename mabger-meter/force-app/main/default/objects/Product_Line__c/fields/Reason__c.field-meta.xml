@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This field identifies the Reason a Product is being returned. This may be adjusted as necessary if the Reason indicated should be adjusted.</inlineHelpText>
+    <label>Reason</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACCURACY TESTING</fullName>
+                <default>false</default>
+                <label>ACCURACY TESTING</label>
+            </value>
+            <value>
+                <fullName>CALIBRATION - 10-POINT</fullName>
+                <default>false</default>
+                <label>CALIBRATION - 10-POINT</label>
+            </value>
+            <value>
+                <fullName>CALIBRATION - 20-POINT</fullName>
+                <default>false</default>
+                <label>CALIBRATION - 20-POINT</label>
+            </value>
+            <value>
+                <fullName>CALIBRATION - 5-POINT</fullName>
+                <default>false</default>
+                <label>CALIBRATION - 5-POINT</label>
+            </value>
+            <value>
+                <fullName>CALIBRATION - CLEAN &amp; TEST</fullName>
+                <default>false</default>
+                <label>CALIBRATION - CLEAN &amp; TEST</label>
+            </value>
+            <value>
+                <fullName>CALIBRATION - NIST</fullName>
+                <default>false</default>
+                <label>CALIBRATION - NIST</label>
+            </value>
+            <value>
+                <fullName>CALIBRATION - NVLAP</fullName>
+                <default>false</default>
+                <label>CALIBRATION - NVLAP</label>
+            </value>
+            <value>
+                <fullName>CALIBRATION - REPROGRAM</fullName>
+                <default>false</default>
+                <label>CALIBRATION - REPROGRAM</label>
+            </value>
+            <value>
+                <fullName>CREDIT - FIELD SCRAP</fullName>
+                <default>false</default>
+                <label>CREDIT - FIELD SCRAP</label>
+            </value>
+            <value>
+                <fullName>CREDIT - INCORRECT PRODUCT</fullName>
+                <default>false</default>
+                <label>CREDIT - INCORRECT PRODUCT</label>
+            </value>
+            <value>
+                <fullName>CREDIT - RESTOCK</fullName>
+                <default>false</default>
+                <label>CREDIT - RESTOCK</label>
+            </value>
+            <value>
+                <fullName>CREDIT - USED METER</fullName>
+                <default>false</default>
+                <label>CREDIT - USED METER</label>
+            </value>
+            <value>
+                <fullName>CUSTOMER SUPPLIED MATERIAL -</fullName>
+                <default>false</default>
+                <label>CUSTOMER SUPPLIED MATERIAL -</label>
+            </value>
+            <value>
+                <fullName>EXCHANGE / UPGRADE - LOYALTY</fullName>
+                <default>false</default>
+                <label>EXCHANGE / UPGRADE - LOYALTY</label>
+            </value>
+            <value>
+                <fullName>EXCHANGE / UPGRADE - NEW PRODUCT</fullName>
+                <default>false</default>
+                <label>EXCHANGE / UPGRADE - NEW PRODUCT</label>
+            </value>
+            <value>
+                <fullName>EXCHANGE / UPGRADE - SOFTWARE - FIRMWARE</fullName>
+                <default>false</default>
+                <label>EXCHANGE / UPGRADE - SOFTWARE - FIRMWARE</label>
+            </value>
+            <value>
+                <fullName>LOANER/DEMO -</fullName>
+                <default>false</default>
+                <label>LOANER/DEMO -</label>
+            </value>
+            <value>
+                <fullName>OTHER -</fullName>
+                <default>false</default>
+                <label>OTHER -</label>
+            </value>
+            <value>
+                <fullName>POSSIBLE CLAIM -</fullName>
+                <default>false</default>
+                <label>POSSIBLE CLAIM -</label>
+            </value>
+            <value>
+                <fullName>REPAIR &amp; CAL 10-POINT</fullName>
+                <default>false</default>
+                <label>REPAIR &amp; CAL 10-POINT</label>
+            </value>
+            <value>
+                <fullName>REPAIR &amp; CAL 20-POINT</fullName>
+                <default>false</default>
+                <label>REPAIR &amp; CAL 20-POINT</label>
+            </value>
+            <value>
+                <fullName>REPAIR &amp; CAL 5-POINT</fullName>
+                <default>false</default>
+                <label>REPAIR &amp; CAL 5-POINT</label>
+            </value>
+            <value>
+                <fullName>REPAIR &amp; CAL NIST</fullName>
+                <default>false</default>
+                <label>REPAIR &amp; CAL NIST</label>
+            </value>
+            <value>
+                <fullName>REPAIR - ESTIMATE</fullName>
+                <default>false</default>
+                <label>REPAIR - ESTIMATE</label>
+            </value>
+            <value>
+                <fullName>REPAIR - REPAIR &amp; TEST</fullName>
+                <default>false</default>
+                <label>REPAIR - REPAIR &amp; TEST</label>
+            </value>
+            <value>
+                <fullName>SCRAP - DISPOSAL - FEE BASED</fullName>
+                <default>false</default>
+                <label>SCRAP - DISPOSAL - FEE BASED</label>
+            </value>
+            <value>
+                <fullName>SCRAP - DISPOSAL - GOODWILL</fullName>
+                <default>false</default>
+                <label>SCRAP - DISPOSAL - GOODWILL</label>
+            </value>
+            <value>
+                <fullName>WARRANTY - REVIEW - VERIFY</fullName>
+                <default>false</default>
+                <label>WARRANTY - REVIEW - VERIFY</label>
+            </value>
+            <value>
+                <fullName>CELLULAR UPGRADE MKTG PRG</fullName>
+                <default>false</default>
+                <label>CELLULAR UPGRADE MKTG PRG</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

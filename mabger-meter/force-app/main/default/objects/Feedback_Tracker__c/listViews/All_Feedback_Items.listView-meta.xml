@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Feedback_Items</fullName>
+    <columns>NAME</columns>
+    <columns>Request_Type__c</columns>
+    <columns>Detailed_Description__c</columns>
+    <columns>Assigned_To__c</columns>
+    <columns>Area__c</columns>
+    <columns>Priority__c</columns>
+    <columns>Solution_Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Resolution__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All  Feedback Items</label>
+</ListView>

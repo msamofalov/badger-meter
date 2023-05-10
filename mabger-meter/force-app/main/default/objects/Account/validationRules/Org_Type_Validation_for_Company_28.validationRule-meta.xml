@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Org_Type_Validation_for_Company_28</fullName>
+    <active>true</active>
+    <description>Org Type on Accounts Object should be &quot;Read only&quot; for company # 28, except:
+1. When creating an Account and there is no selection for the Org Type
+2. For  Users: Vicky Banks &amp; Gemma Ball  and Admins.</description>
+    <errorConditionFormula>AND(
+
+ISPICKVAL(Company_Number__c , &quot;28 - BADGER METER UK, LTD&quot;) ,
+
+(
+
+NOT( $Profile.Name = &apos;System Administrator&apos; ) &amp;&amp;
+
+
+NOT( $User.Alias = &quot;vbank&quot;)&amp;&amp;
+NOT( $User.Alias = &quot;gball&quot;)
+
+
+
+),
+
+ISCHANGED( Organization_Type__c )
+)</errorConditionFormula>
+    <errorDisplayField>Organization_Type__c</errorDisplayField>
+    <errorMessage>Organization type cannot be edited.
+Contact the Account Manager or System Administrator to update the Organization Type.</errorMessage>
+</ValidationRule>

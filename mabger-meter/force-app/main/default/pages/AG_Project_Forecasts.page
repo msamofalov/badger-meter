@@ -1,0 +1,6 @@
+<apex:page standardController="Case" showHeader="false" docType="html-4.01-strict">
+<CRMC_PP:Grid ObjectName="Project_Forecast__c" FKName="Case__c" FKValue="{!Case.Id}"  DelayLoad="false"  ViewID="a2g3t000002TvycAAC" 
+ EnableNewButton="true"  EnableNewInline="true"  EnableEdit="true"  EnableActions="true"  EnableFieldChooser="false" 
+ EnableStickyViews="true"  EnableToolbar="true"  EnableViews="false"  EnableFormatting="false"  EnableReadingPane="true" />
+<CRMC_PP:DrillUp />
+</apex:page>

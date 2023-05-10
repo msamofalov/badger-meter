@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Return_Location__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This field determines what address is displayed on the customer&apos;s RMA form as the address of where they ship product for return, repair, or warranty analysis.</inlineHelpText>
+    <label>Selected Return Location</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Milwaukee</fullName>
+                <default>false</default>
+                <label>Milwaukee</label>
+            </value>
+            <value>
+                <fullName>Racine</fullName>
+                <default>false</default>
+                <label>Racine</label>
+            </value>
+            <value>
+                <fullName>Collegeville</fullName>
+                <default>false</default>
+                <label>Collegeville</label>
+            </value>
+            <value>
+                <fullName>Neuffen</fullName>
+                <default>false</default>
+                <label>Neuffen</label>
+            </value>
+            <value>
+                <fullName>Tulsa</fullName>
+                <default>false</default>
+                <label>Tulsa</label>
+            </value>
+            <value>
+                <fullName>BMUK</fullName>
+                <default>false</default>
+                <label>BMUK</label>
+            </value>
+            <value>
+                <fullName>Henderson</fullName>
+                <default>false</default>
+                <label>Henderson</label>
+            </value>
+            <value>
+                <fullName>D1 - Centennial</fullName>
+                <default>false</default>
+                <label>D1 - Centennial</label>
+            </value>
+            <value>
+                <fullName>D2 - Sacramento</fullName>
+                <default>false</default>
+                <label>D2 - Sacramento</label>
+            </value>
+            <value>
+                <fullName>D5 - Nashville</fullName>
+                <default>false</default>
+                <label>D5 - Nashville</label>
+            </value>
+            <value>
+                <fullName>Metercor</fullName>
+                <default>false</default>
+                <label>Metercor</label>
+            </value>
+            <value>
+                <fullName>Nogales</fullName>
+                <default>false</default>
+                <label>Nogales</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

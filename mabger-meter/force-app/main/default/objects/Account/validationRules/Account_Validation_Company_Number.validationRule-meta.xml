@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Validation_Company_Number</fullName>
+    <active>true</active>
+    <description>Company Number cannot be edited once a Customer Number has been assigned. Company Number can only be maintained in Infor ERPLX by Credit once a Customer Number has been assigned.</description>
+    <errorConditionFormula>ISCHANGED(Company_Number__c) &amp;&amp; NOT(ISBLANK(Customer_Number__c)) &amp;&amp; (NOT($Profile.Name = &apos;Interface User&apos;))</errorConditionFormula>
+    <errorDisplayField>Company_Number__c</errorDisplayField>
+    <errorMessage>Company Number cannot be edited once a Customer Number has been assigned. Company Number can only be maintained in Infor ERPLX by Credit once a Customer Number has been assigned.</errorMessage>
+</ValidationRule>

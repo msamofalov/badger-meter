@@ -1,0 +1,174 @@
+<apex:page controller="MACustomMassActionController" tabStyle="maps__maps__tab" lightningstylesheets="true">
+<!-- ForceTK -->
+<script type='text/javascript' src='https://cdn.rawgit.com/developerforce/Force.com-JavaScript-REST-Toolkit/4ab6f9c6f4e83f6f8db07fc545a5c01cbff8e50a/forcetk.js'></script>
+        
+<!-- jQuery -->
+<script type='text/javascript' src="https://code.jquery.com/jquery-2.1.3.min.js"></script> 
+
+<style>
+    .conflicts {
+        color: black;
+        font-style: italic;
+        font-weight: bold;
+    }
+    
+</style>
+
+<script type="text/javascript">
+    var batchProcessId;
+    var asyncApexJobInterval; 
+    
+    $(function (){
+        $('[id$=submitBtn]').removeClass('btn').addClass('btnDisabled').attr("disabled", 'disabled');
+    });
+    
+    /*
+     *
+     */
+    function GetBatchProcessId()
+    {
+        $('[id$=submitBtn]').removeClass('btn').addClass('btnDisabled').attr("disabled", 'disabled');
+        batchProcessId = jQuery('[id$=HiddenBatchProcessIdValue]').val();
+        
+        if (batchProcessId != null && batchProcessId != '')
+        {
+            asyncApexJobInterval = setInterval(getRemoteStatus, 5000);
+        }
+    }
+    
+    /*
+     *
+     */
+    function getRemoteStatus()
+    {
+        var DynamicQuery = "SELECT Id, Status, NumberOfErrors, JobItemsProcessed, TotalJobItems, CreatedBy.Email, ExtendedStatus FROM AsyncApexJob WHERE Id ='" + batchProcessId + "'";
+        var client = new forcetk.Client();
+        client.setSessionToken('{!$Api.Session_ID}');     
+        client.query(DynamicQuery, function (apexJobResponse) 
+        {
+            var recordCount = 0;
+            
+            $.each(apexJobResponse.records, function (i, AsyncApexJob)
+            {
+                recordCount++;
+
+                if (recordCount == apexJobResponse.records.length)
+                {
+                    $('#batchStatusDIV').html('<b>Processed ' + AsyncApexJob.JobItemsProcessed + ' out of ' + AsyncApexJob.TotalJobItems  + ' batches</b>');
+                    
+                    if (AsyncApexJob.Status == 'Completed')
+                    {
+                        clearInterval(asyncApexJobInterval);
+                        window.location.href = "/apex/ShapeLayerBatchPage?sfdc.tabName=01r6C0000008Yaq";
+                    }
+                }
+            });
+        });        
+    }
+    
+    /*
+     *
+     */
+    function ValidateDidComplete(){
+        var hasZipConflicts = jQuery('[id$=HasZipConflicts]').val();
+        if (hasZipConflicts === 'true'){
+            jQuery('[id$=submitBtn]').removeClass('btn').addClass('btnDisabled').attr('disabled', 'disabled');
+            jQuery('[id$=validateBtn]').removeClass('btnDisabled').addClass('btn').attr('disabled', null);
+        } else {
+            jQuery('[id$=submitBtn]').removeClass('btnDisabled').addClass('btn').attr('disabled', null);
+            jQuery('[id$=validateBtn]').removeClass('btn').addClass('btnDisabled').attr('disabled', 'disabled');
+        }
+        //console.log('Validate Did Complete' + hasZipConflicts);
+    }
+    
+    /*
+     *
+     */
+    function resDidChange(evt) {
+        if(evt != 'none'){
+            $('[id$=submitBtn]').removeClass('btnDisabled').addClass('btn').attr('disabled', null);
+            $('[id$=validateBtn]').removeClass('btn').addClass('btnDisabled').attr('disabled', 'disabled');
+        } else {
+            $('[id$=submitBtn]').removeClass('btn').addClass('btnDisabled').attr('disabled', 'disabled');
+            $('[id$=validateBtn]').removeClass('btnDisabled').addClass('btn').attr('disabled', null);
+        }
+    }
+
+</script>
+
+<apex:form >
+    <apex:inputHidden value="{!TMTBatchProcessId}" id="HiddenBatchProcessIdValue" />
+    <apex:inputHidden value="{!zipConflict}" id="HasZipConflicts"/>
+    <apex:outputPanel id="InfoOP">
+        <apex:pageMessages escape="false"/>
+        <br/>
+        <div id="batchStatusDIV"/>
+    </apex:outputPanel>
+    <apex:sectionHeader title="Modify TMTs"/>
+    <apex:pageBlock title="Modify TMTs"  mode="edit" id="InfoPB">
+        <apex:variable value="{!TMTBatchProcessId}" var="batchId"/>
+        <apex:pageBlockButtons location="bottom">
+            <apex:actionStatus id="ValidateStatus">
+                <apex:facet name="start">
+                    <apex:commandButton value="Validating Zips..." disabled="true" style="font-style: italic"/>
+                </apex:facet>
+                <apex:facet name="stop">
+                    <apex:commandButton id="validateBtn" value="Validate" status="ValidateStatus" action="{!validateZips}" rerender="InfoOP, HasZipConflicts, pbsEdit" oncomplete="ValidateDidComplete();"/>
+                </apex:facet>
+            </apex:actionStatus>
+            <apex:actionStatus id="SaveStatus">
+                <apex:facet name="start">
+                    <apex:commandButton value="Please Wait..." disabled="true" style="font-style: italic;"/>
+                </apex:facet>
+                <apex:facet name="stop">
+                    <!-- MA - 01/16/2017 update for redirecting <apex:commandButton value="Submit" action="{!doSave}" status="SaveStatus" rerender="InfoOP" /> -->
+                    <apex:commandButton id="submitBtn" value="Submit" action="{!doSaveWithRedirect}" status="SaveStatus" rerender="InfoOP, HiddenBatchProcessIdValue" oncomplete="GetBatchProcessId();"/>
+                </apex:facet>
+            </apex:actionStatus>
+            <apex:commandButton value="Cancel" onclick="window.close()" />
+        </apex:pageBlockButtons>
+        
+        <apex:pageBlockSection columns="1" id="pbsEdit">
+            <table>
+                <tr>
+                    <td>
+                        <apex:selectList id="chooseAction" value="{!actionTaken}" size="1" label="Action" >
+                            <apex:selectOptions value="{!actions}"/>
+                            <apex:actionSupport event="onchange" rerender="pbsEdit"/>
+                        </apex:selectList>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <apex:outputText id="conflicts" rendered="{!zipConflict}" styleClass="conflicts" value="Zip Codes already exist for this Market, how would you like to proceed?"></apex:outputText>
+                        <!-- <apex:outputText id="conflicts" rendered="{!actionTaken == 'Create'}" styleClass="conflicts" value="If Zip Codes already exist for this Market, how would you like to proceed?"></apex:outputText>-->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <apex:selectList id="conflictRes" value="{!conflictResolution}" size="1" rendered="{!zipConflict}" label="Conflict Resolution" onchange="resDidChange(this.value);">
+                        <!--<apex:selectList id="conflictRes" value="{!conflictResolution}" size="1" rendered="{!actionTaken == 'Create'}" label="Conflict Resolution">
+                            <apex:selectOption itemValue="none" itemLabel="---Select a resolution---"></apex:selectOption>
+                            <apex:selectOption itemValue="update" itemLabel="Update existing records"></apex:selectOption>
+                            <apex:selectOption itemValue="exclude" itemLabel="Exclude conflicting records"></apex:selectOption>-->
+                            <apex:selectOptions value="{!ConflictRes}"/>
+                        </apex:selectList>                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <apex:inputField id="chooseMarket" value="{!CustomTMT.Market__c}" label="Market">
+                        </apex:inputField>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <apex:inputField id="chooseSalesCreditNumber" value="{!CustomTMT.Sales_Credit_Number__c}" label="Sales Credit Number"/>
+                    </td>
+                </tr>                   
+            </table>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

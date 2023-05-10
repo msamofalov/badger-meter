@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BigMachines__Time_Zone__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This picklist contains the possible time zones that are available to Oracle CPQ Cloud users.  Do not modify this list.</description>
+    <externalId>false</externalId>
+    <label>Time Zone</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>(GMT-11:00 GMT-11:00) Samoa</fullName>
+                <default>false</default>
+                <label>(GMT-11:00 GMT-11:00) Samoa</label>
+            </value>
+            <value>
+                <fullName>(GMT-10:00 GMT-10:00) Hawaii</fullName>
+                <default>false</default>
+                <label>(GMT-10:00 GMT-10:00) Hawaii</label>
+            </value>
+            <value>
+                <fullName>(GMT-10:00 GMT-9:00) Aleutian</fullName>
+                <default>false</default>
+                <label>(GMT-10:00 GMT-9:00) Aleutian</label>
+            </value>
+            <value>
+                <fullName>(GMT-9:30 GMT-9:30) Marquesas</fullName>
+                <default>false</default>
+                <label>(GMT-9:30 GMT-9:30) Marquesas</label>
+            </value>
+            <value>
+                <fullName>(GMT-9:00 GMT-9:00) Gambier</fullName>
+                <default>false</default>
+                <label>(GMT-9:00 GMT-9:00) Gambier</label>
+            </value>
+            <value>
+                <fullName>(GMT-9:00 GMT-8:00) Alaska</fullName>
+                <default>false</default>
+                <label>(GMT-9:00 GMT-8:00) Alaska</label>
+            </value>
+            <value>
+                <fullName>(GMT-8:00 GMT-8:00) Pitcairn</fullName>
+                <default>false</default>
+                <label>(GMT-8:00 GMT-8:00) Pitcairn</label>
+            </value>
+            <value>
+                <fullName>(GMT-8:00 GMT-7:00) US Pacific Time</fullName>
+                <default>false</default>
+                <label>(GMT-8:00 GMT-7:00) US Pacific Time</label>
+            </value>
+            <value>
+                <fullName>(GMT-7:00 GMT-7:00) Arizona</fullName>
+                <default>false</default>
+                <label>(GMT-7:00 GMT-7:00) Arizona</label>
+            </value>
+            <value>
+                <fullName>(GMT-7:00 GMT-6:00) Mountain</fullName>
+                <default>false</default>
+                <label>(GMT-7:00 GMT-6:00) Mountain</label>
+            </value>
+            <value>
+                <fullName>(GMT-6:00 GMT-6:00) Saskatchewan</fullName>
+                <default>false</default>
+                <label>(GMT-6:00 GMT-6:00) Saskatchewan</label>
+            </value>
+            <value>
+                <fullName>(GMT-6:00 GMT-5:00) US Central Time</fullName>
+                <default>false</default>
+                <label>(GMT-6:00 GMT-5:00) US Central Time</label>
+            </value>
+            <value>
+                <fullName>(GMT-5:00 GMT-5:00) Indianapolis</fullName>
+                <default>false</default>
+                <label>(GMT-5:00 GMT-5:00) Indianapolis</label>
+            </value>
+            <value>
+                <fullName>(GMT-5:00 GMT-4:00) US Eastern Time</fullName>
+                <default>true</default>
+                <label>(GMT-5:00 GMT-4:00) US Eastern Time</label>
+            </value>
+            <value>
+                <fullName>(GMT-4:00 GMT-4:00) Puerto Rico</fullName>
+                <default>false</default>
+                <label>(GMT-4:00 GMT-4:00) Puerto Rico</label>
+            </value>
+            <value>
+                <fullName>(GMT-3:00 GMT-4:00) Chile</fullName>
+                <default>false</default>
+                <label>(GMT-3:00 GMT-4:00) Chile</label>
+            </value>
+            <value>
+                <fullName>(GMT-4:00 GMT-3:00) Canada Atlantic Time</fullName>
+                <default>false</default>
+                <label>(GMT-4:00 GMT-3:00) Canada Atlantic Time</label>
+            </value>
+            <value>
+                <fullName>(GMT-3:00 GMT-3:00) Buenos Aires</fullName>
+                <default>false</default>
+                <label>(GMT-3:00 GMT-3:00) Buenos Aires</label>
+            </value>
+            <value>
+                <fullName>(GMT-3:30 GMT-2:30) Newfoundland</fullName>
+                <default>false</default>
+                <label>(GMT-3:30 GMT-2:30) Newfoundland</label>
+            </value>
+            <value>
+                <fullName>(GMT-2:00 GMT-3:00) Sao Paulo</fullName>
+                <default>false</default>
+                <label>(GMT-2:00 GMT-3:00) Sao Paulo</label>
+            </value>
+            <value>
+                <fullName>(GMT-2:00 GMT-2:00) Brazil/DeNoronha</fullName>
+                <default>false</default>
+                <label>(GMT-2:00 GMT-2:00) Brazil/DeNoronha</label>
+            </value>
+            <value>
+                <fullName>(GMT-1:00 GMT-1:00) Cape Verde</fullName>
+                <default>false</default>
+                <label>(GMT-1:00 GMT-1:00) Cape Verde</label>
+            </value>
+            <value>
+                <fullName>(GMT-1:00 GMT+0:00) Azores</fullName>
+                <default>false</default>
+                <label>(GMT-1:00 GMT+0:00) Azores</label>
+            </value>
+            <value>
+                <fullName>(GMT+0:00 GMT+0:00) GMT</fullName>
+                <default>false</default>
+                <label>(GMT+0:00 GMT+0:00) GMT</label>
+            </value>
+            <value>
+                <fullName>(GMT+0:00 GMT+1:00) London</fullName>
+                <default>false</default>
+                <label>(GMT+0:00 GMT+1:00) London</label>
+            </value>
+            <value>
+                <fullName>(GMT+1:00 GMT+1:00) Algiers</fullName>
+                <default>false</default>
+                <label>(GMT+1:00 GMT+1:00) Algiers</label>
+            </value>
+            <value>
+                <fullName>(GMT+2:00 GMT+1:00) Windhoek</fullName>
+                <default>false</default>
+                <label>(GMT+2:00 GMT+1:00) Windhoek</label>
+            </value>
+            <value>
+                <fullName>(GMT+1:00 GMT+2:00) Amsterdam</fullName>
+                <default>false</default>
+                <label>(GMT+1:00 GMT+2:00) Amsterdam</label>
+            </value>
+            <value>
+                <fullName>(GMT+2:00 GMT+2:00) Tripoli</fullName>
+                <default>false</default>
+                <label>(GMT+2:00 GMT+2:00) Tripoli</label>
+            </value>
+            <value>
+                <fullName>(GMT+2:00 GMT+3:00) Israel</fullName>
+                <default>false</default>
+                <label>(GMT+2:00 GMT+3:00) Israel</label>
+            </value>
+            <value>
+                <fullName>(GMT+3:00 GMT+3:00) Nairobi</fullName>
+                <default>false</default>
+                <label>(GMT+3:00 GMT+3:00) Nairobi</label>
+            </value>
+            <value>
+                <fullName>(GMT+3:00 GMT+4:00) Moscow</fullName>
+                <default>false</default>
+                <label>(GMT+3:00 GMT+4:00) Moscow</label>
+            </value>
+            <value>
+                <fullName>(GMT+3:30 GMT+4:30) Tehran</fullName>
+                <default>false</default>
+                <label>(GMT+3:30 GMT+4:30) Tehran</label>
+            </value>
+            <value>
+                <fullName>(GMT+4:00 GMT+4:00) Dubai</fullName>
+                <default>false</default>
+                <label>(GMT+4:00 GMT+4:00) Dubai</label>
+            </value>
+            <value>
+                <fullName>(GMT+4:00 GMT+5:00) Oral</fullName>
+                <default>false</default>
+                <label>(GMT+4:00 GMT+5:00) Oral</label>
+            </value>
+            <value>
+                <fullName>(GMT+4:30 GMT+4:30) Kabul</fullName>
+                <default>false</default>
+                <label>(GMT+4:30 GMT+4:30) Kabul</label>
+            </value>
+            <value>
+                <fullName>(GMT+5:00 GMT+5:00) Karachi</fullName>
+                <default>false</default>
+                <label>(GMT+5:00 GMT+5:00) Karachi</label>
+            </value>
+            <value>
+                <fullName>(GMT+5:00 GMT+6:00) Yekaterinburg</fullName>
+                <default>false</default>
+                <label>(GMT+5:00 GMT+6:00) Yekaterinburg</label>
+            </value>
+            <value>
+                <fullName>(GMT+5:30 GMT+5:30) Calcutta</fullName>
+                <default>false</default>
+                <label>(GMT+5:30 GMT+5:30) Calcutta</label>
+            </value>
+            <value>
+                <fullName>(GMT+5:45 GMT+5:45) Katmandu</fullName>
+                <default>false</default>
+                <label>(GMT+5:45 GMT+5:45) Katmandu</label>
+            </value>
+            <value>
+                <fullName>(GMT+6:00 GMT+6:00) Dhaka</fullName>
+                <default>false</default>
+                <label>(GMT+6:00 GMT+6:00) Dhaka</label>
+            </value>
+            <value>
+                <fullName>(GMT+6:00 GMT+7:00) Novosibirsk</fullName>
+                <default>false</default>
+                <label>(GMT+6:00 GMT+7:00) Novosibirsk</label>
+            </value>
+            <value>
+                <fullName>(GMT+6:30 GMT+6:30) Rangoon</fullName>
+                <default>false</default>
+                <label>(GMT+6:30 GMT+6:30) Rangoon</label>
+            </value>
+            <value>
+                <fullName>(GMT+7:00 GMT+7:00) Bangkok</fullName>
+                <default>false</default>
+                <label>(GMT+7:00 GMT+7:00) Bangkok</label>
+            </value>
+            <value>
+                <fullName>(GMT+7:00 GMT+8:00) Krasnoyarsk</fullName>
+                <default>false</default>
+                <label>(GMT+7:00 GMT+8:00) Krasnoyarsk</label>
+            </value>
+            <value>
+                <fullName>(GMT+8:00 GMT+8:00) Taipei</fullName>
+                <default>false</default>
+                <label>(GMT+8:00 GMT+8:00) Taipei</label>
+            </value>
+            <value>
+                <fullName>(GMT+8:00 GMT+9:00) Irkutsk</fullName>
+                <default>false</default>
+                <label>(GMT+8:00 GMT+9:00) Irkutsk</label>
+            </value>
+            <value>
+                <fullName>(GMT+9:00 GMT+9:00) Seoul</fullName>
+                <default>false</default>
+                <label>(GMT+9:00 GMT+9:00) Seoul</label>
+            </value>
+            <value>
+                <fullName>(GMT+9:00 GMT+10:00) Yakutsk</fullName>
+                <default>false</default>
+                <label>(GMT+9:00 GMT+10:00) Yakutsk</label>
+            </value>
+            <value>
+                <fullName>(GMT+9:30 GMT+9:30) Darwin</fullName>
+                <default>false</default>
+                <label>(GMT+9:30 GMT+9:30) Darwin</label>
+            </value>
+            <value>
+                <fullName>(GMT+10:00 GMT+10:00) Queensland</fullName>
+                <default>false</default>
+                <label>(GMT+10:00 GMT+10:00) Queensland</label>
+            </value>
+            <value>
+                <fullName>(GMT+10:30 GMT+9:30) Adelaide</fullName>
+                <default>false</default>
+                <label>(GMT+10:30 GMT+9:30) Adelaide</label>
+            </value>
+            <value>
+                <fullName>(GMT+11:00 GMT+10:00) Brisbane</fullName>
+                <default>false</default>
+                <label>(GMT+11:00 GMT+10:00) Brisbane</label>
+            </value>
+            <value>
+                <fullName>(GMT+10:00 GMT+11:00) Vladivostok</fullName>
+                <default>false</default>
+                <label>(GMT+10:00 GMT+11:00) Vladivostok</label>
+            </value>
+            <value>
+                <fullName>(GMT+11:00 GMT+10:30) Lord Howe</fullName>
+                <default>false</default>
+                <label>(GMT+11:00 GMT+10:30) Lord Howe</label>
+            </value>
+            <value>
+                <fullName>(GMT+11:00 GMT+11:00) Ponape</fullName>
+                <default>false</default>
+                <label>(GMT+11:00 GMT+11:00) Ponape</label>
+            </value>
+            <value>
+                <fullName>(GMT+11:00 GMT+12:00) Magadan</fullName>
+                <default>false</default>
+                <label>(GMT+11:00 GMT+12:00) Magadan</label>
+            </value>
+            <value>
+                <fullName>(GMT+11:30 GMT+11:30) Norfolk</fullName>
+                <default>false</default>
+                <label>(GMT+11:30 GMT+11:30) Norfolk</label>
+            </value>
+            <value>
+                <fullName>(GMT+12:00 GMT+12:00) Fiji</fullName>
+                <default>false</default>
+                <label>(GMT+12:00 GMT+12:00) Fiji</label>
+            </value>
+            <value>
+                <fullName>(GMT+13:00 GMT+12:00) Auckland</fullName>
+                <default>false</default>
+                <label>(GMT+13:00 GMT+12:00) Auckland</label>
+            </value>
+            <value>
+                <fullName>(GMT+12:00 GMT+13:00) Kamchatka</fullName>
+                <default>false</default>
+                <label>(GMT+12:00 GMT+13:00) Kamchatka</label>
+            </value>
+            <value>
+                <fullName>(GMT+13:00 GMT+13:00) Enderbury</fullName>
+                <default>false</default>
+                <label>(GMT+13:00 GMT+13:00) Enderbury</label>
+            </value>
+            <value>
+                <fullName>(GMT+13:45 GMT+12:45) Chatham</fullName>
+                <default>false</default>
+                <label>(GMT+13:45 GMT+12:45) Chatham</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

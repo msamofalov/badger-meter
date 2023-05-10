@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_SUSPECT</fullName>
+    <columns>Partner_1__c</columns>
+    <columns>Partner_1_Organization_Type__c</columns>
+    <columns>Ship_To_Number__c</columns>
+    <columns>Partner_2_Shipping_City__c</columns>
+    <columns>Partner_2_Shipping_State__c</columns>
+    <columns>Ship_To_Name__c</columns>
+    <columns>Partner_2__c</columns>
+    <columns>End_Customer_Number__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Partner_1_Organization_Type__c</field>
+        <operation>notContain</operation>
+        <value>UD</value>
+    </filters>
+    <filters>
+        <field>Partner_1_Organization_Type__c</field>
+        <operation>notContain</operation>
+        <value>IR</value>
+    </filters>
+    <filters>
+        <field>Partner_2__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Suspect Account Relationships</label>
+</ListView>

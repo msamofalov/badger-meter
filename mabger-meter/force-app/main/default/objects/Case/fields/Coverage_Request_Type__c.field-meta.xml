@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coverage_Request_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Coverage Request Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pre-Sale</fullName>
+                <default>false</default>
+                <label>Pre-Sale</label>
+            </value>
+            <value>
+                <fullName>RFP – Request for Proposal</fullName>
+                <default>false</default>
+                <label>RFP – Request for Proposal</label>
+            </value>
+            <value>
+                <fullName>RFP – Request for Proposal with NDA</fullName>
+                <default>false</default>
+                <label>RFP – Request for Proposal with NDA</label>
+            </value>
+            <value>
+                <fullName>Post-Sale</fullName>
+                <default>false</default>
+                <label>Post-Sale</label>
+            </value>
+            <value>
+                <fullName>Post Sale Support</fullName>
+                <default>false</default>
+                <label>Post Sale Support</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

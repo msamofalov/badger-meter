@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Utility_eNews__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check box for a contact if record is to receive Utility eNews distributions.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box if this Contact should receive Utility eNews distributions.</inlineHelpText>
+    <label>Utility eNews</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

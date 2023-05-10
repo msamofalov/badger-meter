@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>System_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>System Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ORION SE</fullName>
+                <default>false</default>
+                <label>ORION SE</label>
+            </value>
+            <value>
+                <fullName>ORION ME</fullName>
+                <default>false</default>
+                <label>ORION ME</label>
+            </value>
+            <value>
+                <fullName>ORION CE</fullName>
+                <default>false</default>
+                <label>ORION CE</label>
+            </value>
+            <value>
+                <fullName>Cellular</fullName>
+                <default>false</default>
+                <label>Cellular</label>
+            </value>
+            <value>
+                <fullName>Galaxy</fullName>
+                <default>false</default>
+                <label>Galaxy</label>
+            </value>
+            <value>
+                <fullName>Touch</fullName>
+                <default>false</default>
+                <label>Touch</label>
+            </value>
+            <value>
+                <fullName>Manual</fullName>
+                <default>false</default>
+                <label>Manual</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

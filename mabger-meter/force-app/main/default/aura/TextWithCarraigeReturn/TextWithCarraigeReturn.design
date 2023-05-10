@@ -1,0 +1,4 @@
+<design:component>
+	<design:attribute name="varLabel" label="Lable"/>
+    <design:attribute name="varinput1value" label="input1value"/>
+</design:component>

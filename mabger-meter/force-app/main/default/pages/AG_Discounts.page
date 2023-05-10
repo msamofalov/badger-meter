@@ -1,0 +1,6 @@
+<apex:page standardController="Account" showHeader="false" docType="html-4.01-strict">
+<CRMC_PP:Grid ObjectName="Account_Discount_Association__c" FKName="Account_Name__c" FKValue="{!Account.Id}"  DelayLoad="false"  ViewID="a2g3t000002TwfEAAS" 
+ EnableNewButton="true"  EnableNewInline="true"  EnableEdit="true"  EnableActions="true"  EnableFieldChooser="true" 
+ EnableStickyViews="true"  EnableToolbar="true"  EnableViews="true"  EnableFormatting="true"  EnableReadingPane="true" />
+<CRMC_PP:DrillUp />
+</apex:page>

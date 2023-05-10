@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CERT_Inactive_Contact</fullName>
+    <active>true</active>
+    <description>CERT reporting selection not allowed if Contact is INACTIVE</description>
+    <errorConditionFormula>AND
+(
+Inactive__c = True,  CERT__c = True
+)</errorConditionFormula>
+    <errorDisplayField>CERT__c</errorDisplayField>
+    <errorMessage>You cannot select CERT if the CONTACT is INACTIVE.  Either un-check the Inactive checkbox or un-check CERT.</errorMessage>
+</ValidationRule>

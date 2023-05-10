@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_User_Deactivation_Reason_Require</fullName>
+    <active>true</active>
+    <description>Deactivation Reason is required on the Contact record when a Partner Central User is Disabled</description>
+    <errorConditionFormula>OR( 
+Profile.Name=&quot;2018 Partner Central Pending Community User&quot;, 
+Profile.Name=&quot;2018 Partner Central Community User&quot;) 
+&amp;&amp; 
+(IsActive=FALSE) 
+&amp;&amp; 
+ISBLANK(Community_Deactivation_Reason__c)
+&amp;&amp;
+NOT(ISBLANK(ContactId))</errorConditionFormula>
+    <errorMessage>Deactivation Reason is required on the Contact record when a Partner Central User is Disabled</errorMessage>
+</ValidationRule>

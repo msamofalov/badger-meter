@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Software_Downloaded_History__c</fullName>
+    <description>Populated at the time the opportunity record is created and may not represent all software downloaded by the individual</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Populated when the opportunity record is created. Might not represent all software downloaded by the individual. See the contact record for a full history of downloads.</inlineHelpText>
+    <label>Software Downloaded History</label>
+    <length>100000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Products_Brands_of_Interest__c</fullName>
+    <description>Field to be deprecated. Need to wait until all opportunities with the field have been expired/closed to delete the field.</description>
+    <externalId>false</externalId>
+    <label>OLD Products/Brands of Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Products_Brands_of_Interest</valueSetName>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

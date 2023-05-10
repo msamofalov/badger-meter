@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Widen_DAM_Role__c</fullName>
+    <defaultValue>&quot;BM Employee Role&quot;</defaultValue>
+    <description>For internal employees who use the Widen DAM (&quot;The Vault&quot;), this indicates what role(s) they have in that system. Ignored for external employees.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For internal employees who use the Widen DAM (&quot;The Vault&quot;), this indicates what role(s) they have in that system. Ignored for external employees.</inlineHelpText>
+    <label>Widen DAM Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BM Employee Role</fullName>
+                <default>true</default>
+                <label>BM Employee Role</label>
+            </value>
+            <value>
+                <fullName>BM CAD/BIM Upload Role</fullName>
+                <default>false</default>
+                <label>BM CAD/BIM Upload Role</label>
+            </value>
+            <value>
+                <fullName>BM Certification Upload Role</fullName>
+                <default>false</default>
+                <label>BM Certification Upload Role</label>
+            </value>
+            <value>
+                <fullName>BM Marketing Services Role</fullName>
+                <default>false</default>
+                <label>BM Marketing Services Role</label>
+            </value>
+            <value>
+                <fullName>BM Product Support Upload Role</fullName>
+                <default>false</default>
+                <label>BM Product Support Upload Role</label>
+            </value>
+            <value>
+                <fullName>BM Sales &amp; Marketing Upload Role</fullName>
+                <default>false</default>
+                <label>BM Sales &amp; Marketing Upload Role</label>
+            </value>
+            <value>
+                <fullName>BM Software Upload Role</fullName>
+                <default>false</default>
+                <label>BM Software Upload Role</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>7</visibleLines>
+</CustomField>

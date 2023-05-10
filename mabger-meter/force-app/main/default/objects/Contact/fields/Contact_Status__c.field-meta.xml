@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Contact Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contacted/In Process</fullName>
+                <default>false</default>
+                <label>Contacted/In Process</label>
+            </value>
+            <value>
+                <fullName>Needs Salesperson Input</fullName>
+                <default>false</default>
+                <label>Needs Salesperson Input</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Qualified</fullName>
+                <default>false</default>
+                <label>Qualified</label>
+            </value>
+            <value>
+                <fullName>Quoted</fullName>
+                <default>false</default>
+                <label>Quoted</label>
+            </value>
+            <value>
+                <fullName>Request Fulfilled</fullName>
+                <default>false</default>
+                <label>Request Fulfilled</label>
+            </value>
+            <value>
+                <fullName>retired</fullName>
+                <default>false</default>
+                <label>retired</label>
+            </value>
+            <value>
+                <fullName>Return to Marketing</fullName>
+                <default>false</default>
+                <label>Return to Marketing</label>
+            </value>
+            <value>
+                <fullName>Sent to Rep/Distributor</fullName>
+                <default>false</default>
+                <label>Sent to Rep/Distributor</label>
+            </value>
+            <value>
+                <fullName>Will Never Buy</fullName>
+                <default>false</default>
+                <label>Will Never Buy</label>
+            </value>
+            <value>
+                <fullName>Converted</fullName>
+                <default>false</default>
+                <label>Converted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

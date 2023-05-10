@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BigMachines__BigMachines_Partner_Users</fullName>
+    <active>true</active>
+    <description>In order to link Partner Users, the Salesforce Account must first be linked to a Oracle CPQ Cloud Partner Organization.  To do this, enter the variable name of the partner organization in the &quot;Oracle CPQ Cloud Partner Organization&quot; field on the account.</description>
+    <errorConditionFormula>AND(ISPICKVAL( BigMachines__Association_to_Organization__c , &quot;Partner User&quot;),  LEN( Contact.Account.BigMachines__Partner_Organization__c ) = 0)</errorConditionFormula>
+    <errorDisplayField>BigMachines__Association_to_Organization__c</errorDisplayField>
+    <errorMessage>In order to link to a Oracle CPQ Cloud Partner User, this Salesforce User must be tied to an Account that is mapped to a Partner Organization in Oracle CPQ Cloud.  Please consult with your System administrator for further details.</errorMessage>
+</ValidationRule>

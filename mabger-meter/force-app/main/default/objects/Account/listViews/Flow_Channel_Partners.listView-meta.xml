@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flow_Channel_Partners</fullName>
+    <columns>Organization_Type__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Customer_Number__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Sales_Territory__c</columns>
+    <columns>authorized_market__c</columns>
+    <columns>Products__c</columns>
+    <columns>Primary_Sales_Credit_Number__c</columns>
+    <columns>Sales_Credit_Name__c</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Organization_Type__c</field>
+        <operation>equals</operation>
+        <value>IR-Flow Industrial/Commercial Rep</value>
+    </filters>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Flow Reps</label>
+</ListView>

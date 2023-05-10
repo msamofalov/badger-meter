@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Filter_on_Product_Name</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>PRODUCT2.DESCRIPTION</columns>
+    <columns>LX_Item_Extended_Description__c</columns>
+    <columns>LX_Catalog_String__c</columns>
+    <columns>LX_Item_Type__c</columns>
+    <columns>LX_Item_Class__c</columns>
+    <columns>LX_Item_Class_Description__c</columns>
+    <columns>List_Price__c</columns>
+    <columns>LX_Frozen_Standard_Cost__c</columns>
+    <columns>PRODUCT2.ACTIVE</columns>
+    <columns>LX_Unit_Of_Measure__c</columns>
+    <columns>PRODUCT2.CREATED_DATE</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>PRODUCT2.LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PRODUCT2.ACTIVE</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>PRODUCT2.NAME</field>
+        <operation>startsWith</operation>
+        <value>1part-i5</value>
+    </filters>
+    <label>Filter on Product Name</label>
+</ListView>

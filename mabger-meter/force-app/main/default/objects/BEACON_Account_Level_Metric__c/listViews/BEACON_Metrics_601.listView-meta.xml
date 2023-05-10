@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BEACON_Metrics_601</fullName>
+    <columns>Account_Number__c</columns>
+    <columns>Account_ID__c</columns>
+    <columns>Product__c</columns>
+    <columns>Total_Assets__c</columns>
+    <columns>Service_Units_Consumed__c</columns>
+    <columns>Billing_Units_Remaining__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Item_Number__c</field>
+        <operation>equals</operation>
+        <value>68886-601</value>
+    </filters>
+    <label>BEACON Metrics -601</label>
+</ListView>

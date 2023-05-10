@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Value_cannot_be_changed</fullName>
+    <active>false</active>
+    <description>Credit Value cannot be changed during approval Process.
+Record: Return
+Return Type: Credit
+Approval Status = Submitted, Pending with Dale Matthews II,</description>
+    <errorConditionFormula>AND
+(
+
+ ISCHANGED( Credit_Value__c ), 
+ RecordType.DeveloperName = &quot;Return&quot;,
+ ISPICKVAL( Return_Type__c , &quot;Credit&quot;) ,
+
+ OR
+(
+ ISPICKVAL( Approval_Status__c , &quot;Pending with Dale Matthews II&quot;) ,
+ISPICKVAL( Approval_Status__c , &quot;Submitted&quot;) 
+
+
+) 
+
+
+)</errorConditionFormula>
+    <errorDisplayField>Credit_Value__c</errorDisplayField>
+    <errorMessage>Credit request is under approval process, Recall the request to change Credit Value.</errorMessage>
+</ValidationRule>

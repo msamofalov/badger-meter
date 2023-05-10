@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Resolution__c</fullName>
+    <externalId>false</externalId>
+    <label>Case Resolution</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Information / Action Provided</fullName>
+                <default>false</default>
+                <label>Information / Action Provided</label>
+            </value>
+            <value>
+                <fullName>No Information Available</fullName>
+                <default>false</default>
+                <label>No Information Available</label>
+            </value>
+            <value>
+                <fullName>Reassigned/Transferred</fullName>
+                <default>false</default>
+                <label>Reassigned/Transferred</label>
+            </value>
+            <value>
+                <fullName>Required documentation not provided</fullName>
+                <default>false</default>
+                <label>Required documentation not provided</label>
+            </value>
+            <value>
+                <fullName>Duplicate Child Case</fullName>
+                <default>false</default>
+                <label>Duplicate Case</label>
+            </value>
+            <value>
+                <fullName>SPAM</fullName>
+                <default>false</default>
+                <label>SPAM</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Canceled by customer</fullName>
+                <default>false</default>
+                <label>Canceled by customer</label>
+            </value>
+            <value>
+                <fullName>Canceled, no payment received</fullName>
+                <default>false</default>
+                <label>Canceled, no payment received</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

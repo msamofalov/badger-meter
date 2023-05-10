@@ -1,0 +1,6 @@
+<apex:page standardController="Case" showHeader="false" docType="html-4.01-strict" lightningstylesheets="true">
+<CRMC_PP:Grid ObjectName="Product_Line__c" FKName="Case__c" FKValue="{!Case.Id}"  DelayLoad="false"  ViewID="a2g380000001G1SAAU" 
+ EnableNewButton="true"  EnableNewInline="true"  EnableEdit="true"  EnableActions="true"  EnableFieldChooser="true" 
+ EnableStickyViews="true"  EnableToolbar="true"  EnableViews="true"  EnableFormatting="true"  EnableReadingPane="true" />
+<CRMC_PP:DrillUp />
+</apex:page>

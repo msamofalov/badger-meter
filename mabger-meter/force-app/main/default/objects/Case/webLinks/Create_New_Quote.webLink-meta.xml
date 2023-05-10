@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_New_Quote</fullName>
+    <availability>online</availability>
+    <description>Performs validation on the PO Number, then searches for possible duplicate quotes. If none are found, the process continues to the quote creation screen.</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Create New Order</masterLabel>
+    <openType>sidebar</openType>
+    <page>QuoteCreateForCaseValidation</page>
+    <protected>false</protected>
+</WebLink>

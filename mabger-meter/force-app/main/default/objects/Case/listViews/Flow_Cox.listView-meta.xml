@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flow_Cox</fullName>
+    <booleanFilter>(1 AND 2 AND 3) OR (4 AND 5 AND 6) OR (2 AND 3 AND 5 AND 7)</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Response_Received__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Inquiry_Reason__c</columns>
+    <columns>Product_Type__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.PRIORITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Product_Type__c</field>
+        <operation>equals</operation>
+        <value>Aero Space,Precision Turbine,Preso,Research Control Valve</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>startsWith</operation>
+        <value>Flow</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>equals</operation>
+        <value>Tulsa Production</value>
+    </filters>
+    <filters>
+        <field>Response_Received__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Product_Type__c</field>
+        <operation>equals</operation>
+        <value>Research Control Valve</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Closed_Resolved,Closed - Resolved,Closed - Unresolved,Action Completed,Closed</value>
+    </filters>
+    <label>Flow - Engineered Products</label>
+</ListView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hidden_Return_Location__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Return_Location__c,
+
+&quot;Milwaukee&quot;,
+&quot;Badger Meter Inc.&quot; + BR() + &quot;4545 W. Brown Deer Road&quot; + BR() + &quot;Milwaukee, WI 53223&quot; + BR() + &quot;Attn: &quot; + TEXT(Product_Type__c) + &quot; Returns&quot;,
+
+&quot;Racine&quot;,
+&quot;Badger Meter Inc.&quot; + BR() + &quot;8635 Washington Ave&quot; + BR() + &quot;Racine, WI 53406&quot; + BR() + &quot;Attn: &quot; + TEXT(Product_Type__c) + &quot; Returns&quot;,
+
+&quot;Tulsa&quot;,
+&quot;Badger Meter Inc.&quot; + BR() + &quot;6116 East 15th Street&quot; + BR() + &quot;Tulsa, OK 74112&quot; + BR() + &quot;Attn: Returns&quot;,
+
+&quot;Henderson&quot;,
+&quot;Syrinix&quot; + BR() + &quot;931 American Pacific Drive Suite 108&quot; + BR() + &quot;Henderson, NV 89014&quot; + BR() + &quot;Attn: &quot; + TEXT(Product_Type__c),
+
+&quot;D1 - Centennial&quot;,
+&quot;Badger Meter Inc.&quot; + BR() + &quot;7220 S Fraser St.&quot; + BR() + &quot;Centennial, CO 80112&quot; + BR() + &quot;Attn: &quot; + TEXT(Product_Type__c),
+
+&quot;D2 - Sacramento&quot;,
+&quot;Badger Meter Inc.&quot; + BR() + &quot;940 Riverside Parkway, Suite 30&quot; + BR() + &quot;West Sacramento, CA 95605&quot; + BR() + &quot;Attn: Returns&quot;,
+
+&quot;Collegeville&quot;,
+&quot;Badger Meter Inc.&quot; + BR() + &quot;6 Iron Bridge Drive&quot; + BR() + &quot;Collegeville, PA 19426&quot; + BR() + &quot;Attn: &quot; + TEXT(Product_Type__c),
+
+&quot;BMUK&quot;,
+&quot;Badger Meter UK Ltd.&quot; + BR() + &quot;Unit 1 &amp; 2 Gatehead Business Park&quot; + BR() + &quot;Delph New Road&quot;+ BR() + &quot;Delph&quot;+ BR() + &quot;Saddleworth, England OL3 5DE&quot; + BR() + &quot;Attn: &quot; + TEXT(Product_Type__c),
+
+&quot;Neuffen&quot;,
+&quot;Badger Meter Europa GmbH&quot; + BR() + &quot;Nürtinger Strasse 76&quot; + BR() + &quot;72639 Neuffen, Germany&quot; + BR() + &quot;Attn: Returns&quot;,
+
+&quot;D5 - Nashville&quot;,
+&quot;Badger Meter Inc.&quot; + BR() + &quot;5215 LINBAR DRIVE SUITE 201&quot; + BR() + &quot;Nashville, TN 37211&quot; + BR() + &quot;Attn: &quot; + TEXT(Product_Type__c),
+
+&quot;Error&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Hidden Return Location</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

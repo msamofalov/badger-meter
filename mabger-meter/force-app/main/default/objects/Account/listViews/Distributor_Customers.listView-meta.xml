@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Distributor_Customers</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ACCOUNT_NUMBER</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>Primary_Sales_Credit_Number__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Organization_Type__c</field>
+        <operation>equals</operation>
+        <value>DC-Distributor Customer</value>
+    </filters>
+    <label>Distributor Customers</label>
+</ListView>

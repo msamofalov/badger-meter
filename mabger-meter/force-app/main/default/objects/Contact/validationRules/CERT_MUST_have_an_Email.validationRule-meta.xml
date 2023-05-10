@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CERT_MUST_have_an_Email</fullName>
+    <active>true</active>
+    <description>When selecting CERT reporting, validate there the Contact has a VALID Email Address.</description>
+    <errorConditionFormula>AND(
+CERT__c == true,
+Email = &apos;&apos;
+)</errorConditionFormula>
+    <errorDisplayField>Email</errorDisplayField>
+    <errorMessage>You MUST enter an Email address for this Contact when selecting CERT reporting.  Either enter a VALID Email address or remove the CERT reporting.</errorMessage>
+</ValidationRule>

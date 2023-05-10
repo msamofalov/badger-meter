@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CERT_Shipto_4__c</fullName>
+    <description>Shipto that will candidates for the Contact to receive an email.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a Shipto number that you want to be a candidate for the Contact to receive an email.
+
+Note:  If ALL Shiptos for the Account should be candidates for the Contact to receive an email, then ALL of the Shipto entries need to be cleared.</inlineHelpText>
+    <label>CERT Shipto 4</label>
+    <length>4</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

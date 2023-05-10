@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_User_Deactivation_Reason__c</fullName>
+    <description>Reason why contact&apos;s partner community user is no longer active.</description>
+    <externalId>false</externalId>
+    <label>Partner User Deactivation Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Longer at Company</fullName>
+                <default>false</default>
+                <label>No Longer at Company</label>
+            </value>
+            <value>
+                <fullName>Company No Longer Rep</fullName>
+                <default>false</default>
+                <label>Company No Longer Rep</label>
+            </value>
+            <value>
+                <fullName>Unknown - Will not Validate</fullName>
+                <default>false</default>
+                <label>Unknown - Will not Validate</label>
+            </value>
+            <value>
+                <fullName>Request not from Authorized Rep</fullName>
+                <default>false</default>
+                <label>Request not from Authorized Rep</label>
+            </value>
+            <value>
+                <fullName>Passive or Internal  - Partner Licenses Needed</fullName>
+                <default>false</default>
+                <label>Passive or Internal  - Partner Licenses Needed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

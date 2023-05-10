@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pardot_Do_Not_Email__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field can be checked by specific marketing individuals only and syncs with the Do Not Email field in Pardot</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Field can be checked by specific marketing individuals only</inlineHelpText>
+    <label>Pardot Do Not Email</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

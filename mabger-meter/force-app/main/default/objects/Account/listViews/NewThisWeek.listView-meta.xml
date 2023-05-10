@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewThisWeek</fullName>
+    <columns>Active__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Customer_Number__c</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <columns>Organization_Type__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>X4th_Shift_Customer_Notes__c</columns>
+    <columns>Market__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_WEEK</value>
+    </filters>
+    <filters>
+        <field>Organization_Type__c</field>
+        <operation>equals</operation>
+        <value>ID-International Distributor</value>
+    </filters>
+    <label>New This Week</label>
+</ListView>

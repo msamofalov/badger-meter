@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Potential_Dollar_Value__c</fullName>
+    <description>Potential dollar value of open cases</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the dollar value of the PO or new quote</inlineHelpText>
+    <label>Potential Dollar Value</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

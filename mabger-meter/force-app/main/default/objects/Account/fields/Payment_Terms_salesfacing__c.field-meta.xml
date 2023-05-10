@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Terms_salesfacing__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This information is entered in Infor ERPLX.</inlineHelpText>
+    <label>Payment Terms</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Company_Number__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>**</fullName>
+                <default>false</default>
+                <label>**</label>
+            </value>
+            <value>
+                <fullName>1% NET 10 DAYS</fullName>
+                <default>false</default>
+                <label>1% NET 10 DAYS</label>
+            </value>
+            <value>
+                <fullName>2% 10 N30</fullName>
+                <default>false</default>
+                <label>2% 10 N30</label>
+            </value>
+            <value>
+                <fullName>2% 10 N45 Days</fullName>
+                <default>false</default>
+                <label>2% 10 N45 Days</label>
+            </value>
+            <value>
+                <fullName>2% 10 N60</fullName>
+                <default>false</default>
+                <label>2% 10 N60</label>
+            </value>
+            <value>
+                <fullName>2% 14 N30</fullName>
+                <default>false</default>
+                <label>2% 14 N30</label>
+            </value>
+            <value>
+                <fullName>2% 14 N60</fullName>
+                <default>false</default>
+                <label>2% 14 N60</label>
+            </value>
+            <value>
+                <fullName>2% 14 N70</fullName>
+                <default>false</default>
+                <label>2% 14 N70</label>
+            </value>
+            <value>
+                <fullName>2%-30 N45 DAYS</fullName>
+                <default>false</default>
+                <label>2%-30 N45 DAYS</label>
+            </value>
+            <value>
+                <fullName>2% 8 N30</fullName>
+                <default>false</default>
+                <label>2% 8 N30</label>
+            </value>
+            <value>
+                <fullName>2% NET 10 DAYS</fullName>
+                <default>false</default>
+                <label>2% NET 10 DAYS</label>
+            </value>
+            <value>
+                <fullName>3%10/2%14 N30</fullName>
+                <default>false</default>
+                <label>3%10/2%14 N30</label>
+            </value>
+            <value>
+                <fullName>3% 10 N30</fullName>
+                <default>false</default>
+                <label>3% 10 N30</label>
+            </value>
+            <value>
+                <fullName>3% 10 N60</fullName>
+                <default>false</default>
+                <label>3% 10 N60</label>
+            </value>
+            <value>
+                <fullName>3% 14 N30</fullName>
+                <default>false</default>
+                <label>3% 14 N30</label>
+            </value>
+            <value>
+                <fullName>3% 14 N45</fullName>
+                <default>false</default>
+                <label>3% 14 N45</label>
+            </value>
+            <value>
+                <fullName>3% 14 N60</fullName>
+                <default>false</default>
+                <label>3% 14 N60</label>
+            </value>
+            <value>
+                <fullName>3% 15 N30</fullName>
+                <default>false</default>
+                <label>3% 15 N30</label>
+            </value>
+            <value>
+                <fullName>3% 21 N30</fullName>
+                <default>false</default>
+                <label>3% 21 N30</label>
+            </value>
+            <value>
+                <fullName>3%30/2%45 N60</fullName>
+                <default>false</default>
+                <label>3%30/2%45 N60</label>
+            </value>
+            <value>
+                <fullName>3% 30 N60</fullName>
+                <default>false</default>
+                <label>3% 30 N60</label>
+            </value>
+            <value>
+                <fullName>3% 30 N90</fullName>
+                <default>false</default>
+                <label>3% 30 N90</label>
+            </value>
+            <value>
+                <fullName>3% 7 N30</fullName>
+                <default>false</default>
+                <label>3% 7 N30</label>
+            </value>
+            <value>
+                <fullName>30 DAYS NET</fullName>
+                <default>false</default>
+                <label>30 DAYS NET</label>
+            </value>
+            <value>
+                <fullName>360 DAYS NET</fullName>
+                <default>false</default>
+                <label>360 DAYS NET</label>
+            </value>
+            <value>
+                <fullName>45 DAYS NET</fullName>
+                <default>false</default>
+                <label>45 DAYS NET</label>
+            </value>
+            <value>
+                <fullName>45 DAYS - NET</fullName>
+                <default>false</default>
+                <label>45 DAYS - NET</label>
+            </value>
+            <value>
+                <fullName>BEACON CC</fullName>
+                <default>false</default>
+                <label>BEACON CC</label>
+            </value>
+            <value>
+                <fullName>CANADIAN $</fullName>
+                <default>false</default>
+                <label>CANADIAN $</label>
+            </value>
+            <value>
+                <fullName>CARD PROCESSED</fullName>
+                <default>false</default>
+                <label>CARD PROCESSED</label>
+            </value>
+            <value>
+                <fullName>CASH IN ADVANCE</fullName>
+                <default>false</default>
+                <label>CASH IN ADVANCE</label>
+            </value>
+            <value>
+                <fullName>CHARGE CARD</fullName>
+                <default>false</default>
+                <label>CHARGE CARD</label>
+            </value>
+            <value>
+                <fullName>CLAIM FORM</fullName>
+                <default>false</default>
+                <label>CLAIM FORM</label>
+            </value>
+            <value>
+                <fullName>COD-CASH/CERTCK</fullName>
+                <default>false</default>
+                <label>COD-CASH/CERTCK</label>
+            </value>
+            <value>
+                <fullName>COD-COMPANY CHK</fullName>
+                <default>false</default>
+                <label>COD-COMPANY CHK</label>
+            </value>
+            <value>
+                <fullName>DATED DRAFT</fullName>
+                <default>false</default>
+                <label>DATED DRAFT</label>
+            </value>
+            <value>
+                <fullName>DUE ON RECEIPT</fullName>
+                <default>false</default>
+                <label>DUE ON RECEIPT</label>
+            </value>
+            <value>
+                <fullName>FAX INVOICE</fullName>
+                <default>false</default>
+                <label>FAX INVOICE</label>
+            </value>
+            <value>
+                <fullName>LTR OF CREDIT</fullName>
+                <default>false</default>
+                <label>LTR OF CREDIT</label>
+            </value>
+            <value>
+                <fullName>MASTER BILLING</fullName>
+                <default>false</default>
+                <label>MASTER BILLING</label>
+            </value>
+            <value>
+                <fullName>NET 10 DAYS</fullName>
+                <default>false</default>
+                <label>NET 10 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 120 DAYS</fullName>
+                <default>false</default>
+                <label>NET 120 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 123 DAYS</fullName>
+                <default>false</default>
+                <label>NET 123 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 14 DAYS</fullName>
+                <default>false</default>
+                <label>NET 14 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 15 DAYS</fullName>
+                <default>false</default>
+                <label>NET 15 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 180 DAYS</fullName>
+                <default>false</default>
+                <label>NET 180 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 30 DAYS</fullName>
+                <default>false</default>
+                <label>NET 30 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 30 Days TK</fullName>
+                <default>false</default>
+                <label>NET 30 Days TK</label>
+            </value>
+            <value>
+                <fullName>NET 360 DAYS</fullName>
+                <default>false</default>
+                <label>NET 360 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 365 DAYS</fullName>
+                <default>false</default>
+                <label>NET 365 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 40 DAYS</fullName>
+                <default>false</default>
+                <label>NET 40 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 44 DAYS</fullName>
+                <default>false</default>
+                <label>NET 44 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 45 DAYS</fullName>
+                <default>false</default>
+                <label>NET 45 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 45 Days TK</fullName>
+                <default>false</default>
+                <label>NET 45 Days TK</label>
+            </value>
+            <value>
+                <fullName>NET 50 DAYS</fullName>
+                <default>false</default>
+                <label>NET 50 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 60 DAYS</fullName>
+                <default>false</default>
+                <label>NET 60 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 63 DAYS</fullName>
+                <default>false</default>
+                <label>NET 63 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 75 DAYS</fullName>
+                <default>false</default>
+                <label>NET 75 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 7 DAYS</fullName>
+                <default>false</default>
+                <label>NET 7 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 8 DAYS</fullName>
+                <default>false</default>
+                <label>NET 8 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 90 DAYS</fullName>
+                <default>false</default>
+                <label>NET 90 DAYS</label>
+            </value>
+            <value>
+                <fullName>NET 95 DAYS</fullName>
+                <default>false</default>
+                <label>NET 95 DAYS</label>
+            </value>
+            <value>
+                <fullName>NO CUST COPY</fullName>
+                <default>false</default>
+                <label>NO CUST COPY</label>
+            </value>
+            <value>
+                <fullName>PFC/BANKRUPTCY</fullName>
+                <default>false</default>
+                <label>PFC/BANKRUPTCY</label>
+            </value>
+            <value>
+                <fullName>PROFORMA INVC</fullName>
+                <default>false</default>
+                <label>PROFORMA INVC</label>
+            </value>
+            <value>
+                <fullName>SALES TAX DISP</fullName>
+                <default>false</default>
+                <label>SALES TAX DISP</label>
+            </value>
+            <value>
+                <fullName>SIGHT DRAFT</fullName>
+                <default>false</default>
+                <label>SIGHT DRAFT</label>
+            </value>
+            <value>
+                <fullName>SPECIAL REQMT</fullName>
+                <default>false</default>
+                <label>SPECIAL REQMT</label>
+            </value>
+            <value>
+                <fullName>SPECIAL TERMS</fullName>
+                <default>false</default>
+                <label>SPECIAL TERMS</label>
+            </value>
+            <value>
+                <fullName>PAY BEFORE SHIP</fullName>
+                <default>false</default>
+                <label>PAY BEFORE SHIP</label>
+            </value>
+            <value>
+                <fullName>SPEC REQMT N60</fullName>
+                <default>false</default>
+                <label>SPEC REQMT N60</label>
+            </value>
+            <value>
+                <fullName>SPEC REQMT N40</fullName>
+                <default>false</default>
+                <label>SPEC REQMT N40</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <controllingFieldValue>28 - BADGER METER UK, LTD</controllingFieldValue>
+            <valueName>**</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>1% NET 10 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>2% 10 N45 Days</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>2%-30 N45 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>2% NET 10 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>30 DAYS NET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>360 DAYS NET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>45 DAYS NET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>45 DAYS - NET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>BEACON CC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>CANADIAN $</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>CARD PROCESSED</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <controllingFieldValue>28 - BADGER METER UK, LTD</controllingFieldValue>
+            <valueName>CASH IN ADVANCE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>CHARGE CARD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>CLAIM FORM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>COD-CASH/CERTCK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>COD-COMPANY CHK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>DATED DRAFT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>FAX INVOICE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>LTR OF CREDIT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>MASTER BILLING</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>NET 120 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>NET 15 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <controllingFieldValue>28 - BADGER METER UK, LTD</controllingFieldValue>
+            <valueName>NET 30 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>NET 30 Days TK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>NET 360 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <controllingFieldValue>28 - BADGER METER UK, LTD</controllingFieldValue>
+            <valueName>NET 40 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>NET 45 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>NET 45 Days TK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>NET 50 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <controllingFieldValue>28 - BADGER METER UK, LTD</controllingFieldValue>
+            <valueName>NET 60 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>NET 75 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <controllingFieldValue>28 - BADGER METER UK, LTD</controllingFieldValue>
+            <valueName>NET 90 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>NO CUST COPY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>PFC/BANKRUPTCY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>PROFORMA INVC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>SALES TAX DISP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>SIGHT DRAFT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <controllingFieldValue>28 - BADGER METER UK, LTD</controllingFieldValue>
+            <valueName>SPECIAL REQMT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - BADGER METER, INC. (US)</controllingFieldValue>
+            <valueName>SPECIAL TERMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>2% 10 N30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>2% 10 N60</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>2% 14 N30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>2% 14 N60</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>2% 14 N70</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>2% 8 N30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>3%10/2%14 N30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>3% 10 N30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>3% 10 N60</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>3% 14 N30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>3% 14 N45</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>3% 14 N60</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>3% 15 N30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>3% 21 N30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>3%30/2%45 N60</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>3% 30 N60</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>3% 30 N90</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>3% 7 N30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>DUE ON RECEIPT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>NET 10 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>NET 123 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>NET 14 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>NET 180 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>NET 365 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>NET 44 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>NET 63 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>NET 7 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>NET 8 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>NET 95 DAYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - BADGER METER EUROPA GmbH (Germany)</controllingFieldValue>
+            <valueName>PAY BEFORE SHIP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>28 - BADGER METER UK, LTD</controllingFieldValue>
+            <valueName>SPEC REQMT N60</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>28 - BADGER METER UK, LTD</controllingFieldValue>
+            <valueName>SPEC REQMT N40</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

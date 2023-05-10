@@ -1,0 +1,9 @@
+.THIS.align-right {
+    float: right;
+    margin-top: t(varSpacingVerticalMedium);
+    padding-top: 3px !important;
+    margin-left: 6px;
+    margin-right: 6px;
+    z-index: 99 !important;
+    position: relative;
+}

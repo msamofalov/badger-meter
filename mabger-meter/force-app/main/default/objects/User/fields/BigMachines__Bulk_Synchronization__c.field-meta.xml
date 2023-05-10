@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BigMachines__Bulk_Synchronization__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Setting this field to True will suspend synchronization between Salesforce and Oracle CPQ Cloud for this user.  This is useful when you want to update many users at once (via the Salesforce data loader for example).  Instead of sending a separate SOAP call to Oracle CPQ Cloud for each user, Salesforce will send a single SOAP call for all users that have this flag set to True.  To update many users at once, download the users using the data loader and then set this field to True for all the users that you want to sync.  Be sure to update any other fields you wish on those users and upload the data back.  Then go to Oracle CPQ Cloud Site Setup and click the &apos;Bulk Synchronize&apos; button.  Users that have the &apos;Synchronize with Oracle CPQ Cloud&apos; flag set to True will be provisioned or updated and those that have it set to False will be de-provisioned.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If you want to update and synchronize many users at once, you can do so by using the Salesforce Data Loader and the BigMachines Bulk Synchronize feature.  Read this field&apos;s description or check the BigMachines Implementation Guide for more information.</inlineHelpText>
+    <label>Suspend Oracle CPQ Cloud Synchronization</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

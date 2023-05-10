@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>authorized_market__c</fullName>
+    <externalId>false</externalId>
+    <label>Authorized Market</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agriculture Irrigation</fullName>
+                <default>false</default>
+                <label>Agriculture Irrigation</label>
+            </value>
+            <value>
+                <fullName>Chem &amp; Petrochem</fullName>
+                <default>false</default>
+                <label>Chem &amp; Petrochem</label>
+            </value>
+            <value>
+                <fullName>Concrete Finishing</fullName>
+                <default>false</default>
+                <label>Concrete Finishing</label>
+            </value>
+            <value>
+                <fullName>Concrete Production</fullName>
+                <default>false</default>
+                <label>Concrete Production</label>
+            </value>
+            <value>
+                <fullName>Energy Generation</fullName>
+                <default>false</default>
+                <label>Energy Generation</label>
+            </value>
+            <value>
+                <fullName>HVAC &amp; Sustainability</fullName>
+                <default>false</default>
+                <label>HVAC &amp; Sustainability</label>
+            </value>
+            <value>
+                <fullName>Municipal Utility</fullName>
+                <default>false</default>
+                <label>Municipal Utility</label>
+            </value>
+            <value>
+                <fullName>Oil &amp; Gas</fullName>
+                <default>false</default>
+                <label>Oil &amp; Gas</label>
+            </value>
+            <value>
+                <fullName>Process</fullName>
+                <default>false</default>
+                <label>Process</label>
+            </value>
+            <value>
+                <fullName>Process-Valve</fullName>
+                <default>false</default>
+                <label>Process-Valve</label>
+            </value>
+            <value>
+                <fullName>Semiconductor</fullName>
+                <default>false</default>
+                <label>Semiconductor</label>
+            </value>
+            <value>
+                <fullName>Test &amp; Measurement</fullName>
+                <default>false</default>
+                <label>Test &amp; Measurement</label>
+            </value>
+            <value>
+                <fullName>Turf Irrigation</fullName>
+                <default>false</default>
+                <label>Turf Irrigation</label>
+            </value>
+            <value>
+                <fullName>Water / Wastewater</fullName>
+                <default>false</default>
+                <label>Water / Wastewater</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

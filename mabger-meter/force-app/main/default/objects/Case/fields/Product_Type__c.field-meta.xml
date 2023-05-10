@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Family</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Industry__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Product_Family</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Aero Space</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>AquaCUE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Automotive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Barnacle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>BEACON</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Blancett</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Calibration Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>Compound</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Coriolis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Dynasonics Ultrasonic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>Encoder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>E-Series Ultrasonic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Flo-Tech</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Flow Calibrators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Hedland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Impeller</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Industrial Oval Gear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>M-Series Electromagnetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>ORION</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Oscillating Piston</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <controllingFieldValue>WYCO</controllingFieldValue>
+            <valueName>Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Precision Turbine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Preso</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>Recordall Disc</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>Registers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Research Control Valve</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Specialized</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>Turbo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Vision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Vista</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Vortex</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Water Conditioning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>Badger Touch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>CONNECT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>Fire Hydrant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>Fire Series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>Galaxy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>Gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>Gateway</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>ITRON</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>Meter Reading Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>ReadCenter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>Recordall Test Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>Strainers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utility</controllingFieldValue>
+            <valueName>Syrinix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WYCO</controllingFieldValue>
+            <valueName>Concrete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WYCO</controllingFieldValue>
+            <valueName>WYCO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATi/s::can Municipal</controllingFieldValue>
+            <controllingFieldValue>ATi/s::can Industrial</controllingFieldValue>
+            <valueName>Water Quality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATi/s::can Municipal</controllingFieldValue>
+            <controllingFieldValue>ATi/s::can Industrial</controllingFieldValue>
+            <valueName>Water Quality - UK</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

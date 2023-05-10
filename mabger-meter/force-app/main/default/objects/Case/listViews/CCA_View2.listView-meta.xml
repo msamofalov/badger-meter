@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CCA_View2</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Coverage_Request_Type__c</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Summary__c</columns>
+    <columns>Network_Type__c</columns>
+    <columns>Solution_Architect__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Utility_Information__c</columns>
+    <columns>Data_Submit_Date__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>Data_Quality_Description__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>Coverage Analysis</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Coverage_Evaluation_Request</value>
+    </filters>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Scheduled</value>
+    </filters>
+    <label>CCA View</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Marketing</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Sales_Support_Managers</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Utility_Account_Manager_Central</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Utility_Account_Manager_East</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Utility_Account_Manager_West</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

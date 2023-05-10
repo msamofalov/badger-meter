@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quotes_with_Error_messages</fullName>
+    <columns>BigMachines__Account__c</columns>
+    <columns>NAME</columns>
+    <columns>Order_Number__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>LX_Error_Message__c</columns>
+    <columns>Order_Create_Date__c</columns>
+    <columns>BigMachines__Status__c</columns>
+    <columns>Quote_Type__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>BigMachines__Status__c</field>
+        <operation>contains</operation>
+        <value>Cancelled</value>
+    </filters>
+    <label>Quotes with Error messages</label>
+</ListView>

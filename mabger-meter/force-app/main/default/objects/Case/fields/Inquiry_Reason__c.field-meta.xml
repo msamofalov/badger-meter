@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inquiry_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Inquiry Reason</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account Maintenance</fullName>
+                <default>false</default>
+                <label>Account Maintenance</label>
+            </value>
+            <value>
+                <fullName>Broken/Repair</fullName>
+                <default>false</default>
+                <label>Broken/Repair</label>
+            </value>
+            <value>
+                <fullName>Calibration</fullName>
+                <default>false</default>
+                <label>Calibration</label>
+            </value>
+            <value>
+                <fullName>Change</fullName>
+                <default>false</default>
+                <label>Change</label>
+            </value>
+            <value>
+                <fullName>Credit Status</fullName>
+                <default>false</default>
+                <label>Credit Status</label>
+            </value>
+            <value>
+                <fullName>Customer Setup</fullName>
+                <default>false</default>
+                <label>Customer Setup</label>
+            </value>
+            <value>
+                <fullName>Placing Order</fullName>
+                <default>false</default>
+                <label>Placing Order</label>
+            </value>
+            <value>
+                <fullName>Damaged/Faulty</fullName>
+                <default>false</default>
+                <label>Damaged/Faulty</label>
+            </value>
+            <value>
+                <fullName>Delivery Issue</fullName>
+                <default>false</default>
+                <label>Delivery Issue</label>
+            </value>
+            <value>
+                <fullName>Duplicate Case</fullName>
+                <default>false</default>
+                <label>Duplicate Case</label>
+            </value>
+            <value>
+                <fullName>Form Requests</fullName>
+                <default>false</default>
+                <label>Form Requests</label>
+            </value>
+            <value>
+                <fullName>Hardware Application</fullName>
+                <default>false</default>
+                <label>Hardware Application</label>
+            </value>
+            <value>
+                <fullName>Installation/Set Up</fullName>
+                <default>false</default>
+                <label>Installation/Set Up</label>
+            </value>
+            <value>
+                <fullName>Invoice Disputed</fullName>
+                <default>false</default>
+                <label>Invoice Disputed</label>
+            </value>
+            <value>
+                <fullName>Invoice Payment</fullName>
+                <default>false</default>
+                <label>Invoice Payment</label>
+            </value>
+            <value>
+                <fullName>Invoice Inquiry</fullName>
+                <default>false</default>
+                <label>Invoice Inquiry</label>
+            </value>
+            <value>
+                <fullName>New Quote</fullName>
+                <default>false</default>
+                <label>New Quote</label>
+            </value>
+            <value>
+                <fullName>Order Revision</fullName>
+                <default>false</default>
+                <label>Order Revision</label>
+            </value>
+            <value>
+                <fullName>Order Status</fullName>
+                <default>false</default>
+                <label>Order Status</label>
+            </value>
+            <value>
+                <fullName>Documentation Request</fullName>
+                <default>false</default>
+                <label>Documentation Request</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Product Operation</fullName>
+                <default>false</default>
+                <label>Product Operation</label>
+            </value>
+            <value>
+                <fullName>Quote Status</fullName>
+                <default>false</default>
+                <label>Quote Status</label>
+            </value>
+            <value>
+                <fullName>Restock</fullName>
+                <default>false</default>
+                <label>Restock</label>
+            </value>
+            <value>
+                <fullName>Return Case</fullName>
+                <default>false</default>
+                <label>Return Case</label>
+            </value>
+            <value>
+                <fullName>Revise Quote</fullName>
+                <default>false</default>
+                <label>Revise Quote</label>
+            </value>
+            <value>
+                <fullName>RMA Status</fullName>
+                <default>false</default>
+                <label>RMA Status</label>
+            </value>
+            <value>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+                <label>Shipping</label>
+            </value>
+            <value>
+                <fullName>Software Application</fullName>
+                <default>false</default>
+                <label>Software Application</label>
+            </value>
+            <value>
+                <fullName>SPAM</fullName>
+                <default>false</default>
+                <label>SPAM</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>Warranty Evaluation</fullName>
+                <default>false</default>
+                <label>Warranty Evaluation</label>
+            </value>
+            <value>
+                <fullName>Wrong Order Fulfillment</fullName>
+                <default>false</default>
+                <label>Wrong Order Fulfillment</label>
+            </value>
+            <value>
+                <fullName>Lead time only</fullName>
+                <default>false</default>
+                <label>Lead Time Only</label>
+            </value>
+            <value>
+                <fullName>Endpoint not in Beacon</fullName>
+                <default>false</default>
+                <label>Endpoint not in Beacon</label>
+            </value>
+            <value>
+                <fullName>Inventory Transfer Tool does not complete</fullName>
+                <default>false</default>
+                <label>Inventory Transfer Tool does not complete</label>
+            </value>
+            <value>
+                <fullName>Duplicate Endpoint</fullName>
+                <default>false</default>
+                <label>Duplicate Endpoint</label>
+            </value>
+            <value>
+                <fullName>End User Training Required</fullName>
+                <default>false</default>
+                <label>End User Training Required</label>
+            </value>
+            <value>
+                <fullName>BEACON End Customer link not established in SF for Account Relationship</fullName>
+                <default>false</default>
+                <label>BEACON End Customer link not established in SF for Account Relationship</label>
+            </value>
+            <value>
+                <fullName>Endpoint Transferred in Error</fullName>
+                <default>false</default>
+                <label>Endpoint Transferred in Error</label>
+            </value>
+            <value>
+                <fullName>Load into SFDC</fullName>
+                <default>false</default>
+                <label>Load into SFDC</label>
+            </value>
+            <value>
+                <fullName>Revise SFDC</fullName>
+                <default>false</default>
+                <label>Revise SFDC</label>
+            </value>
+            <value>
+                <fullName>BEACON/AQUACUE Order</fullName>
+                <default>false</default>
+                <label>BEACON/AQUACUE Order</label>
+            </value>
+            <value>
+                <fullName>Cellular Coverage</fullName>
+                <default>false</default>
+                <label>Cellular Coverage</label>
+            </value>
+            <value>
+                <fullName>Lead</fullName>
+                <default>false</default>
+                <label>Lead</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Quote</controllingFieldValue>
+            <valueName>New Quote</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quote</controllingFieldValue>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <controllingFieldValue>Invoice</controllingFieldValue>
+            <controllingFieldValue>Product / Technical</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quote</controllingFieldValue>
+            <valueName>Quote Status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quote</controllingFieldValue>
+            <valueName>Revise Quote</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quote</controllingFieldValue>
+            <valueName>Lead time only</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quote</controllingFieldValue>
+            <valueName>Load into SFDC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quote</controllingFieldValue>
+            <valueName>Revise SFDC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quote</controllingFieldValue>
+            <valueName>Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Placing Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Damaged/Faulty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Delivery Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Order Revision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Order Status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Documentation Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <controllingFieldValue>Product / Technical</controllingFieldValue>
+            <valueName>Restock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Shipping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>Wrong Order Fulfillment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order</controllingFieldValue>
+            <valueName>BEACON/AQUACUE Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Invoice</controllingFieldValue>
+            <valueName>Credit Status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Invoice</controllingFieldValue>
+            <valueName>Invoice Disputed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Invoice</controllingFieldValue>
+            <valueName>Invoice Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Invoice</controllingFieldValue>
+            <valueName>Invoice Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product / Technical</controllingFieldValue>
+            <valueName>Broken/Repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product / Technical</controllingFieldValue>
+            <valueName>Calibration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product / Technical</controllingFieldValue>
+            <valueName>Hardware Application</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product / Technical</controllingFieldValue>
+            <valueName>Installation/Set Up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product / Technical</controllingFieldValue>
+            <valueName>Product Operation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product / Technical</controllingFieldValue>
+            <valueName>RMA Status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product / Technical</controllingFieldValue>
+            <valueName>Software Application</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product / Technical</controllingFieldValue>
+            <valueName>Training</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product / Technical</controllingFieldValue>
+            <valueName>Warranty Evaluation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product / Technical</controllingFieldValue>
+            <valueName>Cellular Coverage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Duplicate Case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>SPAM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <controllingFieldValue>Service Cancellation</controllingFieldValue>
+            <valueName>Account Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>Customer Setup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>Form Requests</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Endpoint Transfer</controllingFieldValue>
+            <valueName>Endpoint not in Beacon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Endpoint Transfer</controllingFieldValue>
+            <valueName>Inventory Transfer Tool does not complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Endpoint Transfer</controllingFieldValue>
+            <valueName>Duplicate Endpoint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Endpoint Transfer</controllingFieldValue>
+            <valueName>End User Training Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Endpoint Transfer</controllingFieldValue>
+            <valueName>BEACON End Customer link not established in SF for Account Relationship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Endpoint Transfer</controllingFieldValue>
+            <valueName>Endpoint Transferred in Error</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Escalation_Requires_a_Reason</fullName>
+    <active>true</active>
+    <description>A case cannot be marked as &quot;Escalated&quot; without an &quot;Escalation Reason.&quot;</description>
+    <errorConditionFormula>IsEscalated=TRUE
+&amp;&amp;
+ISBLANK(Escalation_Reason__c)</errorConditionFormula>
+    <errorDisplayField>Escalation_Reason__c</errorDisplayField>
+    <errorMessage>A case cannot be marked as &quot;Escalated&quot; without an &quot;Escalation Reason.&quot;</errorMessage>
+</ValidationRule>

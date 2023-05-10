@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_WINS_FI_MgmtReport_Last60Days</fullName>
+    <columns>OPPORTUNITY.WON</columns>
+    <columns>Market__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Application_Description__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Product__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.PROBABILITY</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Closed - Won</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSE_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>LAST_N_DAYS:60</value>
+    </filters>
+    <filters>
+        <field>Market__c</field>
+        <operation>notEqual</operation>
+        <value>Utility CSR,Utility Direct,Water Distribution</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Flow_Instrumentation</value>
+    </filters>
+    <label>Active_WINS_FI_MgmtReport_Last60Days</label>
+    <sharedTo>
+        <group>FI_Marketing_Group</group>
+        <role>Flow_Account_Manager</role>
+        <role>Sales_Director_Flow</role>
+    </sharedTo>
+</ListView>

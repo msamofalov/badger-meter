@@ -1,0 +1,5 @@
+<aura:component controller="FCRMetricHelper" implements="flexipage:availableForAllPageTypes,force:hasRecordId">
+    <div class="align-right">
+    	<lightning:button label="Recalculate FCR Metric" onclick="{!c.doInit}"/>
+    </div>
+</aura:component>

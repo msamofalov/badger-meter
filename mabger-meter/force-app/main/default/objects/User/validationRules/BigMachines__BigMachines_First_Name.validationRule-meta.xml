@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BigMachines__BigMachines_First_Name</fullName>
+    <active>true</active>
+    <description>In order to provision users in Oracle CPQ Cloud, they must have a first name.</description>
+    <errorConditionFormula>AND(len(FirstName ) = 0,  BigMachines__Provisioned__c = true)</errorConditionFormula>
+    <errorDisplayField>FirstName</errorDisplayField>
+    <errorMessage>Users are required to have a first name in Oracle CPQ Cloud.  Please provide a value for this field in order to provision this user.</errorMessage>
+</ValidationRule>

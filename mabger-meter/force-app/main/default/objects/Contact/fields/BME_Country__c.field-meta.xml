@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BME_Country__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(MailingCountry,
+ &quot;United States&quot;, &quot;Not International&quot;,
+&quot;Canada&quot;, &quot;Not International&quot;,
+&quot;Guam&quot;, &quot;Not International&quot;,
+&quot;Antigua and Barbuda&quot;, &quot;Not International&quot;,
+&quot;Argentina&quot;, &quot;Not International&quot;,
+&quot;Barbados&quot;, &quot;Not International&quot;,
+&quot;Belize&quot;, &quot;Not International&quot;,
+&quot;Bermuda&quot;, &quot;Not International&quot;,
+&quot;Bolivia&quot;, &quot;Not International&quot;,
+&quot;Brazil&quot;, &quot;Not International&quot;,
+&quot;Chile&quot;, &quot;Not International&quot;,
+&quot;Colombia&quot;, &quot;Not International&quot;,
+&quot;Costa Rica&quot;, &quot;Not International&quot;,
+&quot;Dominica&quot;, &quot;Not International&quot;,
+&quot;Dominican Republic&quot;, &quot;Not International&quot;,
+&quot;Ecuador&quot;, &quot;Not International&quot;,
+&quot;El Salvador&quot;, &quot;Not International&quot;,
+&quot;Grenada&quot;, &quot;Not International&quot;,
+&quot;Guatemala&quot;, &quot;Not International&quot;,
+&quot;Guyana&quot;, &quot;Not International&quot;,
+&quot;Haiti&quot;, &quot;Not International&quot;,
+&quot;Honduras&quot;, &quot;Not International&quot;,
+&quot;Jamaica&quot;, &quot;Not International&quot;,
+&quot;Mexico&quot;, &quot;Not International&quot;,
+&quot;Nicaragua&quot;,&quot;Not International&quot;, 
+&quot;Panama&quot;,&quot;Not International&quot;,
+&quot;Paraguay&quot;,&quot;Not International&quot;,
+&quot;Peru&quot;,&quot;Not International&quot;,
+&quot;Saint Kitts and Nevis&quot;,&quot;Not International&quot;,
+&quot;Saint Lucia&quot;,&quot;Not International&quot;,
+&quot;Saint Vincent and the Grenadines&quot;,&quot;Not International&quot;,
+&quot;Suriname&quot;,&quot;Not International&quot;,
+&quot;The Bahamas&quot;,&quot;Not International&quot;,
+&quot;Trinidad and Tobago&quot;,&quot;Not International&quot;,
+&quot;US Minor Outlying Islands&quot;, &quot;Not International&quot;,
+&quot;US Virgin Islands&quot;, &quot;Not International&quot;,
+&quot;Uruguay&quot;,&quot;Not International&quot;,
+&quot;Venezuela&quot;,&quot;Not International&quot;,
+&quot;Puerto Rico&quot;, &quot;Not International&quot;,
+&quot;&quot;, &quot;Not International&quot;,
+&quot;International&quot;)</formula>
+    <label>International Country</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

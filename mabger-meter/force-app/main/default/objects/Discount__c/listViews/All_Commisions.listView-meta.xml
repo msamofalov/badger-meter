@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Commisions</fullName>
+    <columns>NAME</columns>
+    <columns>Customer_Number__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Dis_Comm__c</columns>
+    <columns>Org_Type__c</columns>
+    <columns>Product_Family__c</columns>
+    <columns>Description__c</columns>
+    <columns>Sales_Credit_Number__c</columns>
+    <columns>Ship_To_Number__c</columns>
+    <columns>Discount__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Dis_Comm__c</field>
+        <operation>equals</operation>
+        <value>C</value>
+    </filters>
+    <filters>
+        <field>Sales_Credit_Number__c</field>
+        <operation>startsWith</operation>
+        <value>080</value>
+    </filters>
+    <label>All Commisions</label>
+</ListView>

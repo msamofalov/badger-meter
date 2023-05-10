@@ -1,0 +1,44 @@
+{
+    "ConsumptionDetailRecords": [
+        {
+            "ProductNumber": "68886-101",
+            "SerialNumber": "9250507",
+            "QuantityConsumed": 1,
+            "Date": "2019-01",
+            "Status": null,
+            "Route": null,
+            "Cadence": null,
+            "Tag1": null,
+            "Tag2": null
+        },
+        {
+            "ProductNumber": "68886-101",
+            "SerialNumber": "9250519",
+            "QuantityConsumed": 1,
+            "Date": "2019-01",
+            "Status": null,
+            "Route": null,
+            "Cadence": null,
+            "Tag1": null,
+            "Tag2": null
+        },
+        {
+            "ProductNumber": "68886-103",
+            "SerialNumber": "945266",
+            "QuantityConsumed": 1,
+            "Date": "2019-01",
+            "Status": null,
+            "Route": null,
+            "Cadence": null,
+            "Tag1": null,
+            "Tag2": null
+        }
+    ],
+    "TotalItems": 3,
+    "CustomerNumber": "17851",
+    "StartMonth": "2019-01",
+    "EndMonth": "2019-01",
+    "SerialNumber": null,
+    "PageNumber": 0,
+    "PageSize": 100
+}

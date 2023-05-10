@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Applications_of__c</fullName>
+    <externalId>false</externalId>
+    <label>Applications of Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fluid Management</fullName>
+                <default>false</default>
+                <label>Fluid Management</label>
+            </value>
+            <value>
+                <fullName>Residential Meters</fullName>
+                <default>false</default>
+                <label>Residential Meters</label>
+            </value>
+            <value>
+                <fullName>C&amp;I Meters</fullName>
+                <default>false</default>
+                <label>C&amp;I Meters</label>
+            </value>
+            <value>
+                <fullName>Encoders</fullName>
+                <default>false</default>
+                <label>Encoders</label>
+            </value>
+            <value>
+                <fullName>Mobile Reading System</fullName>
+                <default>false</default>
+                <label>Mobile Reading System</label>
+            </value>
+            <value>
+                <fullName>Fixed Network Reading Systems</fullName>
+                <default>false</default>
+                <label>Fixed Network Reading Systems</label>
+            </value>
+            <value>
+                <fullName>Analytics/Meter Data Management Software</fullName>
+                <default>false</default>
+                <label>Analytics/Meter Data Management Software</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

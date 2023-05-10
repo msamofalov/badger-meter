@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other</fullName>
+    <active>true</active>
+    <description>This is the template that will align with accounts do not use or sell Badger Meter products &amp; services, but rather partner with End Customers or Channel Partners (e.g. Billing Vendors, Engineering Firms, etc.)</description>
+    <label>Other</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>BadgerMeter%2Ecom %E2%80%93 Contact a Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Self</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Account_Cadence__c</picklist>
+        <values>
+            <fullName>No Auto - AW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Auto - BMDLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Auto - BME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Auto - Cust PO Req%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Auto - PMO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Acknowledgment__c</picklist>
+        <values>
+            <fullName>Immediately</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Authorized_Products__c</picklist>
+        <values>
+            <fullName>Automotive Fluid Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEACON AMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blancett</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concrete Fluid Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coriolis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Acquisition %2F Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dynasonics Ultrasonic Meters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Series Meters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flo-Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Dynamics Calibration Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Dynamics Calibrator Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Galaxy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hedland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impeller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Oval Gear %28IOG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Turbo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ModMAG M-Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitors %2F Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ORION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preso DP Meters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recordall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Control Valves %28RCV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services%2FTechnical Field Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vortex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wyco Tool</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BEACON_Consumption_Model__c</picklist>
+        <values>
+            <fullName>Discontinued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visible</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BEACON_Payment_Status__c</picklist>
+        <values>
+            <fullName>%2B30 Days Past Due</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2B60 Days Past Due</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2B90 Days Past Due</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Type__c</picklist>
+        <values>
+            <fullName>Bid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Book</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Company_Number__c</picklist>
+        <values>
+            <fullName>10 - BADGER METER%2C INC%2E %28US%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14 - BADGER METER EUROPA GmbH %28Germany%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>28 - BADGER METER UK%2C LTD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Registration_Country__c</picklist>
+        <values>
+            <fullName>AT - Austria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE - Belgium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BG - Bulgaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CY - Cyprus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CZ - Czech Republic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE - Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DK - Denmark</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EE - Estonia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EL - Greece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ES - Spain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FI - Finland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GB - United Kingdom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR - Croatia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HU - Hungary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IE - Ireland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT - Italy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LT - Lithuania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LU - Luxembourg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LV - Latvia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT - Malta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NL - Netherlands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NO - Norway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL - Poland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PT - Portugal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RO - Romania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE - Sweden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SI - Slovenia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK - Slovakia</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Endpoint_Review_Type__c</picklist>
+        <values>
+            <fullName>Administrative Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cell Coverage%2FField Analysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coverage Map</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Endpoint_Type__c</picklist>
+        <values>
+            <fullName>Insufficient Cell Endpoint Coverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LTE-CAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>See Attachment and Coverage Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>See Coverage Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified LTE-M %26 LTE-MS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified ORION LTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified ORION LTE-M</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Chemical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas %2B Electricity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HVAC%2FBuilding Automation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refining%2FPetrochem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test %26 Measurement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water %2B Electricity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water %2B Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water%2FWastewater</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry__c</picklist>
+        <values>
+            <fullName>Chemical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test %26 Measurement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Insufficient_Cell_Endpoint_Coverage__c</picklist>
+        <values>
+            <fullName>NO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>International_Country__c</picklist>
+        <values>
+            <fullName>International Country</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not International Country</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Language__c</picklist>
+        <values>
+            <fullName>ENU - US English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GER - German</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Market_Libraries__c</picklist>
+        <values>
+            <fullName>Concrete Finishing Partner Library</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Instrumentation Partner Library</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open Distribution Partner Library</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process Valve Partner Library</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility Water Partner Library</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Market__c</picklist>
+        <values>
+            <fullName>ATi - Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATi - Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATi - Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATi - Municipal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agriculture Irrigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive Aftermarket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter Intracompany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chem and Petrochem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concrete Finishing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concrete Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entech - Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HVAC and Sustainability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process-Valve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiconductor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test and Measurement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turf Irrigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility CSR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water %26 Wastewater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>s%3A%3Acan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>s%3A%3Acan - Direct</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Office_Type__c</picklist>
+        <values>
+            <fullName>Branch Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main Office</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Organization_Type__c</picklist>
+        <values>
+            <fullName>HA-Flow House Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UO-Utility Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Govenment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Terms_salesfacing__c</picklist>
+        <values>
+            <fullName>**</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%25 NET 10 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 10 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 10 N45 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 10 N60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 14 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 14 N60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 14 N70</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 8 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 NET 10 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25-30 N45 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%25 10 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%25 10 N60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%25 14 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%25 14 N45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%25 14 N60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%25 15 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%25 21 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%25 30 N60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%25 30 N90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%25 7 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2510%2F2%2514 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2530%2F2%2545 N60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 DAYS NET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>360 DAYS NET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45 DAYS - NET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45 DAYS NET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEACON CC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANADIAN %24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CARD PROCESSED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CASH IN ADVANCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHARGE CARD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLAIM FORM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COD-CASH%2FCERTCK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COD-COMPANY CHK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DATED DRAFT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DUE ON RECEIPT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FAX INVOICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LTR OF CREDIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MASTER BILLING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 10 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 120 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 123 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 14 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 15 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 180 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 30 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 30 Days TK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 360 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 365 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 40 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 44 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 45 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 45 Days TK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 50 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 60 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 63 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 7 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 75 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 8 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 90 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET%C2%A095 DAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NO CUST COPY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAY BEFORE SHIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PFC%2FBANKRUPTCY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROFORMA INVC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SALES TAX DISP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIGHT DRAFT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPECIAL REQMT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPECIAL TERMS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Products__c</picklist>
+        <values>
+            <fullName>%22Utility Sub-Distributors%22</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Territory__c</picklist>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latin America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mexico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Northeast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rest of World</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southeast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Software_Model__c</picklist>
+        <values>
+            <fullName>BEACON AMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEACON HES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inventory Management Tool</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCU Only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SubType__c</picklist>
+        <values>
+            <fullName>Alliance Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contractor Infrastructure Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contractor Meter Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contractor Meter Testing %26 Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering Firm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exporter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation Firm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machine%2FSkid Builder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental House</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Integrator</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Survey_Email_Selections__c</picklist>
+        <values>
+            <fullName>Order Survey</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Survey_Opt_Out__c</picklist>
+        <values>
+            <fullName>Order Survey</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Catalog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concrete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exporter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Key Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National %2F Strategic Acct%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental House</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Representative</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Verified_ORION_LTE_CAN__c</picklist>
+        <values>
+            <fullName>NO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Verified_ORION_LTE_M__c</picklist>
+        <values>
+            <fullName>NO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Verified_ORION_LTE__c</picklist>
+        <values>
+            <fullName>NO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>authorized_market__c</picklist>
+        <values>
+            <fullName>Municipal Utility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test %26 Measurement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water %2F Wastewater</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

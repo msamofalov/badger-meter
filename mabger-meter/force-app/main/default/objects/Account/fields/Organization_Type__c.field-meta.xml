@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Organization_Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the company type</inlineHelpText>
+    <label>Organization Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DC-Distributor Customer</fullName>
+                <default>false</default>
+                <label>DC-Distributor Customer</label>
+            </value>
+            <value>
+                <fullName>ED-Encompass Program Distributor</fullName>
+                <default>false</default>
+                <label>ED-Encompass Program Distributor</label>
+            </value>
+            <value>
+                <fullName>FE-Flow End Customer</fullName>
+                <default>false</default>
+                <label>FE-Flow End Customer</label>
+            </value>
+            <value>
+                <fullName>FM-Skid Manufacturer/OEM</fullName>
+                <default>false</default>
+                <label>FM-Skid Manufacturer/OEM</label>
+            </value>
+            <value>
+                <fullName>HA-Flow House Account</fullName>
+                <default>false</default>
+                <label>HA-Flow House Account</label>
+            </value>
+            <value>
+                <fullName>ID-International Distributor</fullName>
+                <default>false</default>
+                <label>ID-International Distributor</label>
+            </value>
+            <value>
+                <fullName>IR-Flow Industrial/Commercial Rep</fullName>
+                <default>false</default>
+                <label>IR-Flow Industrial/Commercial Rep</label>
+            </value>
+            <value>
+                <fullName>OD-Flow Open Distribution</fullName>
+                <default>false</default>
+                <label>OD-Flow Open Distribution</label>
+            </value>
+            <value>
+                <fullName>TD-Turf Distributor</fullName>
+                <default>false</default>
+                <label>TD-Turf Distributor</label>
+            </value>
+            <value>
+                <fullName>UC-Utility Customer</fullName>
+                <default>false</default>
+                <label>UC-Utility Customer</label>
+            </value>
+            <value>
+                <fullName>UD-Utility Distributor</fullName>
+                <default>false</default>
+                <label>UD-Utility Distributor</label>
+            </value>
+            <value>
+                <fullName>UO-Utility Other</fullName>
+                <default>false</default>
+                <label>UO-Utility Other</label>
+            </value>
+            <value>
+                <fullName>WD-WYCO Distributor</fullName>
+                <default>false</default>
+                <label>WD-WYCO Distributor</label>
+            </value>
+            <value>
+                <fullName>WE-WYCO End Customer/Contractor</fullName>
+                <default>false</default>
+                <label>WE-WYCO End Customer/Contractor</label>
+            </value>
+            <value>
+                <fullName>WM-WYCO OEM</fullName>
+                <default>false</default>
+                <label>WM-WYCO OEM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

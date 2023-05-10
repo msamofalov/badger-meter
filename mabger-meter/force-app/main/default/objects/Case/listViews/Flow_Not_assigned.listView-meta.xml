@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flow_Not_assigned</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Inquiry_Reason__c</columns>
+    <columns>Product_Type__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.PRIORITY</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Product_Type__c</field>
+        <operation>contains</operation>
+        <value>BadgerTouch,BEACON,Concrete,CONNECT,Flow Calibrators,GALAXY,Gas,Gateway,Itron,Meter Reading Equipment,ORION,Oscillating Piston,ReadCenter,Vista,Water Conditioning,WYCO</value>
+    </filters>
+    <label>Flow - Not assigned</label>
+    <queue>Flow_Instrumentation_Orders_Queue</queue>
+</ListView>

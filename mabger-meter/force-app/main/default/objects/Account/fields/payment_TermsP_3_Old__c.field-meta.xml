@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>payment_TermsP_3_Old__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Payment_Terms_salesfacing__c,
+&quot;NET 30 DAYS&quot;, &quot;30&quot;,
+&quot;CHARGE CARD&quot;, &quot;07&quot;,
+&quot;NO CUST COPY&quot;, &quot;N&quot;,
+&quot;SPECIAL REQMT&quot;, &quot;S&quot;,
+&quot;COD-COMPANY CHK&quot;, &quot;12&quot;,
+&quot;CASH IN ADVANCE&quot;, &quot;11&quot;,
+&quot;FAX INVOICE&quot;, &quot;FX&quot;,
+&quot;NET 40 DAYS&quot;, &quot;40&quot;,
+&quot;NET 45 DAYS&quot;, &quot;45&quot;,
+&quot;NET 50 DAYS&quot;, &quot;50&quot;,
+&quot;NET 60 DAYS&quot;, &quot;60&quot;,
+&quot;NET 75 DAYS&quot;, &quot;75&quot;,
+&quot;NET 90 DAYS&quot;, &quot;90&quot;,
+&quot;NET 120 DAYS&quot;, &quot;96&quot;,
+&quot;2% NET 10 DAYS&quot;, &quot;2%&quot;,
+&quot;1% NET 10 DAYS&quot;, &quot;09&quot;,
+&quot;CARD PROCESSED&quot;, &quot;18&quot;,
+&quot;45 DAYS - NET&quot;, &quot;17&quot;,
+&quot;NET 15 DAYS&quot;, &quot;16&quot;,
+&quot;PFC/BANKRUPTCY&quot;, &quot;15&quot;,
+&quot;**&quot;, &quot;13&quot;,
+&quot;SPECIAL TERMS&quot;, &quot;08&quot;,
+&quot;DATED DRAFT&quot;, &quot;05&quot;,
+&quot;SIGHT DRAFT&quot;, &quot;04&quot;,
+&quot;LTR OF CREDIT&quot;, &quot;03&quot;,
+&quot;COD-CASH/CERTCK&quot;, &quot;02&quot;,
+&quot;30 DAYS NET&quot;, &quot;01&quot;,
+&quot;CLAIM FORM&quot;, &quot;Z&quot;,
+&quot;SALES TAX DISP&quot;, &quot;ST&quot;,
+&quot;MASTER BILLING&quot;, &quot;M&quot;,
+&quot;PROFORMA INVC&quot;, &quot;F&quot;,
+&quot;CANADIAN $&quot;, &quot;C$&quot;,
+&quot;45 DAYS NET&quot;, &quot;SD&quot;,
+&quot;360 DAYS NET&quot;, &quot;YR&quot;,
+&quot;NET 360 DAYS&quot;, &quot;1Y&quot;,
+&quot;BEACON CC&quot;, &quot;1B&quot;,
+&quot;2%-30 N45 DAYS&quot;, &quot;20&quot;,
+&quot;2% 10 N45 Days&quot;, &quot;19&quot;,
+&quot;&quot;)</formula>
+    <label>Payment Terms old</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

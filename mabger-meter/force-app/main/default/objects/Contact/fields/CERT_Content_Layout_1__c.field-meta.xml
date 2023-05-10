@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CERT_Content_Layout_1__c</fullName>
+    <description>101 will create a STD CERT:
+If customization is required, the Customer will select from the existing layouts or a new layout will be created The ID# will be used to designate the specific content and sequence the content on the CERT will be generated in.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>101 will create a STD CERT:
+If customization is required, the Customer will select from the existing layouts or a new layout will be created The ID# will be used to designate the specific content and sequence the content on the CERT will be generated in.</inlineHelpText>
+    <label>Content/Layout #1</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PO_Number_is_required</fullName>
+    <active>true</active>
+    <description>:   the PO Number is required 
+
+Case Record Type:   Inquiry
+Issue Type:                Order 
+Inquiry Reason:        Placing Order</description>
+    <errorConditionFormula>AND(
+RecordType.Name = &quot;Inquiry&quot;,
+ISPICKVAL(  Type  , &quot;Order&quot;) ,
+ISPICKVAL( Inquiry_Reason__c , &quot;Placing Order&quot;) ,
+ ISBLANK( PO_Number__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>PO_Number__c</errorDisplayField>
+    <errorMessage>PO Number is Required.</errorMessage>
+</ValidationRule>

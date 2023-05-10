@@ -1,0 +1,51 @@
+<apex:page standardController="Training_Request__c" recordSetVar="cases" extensions="TrainingListViewsController"
+              tabStyle="Training_Request__c"
+    sidebar="false" lightningstylesheets="true">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageMessages />
+            <apex:pageBlock >
+                <apex:panelGrid columns="2">
+                    <apex:outputLabel value="View1:"/>
+                    <apex:selectList value="{!filterId}" size="1">
+                        <apex:actionSupport event="onchange" rerender="cas_table"/>
+                        <apex:selectOptions value="{!listviewoptions}"/>
+                    </apex:selectList>
+                </apex:panelGrid>
+            </apex:pageBlock>
+
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}"/>
+            <!--    <apex:commandButton value="New Training" action="{!create}"/> -->
+                <apex:commandButton value="New Training" action="/a1o/e?retURL=%2Fa1o%2Fo"/>
+            
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable value="{!cases}" var="cas" id="cas_table">
+                <apex:column headerValue="Training Request">
+                    <apex:outputLink value="/{!cas.id}" target="_top">
+                     <apex:outputText value="{!cas.Training_Request_Number__c}">
+                        </apex:outputText>
+                    </apex:outputLink>                
+                </apex:column>
+                <apex:column headerValue="Status">
+                    <apex:inputField value="{!cas.Status__c}"/>
+                </apex:column>
+                <apex:column headerValue="Subject">
+                    <apex:inputField value="{!cas.Name}"/>
+                </apex:column>
+                <apex:column headerValue="Type">
+                    <apex:inputField value="{!cas.Training_Type__c}"/>
+                </apex:column>
+                <apex:column headerValue="Date">
+                    <apex:inputField value="{!cas.Training_Date__c}"/>
+                </apex:column>
+                <apex:column headerValue="Assigned Trainer">
+                    <apex:inputField value="{!cas.Primary_Trainer__c}"/>
+                </apex:column>                
+                <apex:column headerValue="End User Company">
+                    <apex:inputField value="{!cas.End_User_Account__c}"/>
+                </apex:column>                                                                 
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

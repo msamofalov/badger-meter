@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Eligibility_Date__c</fullName>
+    <description>This date determines if the Contact is still eligible to receive emails.  This date can be used in other process to control eligibility for emailing reports and documents to the Contact.  It does not have to be used, each process will determine if it is appropriate.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This date determines if the Contact is still eligible to receive emails.  
+
+This date may be used in other processes to control eligibility for emailing reports and documents to the Contact.</inlineHelpText>
+    <label>Eligibility Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Date</type>
+</CustomField>

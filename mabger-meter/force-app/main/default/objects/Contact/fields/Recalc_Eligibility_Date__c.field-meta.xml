@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recalc_Eligibility_Date__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is used to recalculate the Eligibility Date field.  
+
+When checked, it will add 18 months to the existing Eligibility Date and then uncheck the Recalc Eligibility Date checkbox field.
+
+If the Eligibility Date is blank, it will add 18 months to Today&apos;s date and then uncheck the Recalc Eligibility Date checkbox field.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is used to recalculate the Eligibility Date field.  
+
+When checked, it will add 18 mos. to the Eligibility Date and then uncheck the Recalc Eligibility checkbox field.  If the Eligibility Date is blank, it will add 18 mos. to Today&apos;s Date.</inlineHelpText>
+    <label>Recalc Eligibility Date</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

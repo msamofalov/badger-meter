@@ -1,0 +1,11 @@
+<apex:page showHeader="false" controller="WidenSSOLoginController" action="{!authenticateAndRedirectToWidenDAM}">
+
+    <apex:form >
+
+        <h1>Login to Widen DAM</h1>
+    
+        <apex:commandButton action="{!authenticateAndRedirectToWidenDAM}" value="Login to Widen DAM"/>
+
+    </apex:form>
+
+</apex:page>

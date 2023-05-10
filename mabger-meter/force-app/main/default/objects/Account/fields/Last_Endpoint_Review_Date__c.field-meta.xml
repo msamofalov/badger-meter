@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Endpoint_Review_Date__c</fullName>
+    <description>1. Field is editable by a small group of people with the ORION Verification permission set.
+2. By Kavya - As per Kyle Kolhouse&apos;s request , the field is Set for History tracking on 08/05/19 .</description>
+    <externalId>false</externalId>
+    <label>Last Endpoint Review Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Date</type>
+</CustomField>

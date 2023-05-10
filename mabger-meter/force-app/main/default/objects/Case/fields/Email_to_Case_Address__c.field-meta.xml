@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_to_Case_Address__c</fullName>
+    <description>Original email address case was sent to.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this is an E2C case, stamps the original set to address on the case. populated via PB</inlineHelpText>
+    <label>Email-to-Case Address</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

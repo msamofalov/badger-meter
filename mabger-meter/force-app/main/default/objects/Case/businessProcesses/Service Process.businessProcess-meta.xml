@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service Process</fullName>
+    <description>This process is used for Badger Meter support process.</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Awaiting Customer</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - Resolved</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - Unresolved</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Confirming Cell Coverage</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Credit Pending</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Customer Supplied Rec%27d</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Engineering Review</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Final Processing</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Hydrolab</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>In Evaluation</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Incorrect Credit Memo</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Loaner Return Initiated</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Open</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Order Pending</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Outside Vendor</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Production Floor</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Quality Hold</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>RMA Completed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>RMA Pending Approval</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Received - Awaiting Check In</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Service Parts Shortage</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Shipment Received</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

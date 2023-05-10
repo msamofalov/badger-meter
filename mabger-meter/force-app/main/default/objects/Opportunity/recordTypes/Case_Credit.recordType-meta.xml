@@ -1,0 +1,3528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Credit</fullName>
+    <active>true</active>
+    <businessProcess>Badger Opportunity</businessProcess>
+    <label>Case - Credit</label>
+    <picklistValues>
+        <picklist>Alternate_Product_Description__c</picklist>
+        <values>
+            <fullName>ENCODER - ADE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - DUAL RTR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - ECA - ELECTRONIC CONTACTING REGISTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - ER-10 - SCALABLE RATE %2F FLOW REGISTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - ER-6 - LCD COUNTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - ER420 - SCALABLE RATE %2F FLOW REGISTER WITH ANALOG OUTPUT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - HR-E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - HR-E LCD 4-20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - HRE-LCD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - LP LOCAL REGISTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - RCDL LOCAL REGISTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - RTR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - SUMMATOR %2F CONVERTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - AQV3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - BADGER TOUCH PIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - BADGER TOUCH REMOTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - BARNACLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ELSTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - GALAXY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - GAS RT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ITRON 100W PIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ITRON 100W REMOTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ITRON 60W</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ORION 868</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ORION CE - DP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ORION CE GAS - COMMERCIAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ORION CE GAS - RESIDENTIAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ORION CELLULAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ORION ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ORION SE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ORION SE GAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - 200 SERIES SENSOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - 258 HW - NON RESETTABLE TOTALIZER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - 300 SERIES ELECTRONICS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - 3000 SERIES MONITOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - 380 BTU METER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - BLANCETT B1100 METERS AND REPAIR KITS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - BLANCETT B3000 MONITORS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - CORIOLIS MMG SENSOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - DYNASONICS DFXD DOPPLER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - DYNASONICS DT9 TRANSDUCERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - DYNASONICS DTFXB TFX ULTRA STD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - DYNASONICS DTFXL TRANSIT TIME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - DYNASONICS DTT TRANSDUCERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - DYNASONICS DXN PORTABLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - DYNASONICS PARTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - HEDLAND ALUMINUM METERS OIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - HEDLAND BRASS METERS OTHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - HEDLAND CALIBRATION %2F MISC %2F PARTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - HEDLAND ELECTRONICS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - HEDLAND EZ-VIEW ALERT WATER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - HEDLAND EZ-VIEW WATER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - HEDLAND HITEMP OTHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - HEDLAND MR TRANSMITTER AIR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - IMPELLER PARTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - INDUSTRIAL PARTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - INDUSTRIAL REGISTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - INLINE OVAL GEAR 1%2F2%22 %28METER ONLY%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - MSER1 - ELECTRONIC SCALED TRANSMITTER WITH REGISTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - OG W%2F ENHANCED REGISTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - PFT1E - ELECTRONIC SCALABLE TRANSMITTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - PFT2 - MECHANICAL UNSCALED TRANSMITTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - PFT2E - ELECTRONIC UNSCALED TRANSMITTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - PFT420 - ANALOG FLOW TRANSMITTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - PFT420%2F2 - ANALOG FLOW TRANSMITTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - PFT4E - ELECTRONIC SCALABLE TRANSMITTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - PM5 - MECHANICAL SCALABLE TRANSMITTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - REED SWITCH PICKUP W%2F ER ENCLOSURE 6P</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - SDI SENSOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - TOTAL AUTOMOTIVE PARTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - VORTEX PARTS%2C REPAIRS%2C ACCESSORIES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - COMBO-01 LL %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - COMPOUND SERIES HEAD ASSEMBLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - COMPOUND SERIES LL-NS %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - COMPOUND SERIES METER 2%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - COMPOUND SERIES METER 3%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - COMPOUND SERIES METER 4%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - COMPOUND SERIES METER 6%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - COMPOUND SERIES METER 8%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - FIRE SERVICE ASSEMBLY 10%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - FIRE SERVICE ASSEMBLY 12%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - FIRE SERVICE ASSEMBLY 4%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - FIRE SERVICE ASSEMBLY 6%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - FIRE SERVICE ASSEMBLY 8%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - FIRE SERVICE METER 10%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - FIRE SERVICE METER 4%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - FIRE SERVICE METER 6%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - FIRE SERVICE METER 8%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - IND RCDL DISC M25B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - IND RCDL DISC M35B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - INDUSTRIAL TURBO METER 3%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - INDUSTRIAL TURBO METER 4%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - LARGE METER TESTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MAG METER - M SERIES BATTERY POWERED M5000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MAG METER - M SERIES M2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MAG METER - M1000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MAG METER - M2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MAG METER - M5000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MAG METER - MOD MAG M3000 CLASS 1 DIV 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MAG METER - MOD MAG M4000 CLASS 1 DIV 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 120 LL %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 170 LL %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 170 LL HEAVY DUTY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 25 LL %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 25 PN %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 35 LL %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 40 PN %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 55 LL %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 70 LL %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 70 LL HEAVY DUTY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL LP LO-PROFILE LL %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - PLATE STRAINER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - PORTABLE LARGE METER TESTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES CAST IRON - LL HEAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES FIRE HYDRANT METER 3%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES HEAD ASSEMBLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES LL-NS %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES METER 1 1%2F2%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES METER 10%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES METER 2%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES METER 3%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES METER 4%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES METER 6%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES METER 8%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - UL %2F FM STRAINER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - ULTRASONIC 1 1%2F2%22 SS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - ULTRASONIC 1%22 EP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - ULTRASONIC 1%22 SS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - ULTRASONIC 2%22 SS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - ULTRASONIC 3%2F4%22 EP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - ULTRASONIC 3%2F4%22 SS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - ULTRASONIC 3%2F4%22 X 9%22 SS - LONG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - ULTRASONIC 5%2F8%22 EP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - ULTRASONIC 5%2F8%22 SS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - MOBILE READING SYSTEM - LAPTOP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - ORION CE GATEWAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - ORION CE MOBILE RECEIVER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - ORION SE GATEWAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - ORION SE MOBILE RECEIVER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - ORS MOBILE READING SYSTEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - PANASONIC TOUGHPAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - READCENTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - TOUGHPAD TABLET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - TRIMBLE RANGER HANDHELD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER - CELLULAR %2F GATEWAY FEES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER - MAG METER - PARTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER - MAG METER - REPAIRS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER - PARTS %2F REPAIRS - COMMERCIAL - METERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER - PARTS %2F REPAIRS - RESIDENTIAL - METERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER - PARTS %2F REPAIRS - UTILITY - OTHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER - TRAINING</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Applications_of__c</picklist>
+        <values>
+            <fullName>Analytics%2FMeter Data Management Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%26I Meters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encoders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fixed Network Reading Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fluid Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile Reading System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential Meters</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Assignee__c</picklist>
+        <values>
+            <fullName>Accurate Meter - Dayne Burson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Airtelligence - Ron Borino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aluma Systems - Claudia Abrego</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Andrews Industrial Ctls - Nick Andrews</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Applied Engineering - Ed Houchens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aser Control - Joel Guerrero</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aser Control - Jose Covarrubias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atlas - Ed Larson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automatic Controls - Jeff Merman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automation X - Dan Steele</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avensys - Pierre Michaud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter  - Fred Whorff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Angie Phillips</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Ben Bartsch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Brent Bennett</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Brian Helphand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Chris Sizemore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Dan Gilliam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Dennis Renfrow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Duke Julian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Emily Mennenga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Greg Perona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Horacio Gonzalez</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Jay Walsh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Jeff Learned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Jerry Broadway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Jim Ballantine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Jim Braxton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Jimmy Terry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - John Bjorklund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Jon Watson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Jordan Sharp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Kathy Richards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Kayla Schultz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Kevin Davis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Kevin Yoder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Lisa Engstrom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Luis Vazquez</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Mark Leveille</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Mark McMillen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Mark Wright</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Mike McCoy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Mike McNabb</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Morrice Blackwell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Rick Phillips</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Rocio Selstrom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Rodolfo Guzman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Ron Lilley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Ryan Fenton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Ryan Nice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Shauna Griffin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Steve Wheeler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Ted Lindgren</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Tim Wissing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Toby Sledge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter - Tom Watts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Baker Supply - Glen Lohman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bernardo Alberto - Bernardo Tapia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BioFuels Automation - Kerby Todd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brown %26 Morrison - Doug Jackson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buckeye State Pipe - Robert Barber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buckeye State Pipe - Terry Hicks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carle Lueders %26 Co - Mark Lueders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central Pipe Supply - Jay Wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central Pipe Supply - Jerri Sherer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central States Group - Bret Schweitzer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central States Group - Brian Bahr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central States Group - Brian Skinner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central States Group - David Bruce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central States Group - Denise Lee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central States Group - Derek Olson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central States Group - Jeff Allard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central States Group - Patty Lundgren</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central States Group - Paul Holz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central States Group - Susan Marsh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central States Group - Tim Bailey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central States Group - Tim Peterson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compania Guatemalteca de Renta - Luis Folgar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control Equipment - Jamie Rousse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control Equipment - Katherine Sanchez</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control Products - Debbie Vasconcelos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corix - Al Cowen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Criticalaire - Jeff Dollar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Criticalaire - Lance Bowman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW Prouty - Jed Prouty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW Prouty - Paul Obrien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delta Instrumentation - Scott Veno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Derex - Tony Hurst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMI Electricos - Gilberto Rocha</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESCO - Ariel Bodnarin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eastern Controls - Alexandra Freeman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eastern Controls - Kevin Lavelle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eco-Tech%2C Inc%2E - Dan Carter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EloTek - EloTek_Sales Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emco Edmonton - George Vanderzee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emco Hamilton - Eric Moulton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emco Langley - Darren Carlson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emco London - Larry Taylor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emco NFLD - Fred Crowley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emco New Brunswick - Daniel Farren</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emco Windsor - Dave Taylor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emco Winnipeg - Doug Taylor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emoc Saskatoon - Daryl Servetnyk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy Products - Dan McConville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCX Performance - Betty Kirklin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCX Performance - Bob Bird</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCX Performance - Chicago Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCX Performance - Don Simon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCX Performance - John Jacob</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCX Performance - Mike Carlucci</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCX Performance - Scott Douglass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCX Performance - Scott MacLeod</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FLW - Jon Archenhold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FLW Southeast - Michael Calbert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FW Webb - Jim McKenna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FW Webb Bellingham - Corey Post</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FW Webb Cazenovia - Jim Somers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FW Webb Pittsford - Main Inbox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fareco%2C S%2EA%2E - Carlos Fernández</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fidemar%2C S%2EA%2E - Fabián Beinhacker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fieldata - Felipe Gutiérrez</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fieldata - Freddy Olano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floval - Primary-Frank Tondat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Media - David Martz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forgy Process - Bruce Shiffer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forgy Process - Primary-Randy Forgy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forgy Process - Scott Murphy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forgy Process - Stephen Clegg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frew Process - General Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gen Pac - Jason VanCleave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>George T%2E Hall - Dina Johnson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grupo la Fuente - Karla Mendez</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H%2E Cidade Ltda%2E - Clemente Peyrelongue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD-Supply - Pat Hanley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HPS Specialties - Eric Gaumer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Henard Utility Products - George Clayton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hydro Specialties - Dave Welch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hydro Specialties - Jonas Welch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hydro Specialties - Steve Hansen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hydro Specialties - Steven Hansen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hydronic Technology - William Martinez</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I %26C Sales North - Primary-Vince Lowler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISI Hawaii - Chris Robinson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incontrol Indústria e Comércio de Medidores - Willian Abe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indusa Inc%2E - Steven Serrano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Pump %26 Supply %28IPEC%29 - Primary-Scott Gunselman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrias Asociadas%2C S%2EA%2ES%2E - Anderson Parra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingenieria VDM Ltda - Adolfo Jaque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innovative Metering Solutions - Ashley Vittori</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innovative Metering Solutions - Brad Lowe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innovative Metering Solutions - Chuck Porter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innovative Metering Solutions - Nick Portlance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innovative Metering Solutions - Steve Portlance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interpump Supply - Primary-Perry Leifso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Island Bound Partners %28IBP%29 - Brian Blaschka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>J%26M Engineering %26 Sales - Primary-Tim Murphy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>J%26W Instruments - Bob Lester</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>J%26W Instruments - Charles Ries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>J%26W Instruments - Doug Dayhuff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>J%26W Instruments - Nick Mason</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>J%26W Instruments - Primary-Jim Moseley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JK Duren - Ken Duren</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JK Duren - Nancy Webb</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JMB %26 associates - Jeff Mauerman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JMB %26 associates - Jeff Miller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JMB %26 associates - Jim Schabowski</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JMB %26 associates - Mark Aler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JMB %26 associates - Terri Matley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jacco %26 Associates - Greg Drensky</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>James Cooke %26 Hobson - Bruce Loring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>K and K do Brasil Ltda%2E - Massafumi Kato</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Keller-Rivest - Frank Haag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kundinger Controls - Primary-Brian Kundinger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L and W Engineering Equipment - Peter Mouttet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEIS Limitada - Carlos Orellana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEIS Limitada - Matias Larrain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lazarus Export Group Ltd%2E - Daniel Arias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Les Compteurs Lecomte Ltee%2E - François Lecomte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIYMSA - David Chapa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maida International Ltd%2E - Gerald Maida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maida International Ltd%2E - Robert Jarosinski</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maine Water Works - Ryan Johnson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matt Gann - Matt Gann</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mauricio Soto Limited Corporation - Jorge Luis Muñoz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>McCrosco - Matt McCroskey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanical Sales Inc - Mark Morris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mediciones%2C C%2EA%2E - José Vera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medidatmaim - Gaspar Campos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medidores y Medicos - Jose Figueroa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Messplay Machinery Co - Forrest McDonald</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metering and Technology Solutions - Cory Ross</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metering and Technology Solutions - Dan McGrane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metering and Technology Solutions - Dan Sinclair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metering and Technology Solutions - Joe Mereness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metering and Technology Solutions - Steve Mereness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meters %26 Controls - Primary-Chris Arado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwest Meter - Bonnie Anderson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwest Meter - Christopher Herndon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwest Meter - Dustin Carls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwest Meter - Joe Morell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwest Meter - John Farrow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwest Meter - Matt Carls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwest Meter - Mike Bell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwest Meter - Paul Koepke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwest Meter - Steve Dauster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwest Meter - Tim O%27Connor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neponset Controls - Brian Rolfe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neponset Controls - Jim Blake</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noddings - Cavin Nodding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%27Connor Company - Mike O%27Connor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OKC Contractors - Stephen Higgins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omicron Controls - Mike Beach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omicron Controls - Ryan Wellman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oscar Representaciones - Oscar Velarde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCE Pacific - Aaron Leestma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCE Pacific - Henri Bouscaren</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCE Pacific - Jake Bartel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCE Pacific - Rob Clemons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific Pipe - Ken Oto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pembina Controls - Brain Hill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pembina Controls - Brittney Metka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pembina Controls - Edward Lalonde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Controls - Jim Welch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PowerGen Panama - Javier Lasso de la Vega</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Engineering - Paul Trammell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provan Controls - Guy Trudel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provan Controls - support Provan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proyecto Eval y Construccion - Fernando Escamilla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q-Con - Ram Shamaro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R%2EL%2E Deppmann Company - Mark Fine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R%2EL%2E Deppmann Company - Nathan Oliver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RISA - ENRIQUE PAREDES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RLDeppmann - Dan Ondersma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RLDeppmann - Norman Hall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RLDeppmann - Primary-Mike Kennedy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RM Newell - Dick Newell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RM Trading Corp%2E - Allan Cordero</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RM Trading Corp%2E - Gustavo Diaz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RM Trading Corp%2E - Juan Ignacio Quesada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recursos Tecnico Industrial - Alexis Alvarenga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rent Air - Enrique Visconti</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renteco - JoseLuis Espinoza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rime Flow Technology SA DE CV - Armando Castaneda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rime Fluid - Carolina Cruz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rist %26 Associates - Brian Vande-Venter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rist %26 Associates - Primary-Brian Vande</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rodriguez y Londono SA - JuanCarlos Londono</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rust Automation - Eloy Chairez</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rust Automation - Grant Rust</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rust Automation - Ross Ritter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SLC - John Traynor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW Controls - Chris Vaughn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW Controls - Ed Moreau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW Controls - Harold Wertman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW Controls - Jameson Horn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW Controls - Jeff Ling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW Controls - Joe Maceri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW Controls - Peter Howard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW Controls - Primary-Dan Willson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW Controls - Scott Butler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sanders Co%2E - Doug Schafer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schmidt%27s Wholesale - Schmidt%27s Wholesale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schmidt%27s Wholesale - Steve Davis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seltech - Doug Buxton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seltech - Gayle Reynolds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seltech - Steve Maxwell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Servicios Hidraulicos - Francisco Tello</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southern Sales - Travis Callum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specified Solutions - Joe Paul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stiles Company - Ian Kasowitz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stover Sensor Controls - JC Koch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suministros Hidraulicos - Hugo Arnaud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunrise Oilfield Supply - Danny Fechter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swanson Flo %28Water%2FWasterwater%29 - Bill Johnson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swanson Flo - Bill Esposito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swanson Flo - Bob Rannals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swanson Flo - Chuck Lockhart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swanson Flo - Craig Petersen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swanson Flo - Doug Diny</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swanson Flo - Frank Brannon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swanson Flo - Justin Holland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swanson Flo - Kelly Smejkal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swanson Flo - Les Hazelton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swanson Flo - Primary-Hans Alwin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swanson Flo - Rick Barnes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T%26E Flow Services - Todd Nelson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Air Systems - Dave Painter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Air Systems - Paul Scheele</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Spectrum Group - Sherryl Benbow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tighe Zeman - Primary-Dan Tighe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transwest Company - Primary-Greg Troilo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trumbull Industries - Sam Miller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility Products - Chuck Sears</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VanZandt Controls - Jeff Wesson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vard - Jesus Ramirez</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voigt-Abernathy - Bill Voigt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Logic - Rick Heidvogel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Works Suppliers Corporation - Antonio Morera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Western States Automation - David Wilson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Western States Automation - Sean Yardy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Western States Automation - Ted Hanson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Western States Automation - Trent Harris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wisconsin Controls - Primary-Tom Gensch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wisconsin Controls - William Kohlbeck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yorkland Controls Lmtd%2E - Gavin Barrett</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yorkland Controls Lmtd%2E - Gerry Cellucci</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business_Unit__c</picklist>
+        <values>
+            <fullName>Flow Instrumentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mexico-Latin America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Type__c</picklist>
+        <values>
+            <fullName>Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Expected_Sales_Approach__c</picklist>
+        <values>
+            <fullName>Cross-Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Advertisement - Digital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advertisement - Print</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter Salesperson %28Direct%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BadgerMeter%2Ecom %E2%80%93 Cellular Coverage Study Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BadgerMeter%2Ecom %E2%80%93 Cellular Pilot Program Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BadgerMeter%2Ecom %E2%80%93 Contact a Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BadgerMeter%2Ecom %E2%80%93 netAMP Enabled Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BadgerMeter%2Ecom - Calibration Service Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BadgerMeter%2Ecom - Careers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BadgerMeter%2Ecom - Contact Us - General Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BadgerMeter%2Ecom - Contact a Product Expert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BadgerMeter%2Ecom - Order Status Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BadgerMeter%2Ecom - Product Selector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BadgerMeter%2Ecom - Sizing %26 Selection Tool Download</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BadgerMeter%2Ecom - Training Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalog House %2F Internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Meter Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased Lists</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rockwell Automation Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rockwell Automation Encompass Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Self</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WaterHub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Industry__c</picklist>
+        <values>
+            <fullName>Automotive Fluid Dispensing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aviation %26 Aerospace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building Automation%2FHVAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical%2C Refining %26 Petrochemical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concrete Finishing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concrete Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facility or Property Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process or Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test Equipment %26 Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water %26 Wastewater Treatment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Distribution</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Market__c</picklist>
+        <values>
+            <fullName>ATi - Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATi - Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATi - Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATi - Municipal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agriculture Irrigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive Aftermarket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter Intracompany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chem and Petrochem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concrete Finishing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concrete Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entech - Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HVAC and Sustainability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process-Valve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiconductor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test and Measurement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turf Irrigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility CSR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water %26 Wastewater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>s%3A%3Acan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>s%3A%3Acan - Direct</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Meter_Type__c</picklist>
+        <values>
+            <fullName>Both</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Organization_Type__c</picklist>
+        <values>
+            <fullName>DC-Distributor Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ED-Encompass Program Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FE-Flow End Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FM-Skid Manufacturer%2FOEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HA-Flow House Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR-Flow Industrial%2FCommercial Rep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OD-Flow Open Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TD-Turf Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UC-Utility Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UD-Utility Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UO-Utility Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WD-WYCO Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WE-WYCO End Customer%2FContractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WM-WYCO OEM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Product_Solutions__c</picklist>
+        <values>
+            <fullName>Automotive Fluid Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEACON AMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blancett</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concrete Fluid Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connectivity - Generic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connectivity - Itron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coriolis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Acquisition %2F Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dynasonics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Series Electronic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flo-tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Dynamics Calibration Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Dynamics Calibrator Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GALAXY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR-E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HRE%2FLCD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hedland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impeller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Oval Gear %28IOG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Turbo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managed Solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ModMAG%2FM-Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitors %2F Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ORION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ORION CE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ORION Cellular</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ORION ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ORION SE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ReadCenter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recordall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Control Valves %28RCV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services %2F Technical Field Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traditional Fixed Reading System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traditional Mobile Reading System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vortex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wyco Tool</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Product_of_Interest__c</picklist>
+        <values>
+            <fullName>AquaCUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive Oval Gear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEACON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blancett</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coriolis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dynasonics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flo-Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Dynamics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hedland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Resolution Encoders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impeller%2FData Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Oval Gear %28IOG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Turbo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ModMAG M-Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OP Meters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ORION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recordall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Control Valves %28RCV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vortex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wyco</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Description__c</picklist>
+        <values>
+            <fullName>ENCODER - ADE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - DUAL RTR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - ECA - ELECTRONIC CONTACTING REGISTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - ER-10 - SCALABLE RATE %2F FLOW REGISTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - ER-6 - LCD COUNTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - ER420 - SCALABLE RATE %2F FLOW REGISTER WITH ANALOG OUTPUT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - HR-E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - HR-E LCD 4-20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - HRE-LCD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - LP LOCAL REGISTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - RCDL LOCAL REGISTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - RTR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCODER - SUMMATOR %2F CONVERTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - AQV3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - BADGER TOUCH PIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - BADGER TOUCH REMOTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - BARNACLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ELSTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - GALAXY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - GAS RT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ITRON 100W PIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ITRON 100W REMOTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ITRON 60W</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ORION 868</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ORION CE - DP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ORION CE GAS - COMMERCIAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ORION CE GAS - RESIDENTIAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ORION CELLULAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ORION ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ORION SE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENDPOINT - ORION SE GAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - 200 SERIES SENSOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - 258 HW - NON RESETTABLE TOTALIZER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - 300 SERIES ELECTRONICS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - 3000 SERIES MONITOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - 380 BTU METER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - BLANCETT B1100 METERS AND REPAIR KITS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - BLANCETT B3000 MONITORS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - CORIOLIS MMG SENSOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - DYNASONICS DFXD DOPPLER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - DYNASONICS DT9 TRANSDUCERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - DYNASONICS DTFXB TFX ULTRA STD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - DYNASONICS DTFXL TRANSIT TIME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - DYNASONICS DTT TRANSDUCERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - DYNASONICS DXN PORTABLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - DYNASONICS PARTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - HEDLAND ALUMINUM METERS OIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - HEDLAND BRASS METERS OTHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - HEDLAND CALIBRATION %2F MISC %2F PARTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - HEDLAND ELECTRONICS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - HEDLAND EZ-VIEW ALERT WATER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - HEDLAND EZ-VIEW WATER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - HEDLAND HITEMP OTHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - HEDLAND MR TRANSMITTER AIR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - IMPELLER PARTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - INDUSTRIAL PARTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - INDUSTRIAL REGISTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - INLINE OVAL GEAR 1%2F2%22 %28METER ONLY%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - MSER1 - ELECTRONIC SCALED TRANSMITTER WITH REGISTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - OG W%2F ENHANCED REGISTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - PFT1E - ELECTRONIC SCALABLE TRANSMITTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - PFT2 - MECHANICAL UNSCALED TRANSMITTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - PFT2E - ELECTRONIC UNSCALED TRANSMITTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - PFT420 - ANALOG FLOW TRANSMITTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - PFT420%2F2 - ANALOG FLOW TRANSMITTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - PFT4E - ELECTRONIC SCALABLE TRANSMITTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - PM5 - MECHANICAL SCALABLE TRANSMITTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - REED SWITCH PICKUP W%2F ER ENCLOSURE 6P</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - SDI SENSOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - TOTAL AUTOMOTIVE PARTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIAL - VORTEX PARTS%2C REPAIRS%2C ACCESSORIES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - COMBO-01 LL %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - COMPOUND SERIES HEAD ASSEMBLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - COMPOUND SERIES LL-NS %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - COMPOUND SERIES METER 2%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - COMPOUND SERIES METER 3%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - COMPOUND SERIES METER 4%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - COMPOUND SERIES METER 6%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - COMPOUND SERIES METER 8%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - FIRE SERVICE ASSEMBLY 10%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - FIRE SERVICE ASSEMBLY 12%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - FIRE SERVICE ASSEMBLY 4%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - FIRE SERVICE ASSEMBLY 6%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - FIRE SERVICE ASSEMBLY 8%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - FIRE SERVICE METER 10%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - FIRE SERVICE METER 4%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - FIRE SERVICE METER 6%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - FIRE SERVICE METER 8%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - IND RCDL DISC M25B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - IND RCDL DISC M35B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - INDUSTRIAL TURBO METER 3%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - INDUSTRIAL TURBO METER 4%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - LARGE METER TESTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MAG METER - M SERIES BATTERY POWERED M5000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MAG METER - M SERIES M2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MAG METER - M1000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MAG METER - M2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MAG METER - M5000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MAG METER - MOD MAG M3000 CLASS 1 DIV 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MAG METER - MOD MAG M4000 CLASS 1 DIV 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 120 LL %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 170 LL %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 170 LL HEAVY DUTY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 25 LL %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 25 PN %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 35 LL %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 40 PN %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 55 LL %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 70 LL %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL 70 LL HEAVY DUTY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - MODEL LP LO-PROFILE LL %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - PLATE STRAINER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - PORTABLE LARGE METER TESTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES CAST IRON - LL HEAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES FIRE HYDRANT METER 3%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES HEAD ASSEMBLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES LL-NS %28NSF 61-G MTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES METER 1 1%2F2%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES METER 10%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES METER 2%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES METER 3%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES METER 4%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES METER 6%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - TURBO SERIES METER 8%22 - LEAD FREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - UL %2F FM STRAINER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - ULTRASONIC 1 1%2F2%22 SS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - ULTRASONIC 1%22 EP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - ULTRASONIC 1%22 SS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - ULTRASONIC 2%22 SS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - ULTRASONIC 3%2F4%22 EP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - ULTRASONIC 3%2F4%22 SS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - ULTRASONIC 3%2F4%22 X 9%22 SS - LONG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - ULTRASONIC 5%2F8%22 EP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER - ULTRASONIC 5%2F8%22 SS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - MOBILE READING SYSTEM - LAPTOP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - ORION CE GATEWAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - ORION CE MOBILE RECEIVER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - ORION SE GATEWAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - ORION SE MOBILE RECEIVER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - ORS MOBILE READING SYSTEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - PANASONIC TOUGHPAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - READCENTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - TOUGHPAD TABLET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRT - TRIMBLE RANGER HANDHELD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER - CELLULAR %2F GATEWAY FEES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER - MAG METER - PARTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER - MAG METER - REPAIRS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER - PARTS %2F REPAIRS - COMMERCIAL - METERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER - PARTS %2F REPAIRS - RESIDENTIAL - METERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER - PARTS %2F REPAIRS - UTILITY - OTHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER - TRAINING</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product__c</picklist>
+        <values>
+            <fullName>Automotive Fluid Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEACON AMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blancett</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concrete Fluid Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coriolis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Acquisition %2F Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dynasonics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Series Electronic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flo-Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Dynamics Calibration Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Dynamics Calibrator Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Galaxy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR-E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hedland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impeller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Oval Gear %28IOG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Turbo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ModMAG%2FM-Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitors %2F Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ReadCenter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recordall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Control Valves %28RCV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services %2F Technical Field Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vortex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wyco Tool</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Products_Brands_of_Interest__c</picklist>
+        <values>
+            <fullName>AquaCUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive Oval Gear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEACON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badger Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blancett</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coriolis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dynasonics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flo-Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Dynamics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hedland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Resolution Encoders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impeller%2FData Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Oval Gear %28IOG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Turbo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ModMAG M-Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OP Meters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ORION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recordall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Control Valves %28RCV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vortex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wyco</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Proposal_Bid_Expiration_Reminder__c</picklist>
+        <values>
+            <fullName>30 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90 Days</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Proposal_Type__c</picklist>
+        <values>
+            <fullName>Bid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Awarded %E2%80%93 In Negotiations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awarded %E2%80%93 Pending Council Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-House %E2%80%93 Not Yet Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFP Expected Next 3 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted %E2%80%93 Awaiting Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted %E2%80%93 Short Listed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Turnkey__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undecided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Existing Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Business</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Win_Loss_Reason__c</picklist>
+        <values>
+            <fullName>Availability and%2For lead time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Canceled Bid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Features</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No bid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Supplier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Value</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

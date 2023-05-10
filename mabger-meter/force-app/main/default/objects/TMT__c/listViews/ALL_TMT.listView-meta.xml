@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALL_TMT</fullName>
+    <columns>NAME</columns>
+    <columns>Country__c</columns>
+    <columns>Market__c</columns>
+    <columns>ProductText__c</columns>
+    <columns>Sales_Credit_Name__c</columns>
+    <columns>Sales_Credit_Number__c</columns>
+    <columns>TMT_Search__c</columns>
+    <columns>Channel_Partner__c</columns>
+    <columns>User__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Sales_Credit_Number__c</field>
+        <operation>equals</operation>
+        <value>140000</value>
+    </filters>
+    <filters>
+        <field>Market__c</field>
+        <operation>contains</operation>
+        <value>ATi - Direct</value>
+    </filters>
+    <label>ALL TMT</label>
+</ListView>

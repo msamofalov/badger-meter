@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FT_TBE_Credits</fullName>
+    <booleanFilter>1 AND 2</booleanFilter>
+    <columns>BigMachines__Account__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>NAME</columns>
+    <columns>PO_Number__c</columns>
+    <columns>BigMachines__Total_Amount__c</columns>
+    <columns>BigMachines__Line_Items__c</columns>
+    <columns>BigMachines__Status__c</columns>
+    <columns>Current_Approvers__c</columns>
+    <columns>BigMachines__Description__c</columns>
+    <columns>LX_Error_Message__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Order_Create_Date__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Quote_Type__c</field>
+        <operation>equals</operation>
+        <value>Credit</value>
+    </filters>
+    <label>Fast-Track TO BE ENTERED CREDITS</label>
+</ListView>

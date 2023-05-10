@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Selection_Inactive_Contact</fullName>
+    <active>true</active>
+    <description>Email Selections not allowed if Contact is INACTIVE</description>
+    <errorConditionFormula>AND
+(
+Inactive__c = True,  Not(ISBLANK(Email_Selections__c)) = True, NOT( $Permission.Ignore_Validation_Rules )
+)</errorConditionFormula>
+    <errorDisplayField>Inactive__c</errorDisplayField>
+    <errorMessage>You cannot make an Email Selection if the Contact is INACTIVE.  Uncheck the Inactive checkbox, then make your Email Selections.</errorMessage>
+</ValidationRule>

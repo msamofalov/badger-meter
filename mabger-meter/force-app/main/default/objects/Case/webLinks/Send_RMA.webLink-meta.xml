@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_RMA</fullName>
+    <availability>online</availability>
+    <description>Opens SDocs to create an RMA form that may be sent to a customer.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Send RMA</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/SDOC__SDCreate1?id={!Case.Id}&amp;Object=Case&amp;Status=01J4B000000zg8g&amp;retURL=%2F{!Case.Id}</url>
+</WebLink>

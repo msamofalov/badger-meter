@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_RMA_Document__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Use_Suggested_Return__c = FALSE,
+
+  CASE(Return_Location__c, 
+  &quot;Milwaukee&quot;,&quot;a2838000002YZyM&quot;, 
+  &quot;Racine&quot;,&quot;a2838000002YZyR&quot;, 
+  &quot;Tulsa&quot;,&quot;a2838000002YZyW&quot;,
+  &quot;Neuffen&quot;,&quot;a283t000005WYybAAG&quot;,
+  &quot;Collegeville&quot;,&quot;a283t000004WLMJ&quot;,
+  &quot;BMUK&quot;,&quot;a283t000004WLMO&quot;,
+  &quot;a2838000002YZyR&quot;),
+
+  CASE(Suggested_Return_Location__c, 
+  &quot;Milwaukee&quot;,&quot;a2838000002YZyM&quot;, 
+  &quot;Racine&quot;,&quot;a2838000002YZyR&quot;, 
+  &quot;Neuffen&quot;,&quot;a283t000005WYybAAG&quot;,
+  &quot;Tulsa&quot;,&quot;a2838000002YZyW&quot;,
+  &quot;Collegeville&quot;,&quot;a283t000004WLMJ&quot;,
+  &quot;BMUK&quot;,&quot;a283t000004WLMO&quot;,
+  &quot;a2838000002YZyR&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Call RMA Document</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

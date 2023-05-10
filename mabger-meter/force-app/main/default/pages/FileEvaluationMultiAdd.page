@@ -1,0 +1,63 @@
+<apex:page StandardController="Training_Activity__c" extensions="FileEvaluationMultiAddController" id="thePage" lightningstylesheets="true">
+<apex:form >
+<apex:pageblock id="pb" >
+    <apex:pageBlockButtons >
+        <apex:commandbutton value="Add" action="{!Add}" rerender="pb1"/>
+        <apex:commandbutton value="Save" action="{!Save}"/>
+       <!-- <apex:commandbutton value="Back To Activity" action="{!Back}"/> -->
+    </apex:pageBlockButtons>
+    
+        
+        <apex:pageblock id="pb1">
+            
+        <apex:repeat value="{!lstInner}" var="e1" id="therepeat">
+                <apex:panelGrid columns="9">
+                
+                <apex:panelGrid headerClass="Name">
+                    <apex:facet name="header">Del</apex:facet>
+                    <apex:commandButton value="X" action="{!Del}" rerender="pb1">
+                        <apex:param name="rowToBeDeleted" value="{!e1.recCount}" assignTo="{!selectedRowIndex}"></apex:param>
+                    </apex:commandButton>
+                </apex:panelGrid>   
+                <apex:panelGrid title="SPD" >
+                
+                    <apex:facet name="header">Training Activity</apex:facet>
+                    <apex:inputfield value="{!e1.fileev.Training_Activity__c}"/>
+                
+                </apex:panelGrid>  
+                
+                <apex:panelGrid title="SPD" >
+                    <apex:facet name="header">File Name</apex:facet>
+                    <apex:inputfield value="{!e1.fileev.Name}"/>
+                </apex:panelGrid>
+                
+                <apex:panelGrid >
+                    <apex:facet name="header">File Category</apex:facet>
+                    <apex:inputfield value="{!e1.fileev.File_Category__c}"/>
+                </apex:panelGrid>
+                
+                <apex:panelGrid >
+                    <apex:facet name="header">Date Received</apex:facet>
+                    <apex:inputfield value="{!e1.fileev.Date_Received_Sent__c}"/>
+                </apex:panelGrid>
+
+                <apex:panelGrid >
+                    <apex:facet name="header">Date Reviewed</apex:facet>
+                    <apex:inputfield value="{!e1.fileev.Date_Reviewed__c}"/>
+                </apex:panelGrid>     
+
+                <apex:panelGrid >
+                    <apex:facet name="header">Approved</apex:facet>
+                    <apex:inputfield value="{!e1.fileev.Approved__c}"/>
+                </apex:panelGrid>          
+                <apex:panelGrid >
+                    <apex:facet name="header">Notes</apex:facet>
+                    <apex:inputfield value="{!e1.fileev.Notes__c}"/>
+                </apex:panelGrid>                                                     
+            </apex:panelgrid>
+        </apex:repeat>
+    </apex:pageBlock>
+        
+</apex:pageblock>
+</apex:form>
+</apex:page>

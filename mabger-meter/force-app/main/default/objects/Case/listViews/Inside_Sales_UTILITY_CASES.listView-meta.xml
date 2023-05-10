@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inside_Sales_UTILITY_CASES</fullName>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Inquiry,Case.Return</value>
+    </filters>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>RMA Completed,Closed_Resolved,Closed - Resolved,Closed - Unresolved,Action Completed,Closed</value>
+    </filters>
+    <label>Inside Sales UTILITY CASES</label>
+    <queue>Utility_Orders_Queue</queue>
+    <sharedTo>
+        <group>Inside_Sales_Combo_Home_Page_Users</group>
+    </sharedTo>
+</ListView>

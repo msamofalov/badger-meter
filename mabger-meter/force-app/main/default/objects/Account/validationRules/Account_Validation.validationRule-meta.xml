@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Validation</fullName>
+    <active>true</active>
+    <description>Do not allow Active, Name, Phone or Fax Number to be maintained if a Customer Number exists.  This must be done in Infor ERPLX.</description>
+    <errorConditionFormula>(ISCHANGED(Active__c) &amp;&amp;
+ NOT(ISBLANK(Customer_Number__c)) &amp;&amp;
+ NOT($Profile.Name = &apos;Interface User&apos;) &amp;&amp;
+ NOT($Profile.Name = &apos;System Administrator&apos;)) ||
+(ISCHANGED(Name) &amp;&amp;
+ NOT(ISBLANK(Customer_Number__c)) &amp;&amp;
+ NOT($Profile.Name = &apos;Interface User&apos;) &amp;&amp; 
+ NOT($Profile.Name = &apos;System Administrator&apos;)) || 
+(ISCHANGED(Phone) &amp;&amp;
+ NOT(ISBLANK(Customer_Number__c)) &amp;&amp;
+ NOT($Profile.Name = &apos;Interface User&apos;) &amp;&amp; 
+ NOT($Profile.Name = &apos;System Administrator&apos;)) ||
+(ISCHANGED(Fax) &amp;&amp;
+ NOT(ISBLANK(Customer_Number__c)) &amp;&amp;
+ NOT($Profile.Name = &apos;Interface User&apos;) &amp;&amp; 
+ NOT($Profile.Name = &apos;System Administrator&apos;))</errorConditionFormula>
+    <errorMessage>Maintenance of the Active, Name, Phone or Fax Number fields for Accounts with a Customer Number must be maintained in Infor ERPLX.</errorMessage>
+</ValidationRule>

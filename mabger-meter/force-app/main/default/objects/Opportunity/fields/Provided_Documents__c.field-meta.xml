@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Provided_Documents__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select the documents being sent with the bid package</inlineHelpText>
+    <label>Provided Documents</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Affidavit of Compliance</fullName>
+                <default>false</default>
+                <label>Affidavit of Compliance</label>
+            </value>
+            <value>
+                <fullName>Affidavit of Non-Collusion</fullName>
+                <default>false</default>
+                <label>Affidavit of Non-Collusion</label>
+            </value>
+            <value>
+                <fullName>Affidavit of Warranty</fullName>
+                <default>false</default>
+                <label>Affidavit of Warranty</label>
+            </value>
+            <value>
+                <fullName>Annual Report</fullName>
+                <default>false</default>
+                <label>Annual Report</label>
+            </value>
+            <value>
+                <fullName>Authorization to Sign</fullName>
+                <default>false</default>
+                <label>Authorization to Sign</label>
+            </value>
+            <value>
+                <fullName>BEACON Terms/Conditions</fullName>
+                <default>false</default>
+                <label>BEACON Terms/Conditions</label>
+            </value>
+            <value>
+                <fullName>Business Certificate</fullName>
+                <default>false</default>
+                <label>Business Certificate</label>
+            </value>
+            <value>
+                <fullName>Cover Letter</fullName>
+                <default>false</default>
+                <label>Cover Letter</label>
+            </value>
+            <value>
+                <fullName>EEOC/AAP</fullName>
+                <default>false</default>
+                <label>EEOC/AAP</label>
+            </value>
+            <value>
+                <fullName>Insurance Certificate</fullName>
+                <default>false</default>
+                <label>Insurance Certificate</label>
+            </value>
+            <value>
+                <fullName>Itron-Indirect Sales/FDM</fullName>
+                <default>false</default>
+                <label>Itron-Indirect Sales/FDM</label>
+            </value>
+            <value>
+                <fullName>List of Board of Directors</fullName>
+                <default>false</default>
+                <label>List of Board of Directors</label>
+            </value>
+            <value>
+                <fullName>List of Major Shareholders</fullName>
+                <default>false</default>
+                <label>List of Major Shareholders</label>
+            </value>
+            <value>
+                <fullName>List of Officers</fullName>
+                <default>false</default>
+                <label>List of Officers</label>
+            </value>
+            <value>
+                <fullName>Literature</fullName>
+                <default>false</default>
+                <label>Literature</label>
+            </value>
+            <value>
+                <fullName>NSF/ANSI-61 Certification Letter</fullName>
+                <default>false</default>
+                <label>NSF/ANSI-61 Certification Letter</label>
+            </value>
+            <value>
+                <fullName>Parts List</fullName>
+                <default>false</default>
+                <label>Parts List</label>
+            </value>
+            <value>
+                <fullName>Parts Price List</fullName>
+                <default>false</default>
+                <label>Parts Price List</label>
+            </value>
+            <value>
+                <fullName>References</fullName>
+                <default>false</default>
+                <label>References</label>
+            </value>
+            <value>
+                <fullName>Scrap Credit Schedule</fullName>
+                <default>false</default>
+                <label>Scrap Credit Schedule</label>
+            </value>
+            <value>
+                <fullName>Tax Certificate</fullName>
+                <default>false</default>
+                <label>Tax Certificate</label>
+            </value>
+            <value>
+                <fullName>W-9</fullName>
+                <default>false</default>
+                <label>W-9</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

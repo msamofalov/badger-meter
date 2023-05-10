@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Selections_COPIES__c</fullName>
+    <description>Select the Documents you want COPIES to be mailed to this Contact.
+Used in conjunction with the Sales Credits specified in the Email Copies field. 
+Note:  These are Email COPIES only, originals are still emailed via the Email Selections and Invoice checkbox.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the Documents you want COPIES to be mailed to this Contact.
+Used in conjunction with the Sales Credits specified in the Email Copies field. 
+Note:  These are Email COPIES only, originals are emailed via the Email Selections and Invoice checkbox.</inlineHelpText>
+    <label>Email Selections (COPIES)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acknowledgment</fullName>
+                <default>false</default>
+                <label>Acknowledgment</label>
+            </value>
+            <value>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+                <label>Invoice</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

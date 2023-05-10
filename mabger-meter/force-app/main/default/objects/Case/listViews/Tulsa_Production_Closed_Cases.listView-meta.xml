@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tulsa_Production_Closed_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Return_Type__c</columns>
+    <columns>Product_Type__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.CLOSED_DATE</columns>
+    <columns>OWNER_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Closed_Resolved,Closed - Resolved,Closed - Unresolved</value>
+    </filters>
+    <filters>
+        <field>Suggested_Return_Location__c</field>
+        <operation>equals</operation>
+        <value>Tulsa</value>
+    </filters>
+    <label>Tulsa Production - Closed Cases</label>
+</ListView>

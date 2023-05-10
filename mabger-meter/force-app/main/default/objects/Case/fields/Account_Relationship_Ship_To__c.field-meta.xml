@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Relationship_Ship_To__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>This field links customer shipping addresses (from LX) to the Case, allowing the Account Relationship Ship-To address to identify where we ship a customer&apos;s product back to. If the address the customer identifies is not available it must be entered below.</inlineHelpText>
+    <label>Account Relationship (Ship To)</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Account_Relationship__c.Partner_1__r.Id</field>
+            <operation>equals</operation>
+            <valueField>$Source.AccountId</valueField>
+        </filterItems>
+        <infoMessage>Search results only display Account Relationship Ship-To&apos;s associated to the case account.</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account_Relationship__c</referenceTo>
+    <relationshipLabel>Cases</relationshipLabel>
+    <relationshipName>Cases</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,4 @@
+{"records":[
+	{"Customer_Number__c":"17851","Product_Number__c":"68886-101","SerialNumber":"12345"},
+	{"Customer_Number__c":"17851","Product_Number__c":"68886-101","SerialNumber":"12346"}
+]}

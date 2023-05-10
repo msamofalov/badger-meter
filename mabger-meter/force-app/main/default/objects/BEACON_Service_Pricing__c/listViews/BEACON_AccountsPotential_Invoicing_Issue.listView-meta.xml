@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BEACON_AccountsPotential_Invoicing_Issue</fullName>
+    <columns>NAME</columns>
+    <columns>Account_ID__c</columns>
+    <columns>Account_Customer_Number__c</columns>
+    <columns>Bill_To_Number__c</columns>
+    <columns>Account_Default_Ship_To_Number__c</columns>
+    <columns>Commission_Percent__c</columns>
+    <columns>Effective__c</columns>
+    <columns>Expiring__c</columns>
+    <columns>Increment__c</columns>
+    <columns>Item_Number__c</columns>
+    <columns>LX_Item_Number__c</columns>
+    <columns>Price__c</columns>
+    <columns>Sales_Credit_Number__c</columns>
+    <columns>Ship_To_Number__c</columns>
+    <columns>test__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATEDBY_USER</field>
+        <operation>contains</operation>
+        <value>kavya</value>
+    </filters>
+    <label>BEACON AccountsPotential Invoicing Issue</label>
+</ListView>

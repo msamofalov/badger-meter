@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Pending_Approvals</fullName>
+    <columns>NAME</columns>
+    <columns>BigMachines__Total_Amount__c</columns>
+    <columns>Quote_Type__c</columns>
+    <columns>BigMachines__Status__c</columns>
+    <columns>BigMachines__Total__c</columns>
+    <columns>PO_Number__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Current_Approval__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Pending Approvals</label>
+</ListView>

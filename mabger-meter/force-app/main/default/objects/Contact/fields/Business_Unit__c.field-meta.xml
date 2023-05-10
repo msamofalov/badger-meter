@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Unit__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Account.Organization_Type__c, 
+&quot;DC-Distributor Customer&quot;, &quot;Utility&quot;, 
+&quot;ED-Encompass Program Distributor&quot;, &quot;Flow&quot;, 
+&quot;FE-Flow End Customer&quot;,&quot;Flow&quot;, 
+&quot;FM-Skid Manufacturer/OEM&quot;, &quot;Flow&quot;, 
+&quot;HA-Flow House Account&quot;, &quot;Flow&quot;, 
+&quot;IR-Flow Industrial/Commercial Rep&quot;, &quot;Flow&quot;, 
+&quot;OD-Flow Open Distribution&quot;, &quot;Flow&quot;, 
+&quot;TD-Turf Distributor&quot;, &quot;Flow&quot;, 
+&quot;UC-Utility Customer&quot;, &quot;Utility&quot;, 
+&quot;UD-Utility Distributor&quot;, &quot;Utility&quot;, 
+&quot;UO-Utility Other&quot;, &quot;Utility&quot;, 
+&quot;WD-WYCO Distributor&quot;, &quot;Flow&quot;, 
+&quot;WE-WYCO End Customer/Contractor&quot;, &quot;Flow&quot;, 
+&quot;WM-WYCO OEM&quot;, &quot;Flow&quot;, 
+&quot;None&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Business Unit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

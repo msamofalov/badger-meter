@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Uploaded_Data__c</fullName>
+    <defaultValue>&quot;Analysis is based on service location addresses provided by the City, STATE, with ### out of ### (##.#%) successfully geocoded. A map of the geocoded endpoint locations is shown below. Addresses unable to be geocoded are in the Not Found tab of the geocoded addresses spreadsheet.&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Uploaded Data</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

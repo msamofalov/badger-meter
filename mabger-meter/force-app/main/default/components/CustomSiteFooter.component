@@ -1,0 +1,33 @@
+<apex:component >
+    <footer class="page-footer">
+        <div class="page-frame-footer">
+            <div class="page-footer-logo">
+                <a href="https://www.badgermeter.com/">
+                    <apex:image url="{!$Resource.BadgetMeterFooter}" width="200" height="70"/>
+                </a>
+            </div>
+            <div class="page-footer-return">
+                <a href="http://www.badgermeter.com/" style="color:#81a9c1">
+                    Return to badgermeter.com   >
+                </a>
+            </div>
+            <div class="page-footer-social">
+                <a href="https://www.facebook.com/badgermeter" target="_blank">
+                <apex:image url="{!$Resource.Facebook}" />
+                </a>
+                <a href="https://twitter.com/Badger_Meter" target="_blank">
+                    <apex:image url="{!$Resource.Twitter}" />
+                 </a>
+                 <a href="http://www.linkedin.com/company/badger-meter" target="_blank">
+                    <apex:image url="{!$Resource.LinkedIn}" />
+                </a>
+                  <a href="http://www.youtube.com/channel/UCV5WDR1pzpMY-GP8b7J08bg" target="_blank">
+                    <apex:image url="{!$Resource.Youtube}" />
+                 </a>
+            </div>
+            <div class="page-footer-copyright">
+                &copy; Badger Meter, Inc. All rights reserved.
+            </div>
+        </div>
+     </footer>
+</apex:component>

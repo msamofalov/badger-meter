@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BEACON_Metrics_Modified_TODAY</fullName>
+    <booleanFilter>1</booleanFilter>
+    <columns>Account_ID__c</columns>
+    <columns>Account_Number__c</columns>
+    <columns>Product__c</columns>
+    <columns>Total_Assets__c</columns>
+    <columns>Service_Units_Consumed__c</columns>
+    <columns>Billing_Units_Remaining__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>NAME</columns>
+    <columns>BEACON_Account_Level_Metric_ID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LAST_UPDATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>BEACON Metrics Modified TODAY</label>
+</ListView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Milestone_or_Activity__c</columns>
+    <columns>Training_Type_2__c</columns>
+    <columns>Training_Activity_Owner__c</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>Status__c</columns>
+    <columns>Interface_Analysis__c</columns>
+    <columns>OBJECT_ID</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>Training_Type__c</columns>
+    <columns>Dependencies__c</columns>
+    <columns>Sequence__c</columns>
+    <columns>Training_Session_Activity__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

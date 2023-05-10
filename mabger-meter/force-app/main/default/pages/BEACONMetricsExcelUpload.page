@@ -1,0 +1,96 @@
+<apex:page sidebar="false" controller="BEACONMetricsExcelUploadController" readOnly="false" lightningstylesheets="true">
+   <apex:form id="form1">
+      <apex:sectionHeader title="Upload BEACON Metric data from CSV file"/>
+      <apex:pagemessages />
+      <apex:pageBlock id="pb1" >
+            <center>
+                <apex:inputFile value="{!contentFile}" filename="{!nameFile}" /> 
+                <apex:commandButton action="{!ReadFile}" value="Upload File" id="theButton" style="width:70px;"/>
+              <!--  <apex:commandButton value="Upload File" id="theButton" onClick="SubmitOnClick(this);" rerender="pb2"   />--> 
+              <!--  <apex:actionFunction name="doSubmit" action="{!ReadFile}" />--> 
+              <!--  <apex:commandButton action="{!ReadFile}" value="Upload File" id="theButton" style="width:70px;" status="AddStatus" rerender="form1,pb2,pb1"/> -->
+                <br/> <br/> 
+                <!-- <font color="red"> <b>Note: Please use the standard template to upload Assets. <a href="{!URLFOR($Resource.AssetUploadTemplate)}" target="_blank"> Click here </a> to download the template. </b> </font> -->
+            </center>   
+        <!--         
+          <apex:actionStatus id="AddStatus">
+              <apex:facet name="start">
+                  <apex:outputText value="Loading"/>
+              </apex:facet>
+          </apex:actionStatus>  
+        -->    
+        <br />  
+      </apex:pageBlock> 
+      
+      <apex:pageBlock id="pb2" >   
+          Failed Record Count: {!BMetricsFail}
+          Successful Record Count: {!BMetricsSuccess}
+      <!--   
+        <apex:pageblocktable id="pbfl" value="{!filelines}" var="fl" rendered="{!NOT(ISNULL(BMetricsLoadsToupload))}">  
+            PREV ONE      
+            <apex:column HeaderValue="File Data" value="{!fl}"/>
+            <br />
+            Next ONE
+        </apex:pageblocktable>    
+        <br />    
+      -->    
+        <apex:pageblocktable value="{!BMetricsPartialList}" var="bmload" rendered="{!NOT(ISNULL(BMetricsLoadsToupload))}">   
+          <p> <b> BEACON Metrics Loaded ==> </b> </p>         
+          <apex:column headerValue="Account">
+              <apex:outputField value="{!bmload.Account_ID__c}"/>
+          </apex:column>
+          <apex:column headerValue="Part Number">
+              <apex:outputField value="{!bmload.Item_Number__c}"/>
+          </apex:column>
+          <apex:column headerValue="BM ID">
+              <apex:outputField value="{!bmload.id}"/>
+          </apex:column>
+          <apex:column headerValue="Account Number">
+              <apex:outputField value="{!bmload.Account_Number__c}"/>
+          </apex:column>
+          <apex:column headerValue="Product Type">
+              <apex:outputField value="{!bmload.Product_Type__c}"/>
+          </apex:column>
+          <apex:column headerValue="Total Assets">
+              <apex:outputField value="{!bmload.Total_Assets__c}"/>
+          </apex:column>
+          <apex:column headerValue="Pre Invoice">
+              <apex:outputField value="{!bmload.Pre_Invoice__c}"/>
+          </apex:column>
+          <apex:column headerValue="Total Removed">
+              <apex:outputField value="{!bmload.Total_Removed__c}"/>
+          </apex:column>
+          <apex:column headerValue="Service Units Consumed">
+              <apex:outputField value="{!bmload.Service_Units_Consumed__c}"/>
+          </apex:column>
+          <apex:column headerValue="Billing Units Remaining">
+              <apex:outputField value="{!bmload.Billing_Units_Remaining__c}"/>
+          </apex:column> 
+          <apex:column headerValue="Serial">
+              <apex:outputField value="{!bmload.Serial_Number__c}"/>
+          </apex:column> 
+          <apex:column headerValue="Discontinued">
+              <apex:outputField value="{!bmload.Discontinued__c}"/>
+          </apex:column> 
+          <apex:column headerValue="Status">
+              <apex:outputField value="{!bmload.Status__c}"/>
+          </apex:column> 
+          <apex:column headerValue="Processed?">
+              <apex:outputField value="{!bmload.Processed__c}"/>
+          </apex:column> 
+          <apex:column headerValue="Upload Error">
+              <apex:outputField value="{!bmload.Upload_Error__c}"/>
+          </apex:column>                                                   
+       </apex:pageblocktable>          
+    
+      </apex:pageBlock>       
+   </apex:form> 
+    <script language="Javascript">
+        function SubmitOnClick (objSubmitBtn) {
+            objSubmitBtn.disabled = true;
+            objSubmitBtn.value = 'Submitting...';
+            doSubmit();
+        }
+    </script>
+   
+</apex:page>

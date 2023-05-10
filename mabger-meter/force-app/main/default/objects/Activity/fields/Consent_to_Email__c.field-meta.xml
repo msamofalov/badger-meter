@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consent_to_Email__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Contact has verbally consented to receive emails</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Contact has verbally consented to receive emails</inlineHelpText>
+    <label>Consent to Email</label>
+    <type>Checkbox</type>
+</CustomField>

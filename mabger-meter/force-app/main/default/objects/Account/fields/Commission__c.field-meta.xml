@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commission__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Default_Ship_To_Sales_Credit__c = &quot;008483&quot;, 0.1, 
+IF( Default_Ship_To_Sales_Credit__c = &quot;007404&quot;, 0.1, 
+0 
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Commission</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

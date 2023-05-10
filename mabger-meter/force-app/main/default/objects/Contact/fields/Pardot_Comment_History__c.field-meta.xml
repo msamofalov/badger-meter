@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pardot_Comment_History__c</fullName>
+    <description>field concatenates pardot comment field which is just most recent comment</description>
+    <externalId>false</externalId>
+    <inlineHelpText>All recent comments from Pardot</inlineHelpText>
+    <label>Pardot Comment History</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

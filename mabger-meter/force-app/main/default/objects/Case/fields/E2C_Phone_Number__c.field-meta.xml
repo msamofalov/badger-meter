@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>E2C_Phone_Number__c</fullName>
+    <description>based on the address populated in the Email-to-Case Address field, what is the 800 number related to that queue? This field is used for the &quot;auto-response&quot; email template</description>
+    <externalId>false</externalId>
+    <formula>Case(First_Owner__c,
+&apos;WYCO Support Queue&apos;,&apos;1-800-233-9926&apos;, 
+&apos;Flow Global Orders Queue&apos;,&apos;1-877-243-1010&apos;, 
+&apos;Flow Instrumentation Orders Queue&apos;,&apos;1-877-243-1010&apos;,  
+&apos;Flow Instrumentation Tech Support Queue&apos;, &apos;1-877-243-1010&apos;, 
+&apos;Utility/BEACON Tech Support Queue&apos;,&apos;1-800-616-3837&apos;,  
+&apos;Utility Orders Queue&apos;,&apos;1-800-876-3837&apos;,
+&apos;BEACON Orders Queue&apos;,&apos;1-800-876-3837&apos;,
+&apos;&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>What is the phone number associated with the Email-to-Case Address?</inlineHelpText>
+    <label>E2C Phone Number</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

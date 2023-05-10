@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Update_Account_Relationship__c</fullName>
+    <description>When box is checked, the Default Ship To Number is not the same as the Ship To Number on the Default Account Relationship</description>
+    <externalId>false</externalId>
+    <formula>if(Default_Ship_To__c = Default_Acct_Rel_Ship_To_Number__c, False,True)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The Default Ship To Number is not the same as the Ship To Number on the Default Account Relationship</inlineHelpText>
+    <label>Update Account Relationship</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

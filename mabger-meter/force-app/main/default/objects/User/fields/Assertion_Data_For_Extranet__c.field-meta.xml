@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assertion_Data_For_Extranet__c</fullName>
+    <description>Formula field that outputs JSON-formatted assertion data for the extranet.  Is referenced in the setup of Salesforce as a identity provider.  (Warning: Max output for formula field is 1300 chars!)</description>
+    <externalId>false</externalId>
+    <formula>&quot;{&quot; 
+&amp; &quot;un:\&quot;&quot; &amp; Username &amp; &quot;\&quot;&quot; 
+&amp; &quot;,fn:\&quot;&quot; &amp; FirstName &amp; &quot;\&quot;&quot; 
+&amp; &quot;,ln:\&quot;&quot; &amp; LastName &amp; &quot;\&quot;&quot; 
+&amp; &quot;,email:\&quot;&quot; &amp; Email &amp; &quot;\&quot;&quot; 
+&amp; &quot;,p:[&quot; 
+        &amp; Contact.Products_CSV_for_Extranet_1__c 
+        &amp; Contact.Products_CSV_for_Extranet_2__c 
+        &amp; Contact.Products_CSV_for_Extranet_3__c 
+        &amp; Contact.Products_CSV_for_Extranet_4__c 
+        &amp; IF( Contact.Badger_Meter_Advanced__c 
+              ,IF( LEN(Contact.Products_CSV_for_Extranet_1__c)&gt;0, &quot;,&quot;, &quot;&quot;) &amp; &quot;\&quot;Badger Meter Advanced\&quot;&quot;
+              ,&quot;&quot;
+          )
+&amp; &quot;]&quot; 
+&amp; &quot;,pb:[&quot; &amp; Contact.Pricebook_Location_for_Extranet__c  &amp; &quot;]&quot; 
+&amp; &quot;}&quot;</formula>
+    <inlineHelpText>Formula field that outputs JSON-formatted assertion data for the extranet.  Is referenced in the setup of Salesforce as a identity provider.  (Warning: Max output for formula field is 1300 chars!)</inlineHelpText>
+    <label>Assertion Data For Extranet</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

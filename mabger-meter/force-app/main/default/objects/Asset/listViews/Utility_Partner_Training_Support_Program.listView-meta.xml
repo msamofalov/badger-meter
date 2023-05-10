@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Utility_Partner_Training_Support_Program</fullName>
+    <columns>ASSET.NAME</columns>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>Product_Description_Formula__c</columns>
+    <columns>Contact_Information__c</columns>
+    <columns>Last_Certification_Date__c</columns>
+    <columns>Max_Date__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Product_Description_Formula__c</field>
+        <operation>contains</operation>
+        <value>DISTRIB</value>
+    </filters>
+    <label>Utility Partner Training_Support Program</label>
+</ListView>

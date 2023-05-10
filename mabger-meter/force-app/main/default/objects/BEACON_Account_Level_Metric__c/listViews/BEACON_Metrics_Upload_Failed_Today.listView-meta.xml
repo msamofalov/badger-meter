@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BEACON_Metrics_Upload_Failed_Today</fullName>
+    <columns>NAME</columns>
+    <columns>OBJECT_ID</columns>
+    <columns>Account_ID__c</columns>
+    <columns>Account_Number__c</columns>
+    <columns>BEACON_Account_Level_Metric_ID__c</columns>
+    <columns>Processed__c</columns>
+    <columns>Product__c</columns>
+    <columns>Item_Number__c</columns>
+    <columns>Upload_Error__c</columns>
+    <columns>Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Processed__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Failed</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>BEACON Metrics Upload Failed Today</label>
+</ListView>

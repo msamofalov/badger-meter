@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internal_Analysis_Report</fullName>
+    <availability>online</availability>
+    <description>Includes pro-rated warranty data and detail notes. Internal report only.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Internal Analysis Report</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_370}
+&amp;Id={!Case.Id}
+
+&amp;QueryID=[PL]a2038000004ojQl
+&amp;TemplateId=a283t00000BNmZP
+
+&amp;DS7=1
+&amp;SC0=1
+&amp;SC1=SalesforceFile</url>
+</WebLink>

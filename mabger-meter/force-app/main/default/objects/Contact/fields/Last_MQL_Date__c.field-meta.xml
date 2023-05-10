@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_MQL_Date__c</fullName>
+    <description>Date used to test automations when needed. Currently updated by Process Builder. Field is updated by process builder that updates contacts coming from Pardot with lifecycle status of MQL.</description>
+    <externalId>false</externalId>
+    <label>Last MQL Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

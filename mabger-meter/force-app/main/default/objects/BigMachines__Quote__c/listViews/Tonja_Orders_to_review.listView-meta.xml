@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tonja_Orders_to_review</fullName>
+    <columns>NAME</columns>
+    <columns>Order_Number__c</columns>
+    <columns>Case__c</columns>
+    <columns>BigMachines__Account__c</columns>
+    <columns>PO_Verification__c</columns>
+    <columns>PO_Rejection_Reason__c</columns>
+    <columns>Order_Create_Date__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>1/1/2022 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Ack_PO_Verification__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Order_Number__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Quote_Type__c</field>
+        <operation>notEqual</operation>
+        <value>Credit</value>
+    </filters>
+    <filters>
+        <field>PO_Number__c</field>
+        <operation>notContain</operation>
+        <value>RMA</value>
+    </filters>
+    <filters>
+        <field>Credit_Debit_Memo_Code__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>PO_Verification__c</field>
+        <operation>notEqual</operation>
+        <value>Approved</value>
+    </filters>
+    <filters>
+        <field>CREATEDBY_USER.ALIAS</field>
+        <operation>equals</operation>
+        <value>dchat,edurh,syndij,rfent,rkwok,estei,jmccl,ko&apos;co,ssear,swhee,mmerc</value>
+    </filters>
+    <label>West Order Checking</label>
+</ListView>

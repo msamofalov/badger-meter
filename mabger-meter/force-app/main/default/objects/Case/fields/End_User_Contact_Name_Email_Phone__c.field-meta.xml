@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_User_Contact_Name_Email_Phone__c</fullName>
+    <description>This field is populated in the community by Partners and then used as reference by internal users to populated &quot;End User Contact.&quot;</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please provide a name contact information for a person at the End User Company.</inlineHelpText>
+    <label>End User Contact Name &amp; Email/Phone</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

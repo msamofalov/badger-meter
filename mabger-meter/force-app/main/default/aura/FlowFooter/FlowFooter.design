@@ -1,0 +1,6 @@
+<design:component >
+	<design:attribute name="nextLabel" label="Lable for Next Button"/> 
+    <design:attribute name="pauseLabel" label="Lable for Pause Button"/>
+    <design:attribute name="backLabel" label="Lable for Previous(Back) Button"/>
+    <design:attribute name="finishLabel" label="Lable for Finish Button"/>
+</design:component>

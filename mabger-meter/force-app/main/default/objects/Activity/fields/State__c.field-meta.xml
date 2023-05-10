@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State__c</fullName>
+    <description>State Initials for state traveled to for Travel Tracking</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter State initials</inlineHelpText>
+    <label>State</label>
+    <length>2</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_Taken_to_Open_from_Submit_Date__c</fullName>
+    <description>Field is for Reporting only.
+Days taken to Open a Case from Data Submit Date .</description>
+    <externalId>false</externalId>
+    <formula>DATEVALUE( CreatedDate ) -  Data_Submit_Date__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Days Taken to Open from Submit Date</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

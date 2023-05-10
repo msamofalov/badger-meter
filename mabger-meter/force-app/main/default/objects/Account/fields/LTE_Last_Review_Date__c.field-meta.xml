@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LTE_Last_Review_Date__c</fullName>
+    <description>This field is populated via workflow when the Verified ORION LTE field is checked. It will pop today(). Field is also editable by a small group of 3 people with the ORION Verification permission set.</description>
+    <externalId>false</externalId>
+    <label>LTE Last Review Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

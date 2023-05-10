@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Local_Requirements_Reviewed_and_Followed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field to confirm local health and safety requirements have been reviewed and followed for travel and visiting locations during COVID-19.  Beginning Sept. 2020.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>State and Local government health and safety requirements have been reviewed and were followed during travel.</inlineHelpText>
+    <label>Local Requirements Reviewed and Followed</label>
+    <type>Checkbox</type>
+</CustomField>

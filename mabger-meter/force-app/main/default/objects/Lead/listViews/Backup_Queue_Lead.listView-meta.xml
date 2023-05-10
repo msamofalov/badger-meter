@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Backup_Queue_Lead</fullName>
+    <columns>LEAD.RECORDTYPE</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>Lifecycle_Status__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>Send_to_LeadMethod__c</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE_CODE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Industry__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>Send_to_LeadMethod__c</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <label>Backup Queue</label>
+    <queue>Backup_Queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

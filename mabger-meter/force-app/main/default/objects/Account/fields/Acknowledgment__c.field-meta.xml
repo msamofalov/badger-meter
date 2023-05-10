@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acknowledgment__c</fullName>
+    <description>Setting for the timing of the generation of the external customer acknowledgment.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>None - no external acknowledgment generated.
+Immediately - external acknowledgment generated upon customer order creation or PPOC
+Verified - external acknowledgment generated after verification; i.e. will be generated using the current previous day run.</inlineHelpText>
+    <label>Acknowledgment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Immediately</fullName>
+                <default>true</default>
+                <label>Immediately</label>
+            </value>
+            <value>
+                <fullName>Verified</fullName>
+                <default>false</default>
+                <label>Verified</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

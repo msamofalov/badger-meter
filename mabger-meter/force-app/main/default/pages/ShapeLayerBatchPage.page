@@ -1,0 +1,14 @@
+<apex:page controller="ShapeLayerBatchPage" sidebar="false" lightningstylesheets="true">
+    <apex:form >
+        <apex:pageBlock title="Generate Shape Layer Batches">
+            <apex:pageMessages />
+            <table>
+                <tr>
+                    <td>
+                        <apex:commandButton action="{!RunBatch}" value="Run Batch"/>
+                    </td>
+                </tr>
+            </table>                
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

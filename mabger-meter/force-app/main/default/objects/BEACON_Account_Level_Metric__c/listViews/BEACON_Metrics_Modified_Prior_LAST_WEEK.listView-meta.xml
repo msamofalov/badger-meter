@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BEACON_Metrics_Modified_Prior_LAST_WEEK</fullName>
+    <booleanFilter>1</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Account_ID__c</columns>
+    <columns>Account_Number__c</columns>
+    <columns>BEACON_Account_Level_Metric_ID__c</columns>
+    <columns>Product__c</columns>
+    <columns>Serial_Number__c</columns>
+    <columns>Service_Units_Consumed__c</columns>
+    <columns>Billing_Units_Remaining__c</columns>
+    <columns>Status__c</columns>
+    <columns>Total_Assets__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LAST_UPDATE</field>
+        <operation>lessThan</operation>
+        <value>LAST_WEEK</value>
+    </filters>
+    <label>BEACON Metrics Modified Prior LAST WEEK</label>
+</ListView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gateway_Active</fullName>
+    <columns>ASSET.RECORDTYPE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>End_Customer_Number__c</columns>
+    <columns>ASSET.NAME</columns>
+    <columns>ASSET.SERIAL_NUMBER</columns>
+    <columns>Service_Agreement_Mode__c</columns>
+    <columns>Service_Unit_Product__c</columns>
+    <columns>Ship_Date__c</columns>
+    <columns>Service_Units_Remaining__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ASSET.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Asset.Gateway</value>
+    </filters>
+    <filters>
+        <field>AM_Out_of_Service__c</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <label>Gateway_Active</label>
+</ListView>

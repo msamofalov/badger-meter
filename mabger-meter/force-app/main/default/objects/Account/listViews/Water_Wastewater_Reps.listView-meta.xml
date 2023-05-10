@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Water_Wastewater_Reps</fullName>
+    <columns>Customer_Number__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STREET</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+    <columns>Email__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.URL</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <columns>authorized_market__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>authorized_market__c</field>
+        <operation>includes</operation>
+        <value>Water / Wastewater</value>
+    </filters>
+    <filters>
+        <field>Organization_Type__c</field>
+        <operation>equals</operation>
+        <value>IR-Flow Industrial/Commercial Rep</value>
+    </filters>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Water &amp; Wastewater Reps</label>
+</ListView>

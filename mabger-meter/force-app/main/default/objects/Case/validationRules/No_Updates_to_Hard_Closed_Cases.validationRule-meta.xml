@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Updates_to_Hard_Closed_Cases</fullName>
+    <active>false</active>
+    <description>Hard Closed cases are subject to FCR metric calculations and cannot be edited.</description>
+    <errorConditionFormula>AND(
+/*OR(RecordType.Name=&quot;Inquiry&quot;, RecordType.Name=&quot;Return&quot;)*/ 
+RecordType.Name=&quot;Inquiry&quot; ,
+ISPICKVAL(Status, &quot;Closed&quot;),
+TEXT(Case_Resolution__c) &lt;&gt; &quot;Duplicate Child Case&quot;,
+NOT(ISCHANGED(Status)), /*did not just changed to hard closed*/
+NOT(ISNEW()), /*any record change*/
+($Profile.Name &lt;&gt; &quot;System Administrator&quot;) /*sys admin can make changes*/
+)</errorConditionFormula>
+    <errorMessage>You cannot edit a &quot;hard closed&quot; case. Please reach out to a system administrator.</errorMessage>
+</ValidationRule>

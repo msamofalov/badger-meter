@@ -1,0 +1,915 @@
+			body {
+                -webkit-overflow-scroll: smooth;
+                -webkit-overflow-scrolling: touch;
+                -webkit-font-smoothing: antialiased;
+                -webkit-text-size-adjust: 100%;
+                font-family: "Myriad W08",Calibri,Helvetica,sans-serif;
+                font-size: 14px;
+                line-height: 1.5;
+                min-width: 320px;
+                text-rendering: optimizeLegibility;
+            }
+            body, html {
+                height: 100%;
+                margin: 0;
+                width: 100%;
+            }
+            user agent stylesheet body {
+                display: block;
+                margin: 8px;
+            }
+            
+            .page-header {
+                //background-color: #002a42;
+                color: #fff;
+                height: 110px;
+                position: relative;
+            }
+            article, aside, figcaption, figure, footer, header, main, menu, nav, section {
+                display: block;
+            }
+            user agent stylesheet article, aside, footer, header, hgroup, main, nav, section {
+                display: block;
+            }
+            
+            .page-header .page-frame {
+                height: 100%;
+                overflow: visible;
+                position: static;
+            }
+            .page-frame {
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                margin: 0 auto;
+                max-width: 1220px;
+                overflow: auto;
+                padding: 0 30px;
+                position: relative;
+            }
+            user agent stylesheet div {
+                display: block;
+            }
+            
+            .page-header-left {
+                float: left;
+                height: 70px;
+                margin-top: 40px;
+                width: 100%;
+            }
+            
+            .page-header-right {
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                float: right;
+                height: 100%;
+                padding: 18px 0 20px;
+                position: relative;
+                width: 0;
+            }
+            
+            .page-header-left .page-header-logo {
+                display: inline-block;
+                font-size: 0;
+                margin: -120px 0 0;
+                position: absolute;
+            }
+            
+            .page-header-left .page-header-logo>a {
+                position: absolute;
+            }
+            a {
+                color: #007ac2;
+                font-weight: 600;
+                text-decoration: none;
+            }
+            a {
+                background-color: transparent;
+            }
+            user agent stylesheet a:-webkit-any-link {
+                color: -webkit-link;
+                text-decoration: underline;
+                cursor: auto;
+            }
+            
+            .svg-bm-logo-white.svg-dims {
+                width: 220px;
+                height: 90px;
+            }
+            user agent stylesheethtml|* > svg {
+                transform-origin: 50% 50% 0px;
+            }
+            user agent stylesheet svg:not(:root), symbol, image, marker, pattern, foreignObject {
+                overflow: hidden;
+            }
+            user agent stylesheet * {
+                transform-origin: 0px 0px 0px;
+            }
+            
+            .page-header-right .page-header-search-holder {
+                bottom: 43px;
+                margin-bottom: 0;
+                position: absolute;
+                right: 0;
+                width: 310px;
+            }
+            
+            .page-header-right .page-header-link {
+                color: #007ac2;
+                font-size: .92857em;
+                font-weight: 600;
+                letter-spacing: 1px;
+                margin-left: 30px;
+            }
+            
+            .page-section-separator-top {
+                border-top: 1px solid #e3e3e3;
+                padding: 20px 0;
+            }
+            .page-section-gray {
+                background: #fcfcfc;
+            }
+            
+            .page-frame {
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                margin: 0 auto;
+                max-width: 1220px;
+                overflow: auto;
+                padding: 0 30px;
+                position: relative;
+            }
+            
+            .layout-sidebar-quarter {
+                max-width: 1220px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .form-frame {
+                max-width: 560px;
+            }
+            user agent stylesheet form {
+                display: block;
+                margin-top: 0em;
+            }
+            
+            .heading1, h3 {
+                color: #002a42;
+                margin: 1em 0;
+            }
+            
+            .blog-item .blog-title, .button-action, .heading1, h3 {
+                font-size: .92857em;
+                font-weight: 700;
+                letter-spacing: 1px;
+                //text-transform: uppercase;
+            }
+            .heading1, h1 {
+                font-size: 2.3em;
+                font-weight: 700;
+                letter-spacing: 1px;
+                margin: .1em 0 .05em;
+            }
+            user agent stylesheet h2 {
+                display: block;
+                font-size: 1.5em;
+                -webkit-margin-before: 0.83em;
+                -webkit-margin-after: 0.83em;
+                -webkit-margin-start: 0px;
+                -webkit-margin-end: 0px;
+                font-weight: bold;
+            }
+            
+            .heading2, h2 {
+                font-size: 1.2em;
+                font-weight: 500;
+                letter-spacing: 1px;
+                margin: .1em 0 .25em;
+            }
+            
+            h1 {
+                display: block;
+                font-size: 2em;
+                -webkit-margin-before: 0.67em;
+                -webkit-margin-after: 0.67em;
+                -webkit-margin-start: 0px;
+                -webkit-margin-end: 0px;
+                font-weight: bold;
+            }
+            p {
+                display: block;
+                -webkit-margin-before: 1em;
+                -webkit-margin-after: 1em;
+                -webkit-margin-start: 0px;
+                -webkit-margin-end: 0px;
+            }
+            
+            .controls-group {
+                padding: 30px 0;
+            }
+            
+            .field-col.half-width {
+                float: left;
+                display: block;
+                margin-right: 7.42302%;
+                width: 67%;
+            }
+            .half-width {
+                width: 50%;
+            }
+            
+            label {
+                color: #002a42;
+                font-size: 1.07143em;
+                font-weight: 600;
+            }
+            user agent stylesheet label {
+                cursor: default;
+            }
+            .field-holder {
+                margin-bottom: 1.25em;
+                position: relative;
+                padding-top: 5px;
+            }
+            
+            .text-field {
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                -webkit-appearance: none;
+                background-color: #fff;
+                border: 1px solid #e3e3e3;
+                border-radius: 2px;
+                font-family: "Myriad W08",Calibri,Helvetica,sans-serif;
+                height: 40px;
+                line-height: 1.25;
+                padding: 10px 10px;
+                width: 100%;
+            }
+            input {
+                line-height: normal;
+            }
+            button, input, optgroup, select, textarea {
+                color: inherit;
+                font: inherit;
+                margin: 0;
+            }
+            user agent stylesheet input:not([type]), input[type="email" i], input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i], input[type="text" i] {
+                padding: 1px 0px;
+            }
+            user agent stylesheet input {
+                -webkit-appearance: textfield;
+                padding: 1px;
+                background-color: white;
+                border: 2px inset;
+                border-image-source: initial;
+                border-image-slice: initial;
+                border-image-width: initial;
+                border-image-outset: initial;
+                border-image-repeat: initial;
+                -webkit-rtl-ordering: logical;
+                -webkit-user-select: text;
+                cursor: auto;
+            }
+            user agent stylesheet input, textarea, keygen, select, button {
+                margin: 0em;
+                text-rendering: auto;
+                color: initial;
+                letter-spacing: normal;
+                word-spacing: normal;
+                text-transform: none;
+                text-indent: 0px;
+                text-shadow: none;
+                display: inline-block;
+                text-align: start;
+            }
+            user agent stylesheet input, textarea, keygen, select, button, meter, progress {
+                -webkit-writing-mode: horizontal-tb;
+            }
+            
+            .checkbox-wrapper {
+                margin-bottom: 1.25em;
+                position: relative;
+            }
+            
+            .checkbox-wrapper label {
+                color: #9a9a9a;
+                cursor: pointer;
+                display: inline-block;
+                line-height: 22px;
+                margin-top: 0;
+                padding-left: 28px;
+                position: relative;
+            }
+            
+            .checkbox-wrapper input[type=checkbox] {
+                border: 0;
+                clip: rect(0 0 0 0);
+                height: 1px;
+                margin: -1px;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                width: 1px;
+            }
+            input[type=radio], input[type=checkbox] {
+                box-sizing: border-box;
+                padding: 0;
+            }
+            input {
+                line-height: normal;
+            }
+            button, input, optgroup, select, textarea {
+                color: inherit;
+                font: inherit;
+                margin: 0;
+            }
+            user agent stylesheet input[type="checkbox" i] {
+                margin: 3px 3px 3px 4px;
+            }
+            user agent stylesheet input[type="checkbox" i] {
+                -webkit-appearance: checkbox;
+                box-sizing: border-box;
+            }
+            user agent stylesheet input[type="radio" i], input[type="checkbox" i] {
+                margin: 3px 0.5ex;
+                padding: initial;
+                background-color: initial;
+                border: initial;
+            }
+            
+            .checkbox-wrapper input[type=checkbox]~.fake-box {
+                height: 14px;
+                margin-top: 0;
+                top: 1px;
+                width: 14px;
+            }
+            .checkbox-wrapper input[type=checkbox]~.fake-box {
+                display: block;
+                left: 0;
+                position: absolute;
+            }
+            
+            .checkbox-wrapper input[type=checkbox]~.fake-box:before {
+                height: 16px;
+                width: 16px;
+            }
+            .checkbox-wrapper input[type=checkbox]~.fake-box:before {
+                background: #fff;
+                border: 1px solid #e9e9e9;
+                content: ' ';
+                display: block;
+            }
+            
+            .checkbox-wrapper input[type=checkbox]:checked~.fake-box:after {
+                display: block;
+            }
+            .checkbox-wrapper input[type=checkbox]~.fake-box:after {
+                -webkit-transform: scaleX(-1) rotate(-45deg);
+                -moz-transform: scaleX(-1) rotate(-45deg);
+                -ms-transform: scaleX(-1) rotate(-45deg);
+                -o-transform: scaleX(-1) rotate(-45deg);
+                transform: scaleX(-1) rotate(-45deg);
+                color: #32b934;
+                content: 'L';
+                display: none;
+                font-family: 'Arial Black',sans-serif;
+                font-size: 12px;
+                font-weight: 900;
+                height: 12px;
+                left: 4px;
+                line-height: 1;
+                text-align: center;
+                top: 2px;
+                vertical-align: middle;
+                width: 12px;
+            }
+            .checkbox-wrapper input[type=checkbox]~.fake-box:after {
+                position: absolute;
+            }
+            
+            .field-holder {
+                margin-bottom: 1.25em;
+                position: relative;
+            }
+            
+            .button-action {
+                -webkit-transition: background .15s ease-out;
+                -moz-transition: background .15s ease-out;
+                transition: background .15s ease-out;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                background: #b6120a;
+                border: 0;
+                border-radius: 2px;
+                color: #fff;
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                outline: 0;
+                padding: 0 20px;
+                position: relative;
+            }
+            .blog-item .blog-title, .button-action, .heading3, h3 {
+                font-size: .92857em;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+            button, html input[type=button], input[type=reset], input[type=submit] {
+                -webkit-appearance: button;
+                cursor: pointer;
+            }
+            button, select {
+                text-transform: none;
+            }
+            button {
+                overflow: visible;
+            }
+            button, input, optgroup, select, textarea {
+                color: inherit;
+                font: inherit;
+                margin: 0;
+            }
+            user agent stylesheet input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+                padding: 1px 6px;
+            }
+            user agent stylesheet input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+                align-items: flex-start;
+                text-align: center;
+                cursor: default;
+                color: buttontext;
+                padding: 2px 6px 3px;
+                border: 2px outset buttonface;
+                border-image-source: initial;
+                border-image-slice: initial;
+                border-image-width: initial;
+                border-image-outset: initial;
+                border-image-repeat: initial;
+                background-color: buttonface;
+                box-sizing: border-box;
+            }
+            user agent stylesheet input, textarea, keygen, select, button {
+                margin: 0em;
+                text-rendering: auto;
+                color: initial;
+                letter-spacing: normal;
+                word-spacing: normal;
+                text-transform: none;
+                text-indent: 0px;
+                text-shadow: none;
+                display: inline-block;
+                text-align: start;
+            }
+            user agent stylesheet input, textarea, keygen, select, button, meter, progress {
+                -webkit-writing-mode: horizontal-tb;
+            }
+            user agent stylesheet button {
+                -webkit-appearance: button;
+            }
+            
+            .page-footer {
+			    -moz-box-sizing: border-box;
+			    box-sizing: border-box;
+			    background-color: #001d2e;
+			    color: #fff;
+			    min-height: 210px;
+			    overflow: auto;
+			}
+			
+			.page-frame-footer {
+			    -moz-box-sizing: border-box;
+			    box-sizing: border-box;
+			    margin: 0 auto;
+			    max-width: 1220px;
+			    overflow: auto;
+			    padding: 100px 30px;
+			    position: relative;
+			}
+
+			.page-footer-logo {
+			    font-size: 0;
+			    left: 30px;
+			    margin: 0;
+			    position: absolute;
+			    top: 20px;
+			}			
+			
+			.bcms-editor-toggleable .cke_toolbox_main:after, .clearfix:after, .field-row:after, .filters-block-wrapper .filters-block.radio-two-cols:after, .group-results:after, .home-brands-list:after, .industries-wrapper:after, .items-grid:after, .layout-sidebar-quarter .lsq-main:after, .layout-sidebar-quarter:after, .layout-sidebar-third .lst-main:after, .layout-sidebar-third:after, .literature-item:after, .literature-order-footer:after, .product-info-box .product-info-line.as-mini-product .mini-product-content:after, .product-info-box .product-info-line:after, .product-listing-help.unified-padding .help-question:after, .product-listing-help.unified-padding:after, .product-main:after, .related-products:after, .resources-footer:after, .resources-table .resource-table-order:after, .resources-table.as-literature-order .resource-table-order .resource-table-order-form:after, .resources-table.as-literature-order tr:after, .resources-table.with-order tr:after, .section-heading-link.static-on-mobile:after, .select-custom .select-custom-dropdown a:after, .two-columns:after, .two-labels-input:after {
+			    clear: both;
+			    content: '';
+			    display: table;
+			}
+			
+			.page-footer-return {
+			    bottom: 115px;
+			    color: #81a9c1;
+			    font-weight: 600;
+			    position: absolute;
+			    right: 30px;
+			}
+			
+			.page-footer-social {
+			    bottom: 20px;
+			    height: 30px;
+			    left: 30px;
+			    position: absolute;
+			}
+			
+			.page-footer-social>a {
+			    display: inline-block;
+			    height: 30px;
+			    margin-right: 15px;
+			}
+			
+			.page-footer-copyright {
+			    bottom: 20px;
+			    color: #81a9c1;
+			    font-weight: 600;
+			    position: absolute;
+			    right: 30px;
+			}
+			
+			@media screen and (max-width:768px) {
+				.page-header-right, .heading2, .checkbox-wrapper, .page-footer-return {
+					display:none;
+				}
+			}
+			
+			@media screen and (max-width: 768px) {
+				.page-footer-social {
+				    text-align: justify;
+				    text-justify: distribute;
+				    margin-bottom: 25px;
+				    margin-top: 40px;
+				    position: static;
+				}
+			}
+			
+			@media screen and (max-width: 768px) {
+				.page-footer-logo, .page-footer-social {
+			    	left: 20px;
+			    }
+			}
+			
+			@media screen and (max-width: 768px) {
+				.page-footer-social:before {
+				    content: '';
+				    display: block;
+				    width: 100%;
+				}
+			}
+			
+			@media screen and (max-width: 768px) {
+				.page-footer-social:after {
+				    content: '';
+				    display: inline-block;
+				    width: 100%;
+				}
+			}
+			
+			@media screen and (max-width: 768px) {
+				.page-footer-copyright {
+				    right: 20px;
+				    margin-bottom: 15px;
+				    position: static;
+				    text-align: center;
+				}
+			}
+			
+			@media screen and (max-width: 600px) {
+				.mobile-modal-footer .button-action, .text-field {
+				    text-align: center;
+				    width: 100%;
+				}
+			}
+			
+			@media screen and (max-width: 1024px) {
+				.field-col.full-on-tablet, .field-col-register.half-width.full-on-tablet, 
+				.field-col.two-thirds.full-on-tablet, .field-col.one-third.two-thirds-on-tablet.full-on-small-mobile, .field-col.one-third.full-on-tablet {
+				    float: left;
+				    display: block;
+				    margin-right: 3.57869%;
+				    width: 100%;
+				}
+			}
+			
+			@media screen and (min-width: 601px) {
+				.line-brk-mobile-only {
+					display: none;
+				}
+			}
+			
+			@media screen and (max-width: 600px) {
+				.label-desktop-tablet-only {
+					display: none;
+				}
+			}
+			
+			.message {
+			    border-radius: 4px;
+			}
+			.errorM6, .errorM4, .errorM3, .errorM2, .errorS1 {
+			    border-color: #C00;
+			}
+			.message {
+			    background-color: #FFC;
+			    border-style: solid;
+			    border-width: 1px;
+			    color: #000;
+			    padding: 6px 8px 6px 6px;
+			    //margin: 4px 20px;
+			}
+			
+			.errorM3 .msgIcon, .errorMedium {
+			    background-image: url("/img/msg_icons/error24.png");
+			    background-position: 0px 0px;
+			    width: 24px;
+			    height: 24px;
+			}
+			
+			.message .messageTable .messageCell {
+			    vertical-align: middle;
+			}
+			
+			.message .messageText {
+			    margin-left: 8px;
+			    margin-top: -10px;
+			    line-height: 0.25;
+			    margin-bottom: 6px;
+			}
+			
+			.message .messageText h4 {
+			    font-weight: bold;
+			    display: block;
+			}
+			
+			.checkmark {
+                display:inline-block;
+                -ms-transform: rotate(45deg); /* IE 9 */
+                -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+                transform: rotate(45deg);
+                left: 50%;
+                position: absolute;
+            }
+            
+            .checkmark_circle {
+                position: absolute;
+                width:48px;
+                height:48px;
+                border:3px solid #47D147;
+                border-radius:26px;
+            }
+            
+            .checkmark_stem {
+                position: absolute;
+                width:6px;
+                height:26px;
+                background-color: #47D147;
+                left:26px;
+                top:9px;
+            }
+            
+            .checkmark_kick {
+                position: absolute;
+                width: 14px;
+                height: 6px;
+                background-color: #47D147;
+                left: 15px;
+                top: 29px;
+            }
+            
+            .page {
+                background-color: #fff;
+                height: auto!important;
+                min-height: 800px;
+            }
+            
+            .page-section-separator-top {
+                border-top: 1px solid #e3e3e3;
+                padding: 20px 0;
+                min-height: 649px;
+            }
+            
+            .page-frame-password {
+                box-sizing: border-box;
+                margin: 0 auto;
+                max-width: 1220px;
+                overflow: auto;
+                padding: 0 30px;
+                position: relative;
+                top: 54px;
+                text-align: -webkit-center;
+                text-align: -moz-center;
+                text-align: center;
+                
+            }
+            
+            .heading1-password {
+                font-size: 2.3em;
+                font-weight: 700;
+                letter-spacing: 1px;
+                margin: 1.1em 0 .05em;
+                color: #47D147;
+            }
+            
+            .heading2-password {
+                font-size: 1.7em;
+                font-weight: 500;
+                letter-spacing: 1px;
+                margin: .1em 0 .25em;
+                color: #44484b;
+            }
+            
+            @media screen and (min-width: 769px) {
+                .page-frame-password {
+                    width: 610px;
+                }
+            }
+			
+			 .heading2-registration {
+                font-size: 1.3em;
+                font-weight: 500;
+                letter-spacing: 0px;
+                margin: .1em 0 .5em;
+            }
+            
+            .bcms-editor-toggleable .cke_toolbox_main:after, .clearfix:after, .field-row:after, .filters-block-wrapper .filters-block.radio-two-cols:after, .group-results:after, .home-brands-list:after, .industries-wrapper:after, .items-grid:after, .layout-sidebar-quarter .lsq-main:after, .layout-sidebar-quarter:after, .layout-sidebar-third .lst-main:after, .layout-sidebar-third:after, .literature-item:after, .literature-order-footer:after, .product-info-box .product-info-line.as-mini-product .mini-product-content:after, .product-info-box .product-info-line:after, .product-listing-help.unified-padding .help-question:after, .product-listing-help.unified-padding:after, .product-main:after, .related-products:after, .resources-footer:after, .resources-table .resource-table-order:after, .resources-table.as-literature-order .resource-table-order .resource-table-order-form:after, .resources-table.as-literature-order tr:after, .resources-table.with-order tr:after, .section-heading-link.static-on-mobile:after, .select-custom .select-custom-dropdown a:after, .two-columns:after, .two-labels-input:after {
+                clear: both;
+                content: '';
+                display: table;
+            }
+            
+            .field-col-register.half-width:last-child {
+                margin-right: 0;
+            }
+            
+            .field-col-register.half-width {
+                float: left;
+                display: block;
+                margin-right: 7.42302%;
+                width: 46.28849%;
+            }
+            
+            .field-col.two-thirds {
+                float: left;
+                display: block;
+                margin-right: 7.42302%;
+                width: 64.19233%;
+            }
+            
+            .field-col.one-third:last-child {
+                margin-right: 0;
+            }
+            
+            .field-col.one-third {
+                float: left;
+                display: block;
+                margin-right: 7.42302%;
+                width: 28.38465%;
+            }
+            
+            .separator-registration {
+                border-top: 1px solid #e3e3e3;
+                padding: 8px 0;
+            }
+            
+            .select-main {
+                line-height: 16px;
+                padding: 9px 36px 9px 10px;
+                -webkit-padding-end: 36px;
+            }
+            .select-custom .select-custom-selected, .select-main {
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                color: #9a9a9a;
+                font-size: 1.07143em;
+                font-weight: 600;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                -ms-appearance: none;
+                -o-appearance: none;
+                appearance: none;
+                background: url(http://badgermetercomus-prod.cloudapp.net/content/styles/images/select-arrow.png) right center no-repeat #fff;
+                border: 1px solid #e3e3e3;
+                border-radius: 2px;
+                cursor: pointer;
+                display: block;
+                height: 40px;
+                margin: 0;
+                outline: 0;
+                overflow: hidden;
+                text-indent: .01px;
+                text-overflow: '';
+                white-space: nowrap;
+                width: 100%;
+            }
+            button, select {
+                text-transform: none;
+            }
+            button, input, optgroup, select, textarea {
+                color: inherit;
+                font: inherit;
+                margin: 0;
+            }
+            user agent stylesheet keygen, select, select[size="0"], select[size="1"] {
+                border-radius: 0px;
+                border-color: rgb(169, 169, 169);
+            }
+            user agent stylesheet select:not(:-internal-list-box) {
+                overflow: visible !important;
+            }
+            user agent stylesheet select {
+                -webkit-appearance: menulist;
+                box-sizing: border-box;
+                align-items: center;
+                border: 1px solid;
+                border-image-source: initial;
+                border-image-slice: initial;
+                border-image-width: initial;
+                border-image-outset: initial;
+                border-image-repeat: initial;
+                white-space: pre;
+                -webkit-rtl-ordering: logical;
+                color: black;
+                background-color: white;
+                cursor: default;
+            }
+            user agent stylesheet keygen, select {
+                border-radius: 5px;
+            }
+            
+            user agent stylesheet input, textarea, keygen, select, button, meter, progress {
+                -webkit-writing-mode: horizontal-tb;
+            }
+            
+            option {
+                font-weight: normal;
+            }
+            user agent stylesheet option {
+                font-weight: normal;
+                display: block;
+                padding: 0px 2px 1px;
+                white-space: pre;
+                min-height: 1.2em;
+            }
+            
+            .select-custom [disabled].select-custom-selected, [disabled].select-main {
+                cursor: default;
+                opacity: .5;
+            }
+			
+			select { 
+        	
+        		line-height: 16px;
+			    padding: 9px 36px 9px 10px;
+			    -webkit-padding-end: 36px;
+			    moz-box-sizing: border-box;
+			    box-sizing: border-box;
+			    color: #9a9a9a;
+			    font-size: 1.07143em;
+			    font-weight: 600;
+			    -webkit-appearance: none;
+			    -moz-appearance: none;
+			    -ms-appearance: none;
+			    -o-appearance: none;
+			    appearance: none;
+			    background: url(http://badgermetercomus-prod.cloudapp.net/content/styles/images/select-arrow.png) right center no-repeat #fff;
+			    border: 1px solid #e3e3e3;
+			    border-radius: 2px;
+			    cursor: pointer;
+			    display: block;
+			    height: 40px;
+			    margin: 0;
+			    outline: 0;
+			    overflow: hidden;
+			    text-indent: .01px;
+			    text-overflow: '';
+			    white-space: nowrap;
+			    width: 100%;
+        	}
+			
+			a.info{
+                position:relative; 
+                //left:181px;
+                text-decoration:none;
+                text-align:center;
+              }
+            
+            a.info span{display: none}
+            
+            a.info:hover span{ 
+                display:block;
+                position:absolute;
+                top:-42px;
+                width:18em;
+                border:1px solid #e3e3e3;
+                background-color:white; 
+                color:#000;
+                text-align: center;
+                padding:10px;
+                left: -9px;
+              }
+			  
+			.errorMsg {
+				color: #C00;
+			}

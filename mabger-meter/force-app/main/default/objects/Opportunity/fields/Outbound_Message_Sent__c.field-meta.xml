@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outbound_Message_Sent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Box gets checked by workflow that also sends the outbound message</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Box gets checked by workflow that also sends the outbound message</inlineHelpText>
+    <label>Outbound Message Sent</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

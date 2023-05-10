@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Domain_Match_Found__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>this field indicates a domain match was found when the contact self registered for access to the community / extranet.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>this field indicates a domain match was found when the contact self registered for access to the community / extranet.</inlineHelpText>
+    <label>Domain Match Found</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

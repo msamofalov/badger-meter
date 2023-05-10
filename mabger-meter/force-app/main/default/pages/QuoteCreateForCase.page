@@ -1,0 +1,78 @@
+<apex:page controller="QuoteCreateForCaseCntr" tabStyle="BigMachines__Quotes__tab" id="pg" lightningStylesheets="true" action="{!continueOn}">
+    <apex:slds ></apex:slds>
+        
+    <style>
+        .hideListButton{
+            display:none;
+        }
+        .pbSubheader {
+            background-image: url('/img/alohaSkin/opacity75.png');
+            padding: 4px 16px;
+        }
+        
+        .apexp .bPageBlock.apexDefaultPageBlock .pbBody .pbSubheader h3 {
+            font-family: Arial,Helvetica,sans-serif;
+            font-weight: bold;
+            color: #000;
+        }
+    </style>
+
+    <apex:form id="display">
+        
+        <apex:outputPanel rendered="{!forwardingURL != ''}">
+            <script>
+                location.href = "{!forwardingURL}";
+            </script>
+        </apex:outputPanel>
+
+        <apex:outputPanel rendered="{!hasExistingQuotes == true}">      
+            
+            <apex:sectionHeader title="Create Quote" subtitle="New Quote"/>
+
+            <apex:pageBlock >
+        
+                <br/><br/> 
+                Warning: PO Number for Account Name already exists.
+                <br/><br/> 
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Created On</th>
+                            <th>Created By</th>
+                            <th>Status</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <apex:repeat value="{!existingQuotes}" var="quote">
+                            <tr>
+                                <td><a href="/{!quote.Id}">{!quote.Name}</a></td>
+                                <td>{!quote.CreatedDate}</td>
+                                <td>{!quote.CreatedBy.Name}</td>
+                                <td>{!quote.BigMachines__Status__c}</td>
+                                <td>${!quote.BigMachines__Total_Amount__c}</td>
+                            </tr>
+                        </apex:repeat>
+                    </tbody>
+                </table>
+                
+                <br/><br/>
+                
+                If you still want to proceed with creating the order, click on Create Quote below.  Otherwise click on Cancel to return to the case.
+                
+                <br/><br/>
+
+                <apex:pageBlockButtons location="bottom">
+                    <apex:commandButton id="btnCreate" disabled="false" status="idActionStatus" value="Create Quote" action="{!createQuote}"  rerender="display"/>
+                    <apex:commandButton action="{!returnToCase}" value="Cancel"/>
+                </apex:pageBlockButtons>
+
+            </apex:pageBlock>
+
+        </apex:outputPanel>
+        
+    </apex:form>
+    
+</apex:page>

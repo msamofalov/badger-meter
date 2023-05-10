@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Invoice_Validation</fullName>
+    <active>true</active>
+    <description>Do not allow Email Invoice for certain Payment Terms</description>
+    <errorConditionFormula>AND( 
+AND( 
+AND( 
+OR( 
+Account.payment_TermsP_3__c = &apos;C$&apos;, 
+Account.payment_TermsP_3__c = &apos;F&apos;, 
+Account.payment_TermsP_3__c = &apos;FX&apos;, 
+Account.payment_TermsP_3__c = &apos;N&apos;, 
+Account.payment_TermsP_3__c = &apos;OB&apos;, 
+Account.payment_TermsP_3__c = &apos;S&apos;, 
+Account.payment_TermsP_3__c = &apos;Z&apos;, 
+Account.payment_TermsP_3__c = &apos;02&apos;, 
+Account.payment_TermsP_3__c = &apos;03&apos;, 
+Account.payment_TermsP_3__c = &apos;07&apos;, 
+Account.payment_TermsP_3__c = &apos;08&apos;, 
+Account.payment_TermsP_3__c = &apos;1B&apos;, 
+Account.payment_TermsP_3__c = &apos;11&apos;, 
+Account.payment_TermsP_3__c = &apos;12&apos;, 
+Account.payment_TermsP_3__c = &apos;13&apos;, 
+Account.payment_TermsP_3__c = &apos;15&apos;, 
+Account.payment_TermsP_3__c = &apos;17&apos;, 
+Account.payment_TermsP_3__c = &apos;18&apos; 
+), 
+NOT(ISBLANK(Account.payment_TermsP_3__c) )
+), 
+Email_Invoice__c = True 
+), 
+ISCHANGED(Email_Invoice__c) 
+)</errorConditionFormula>
+    <errorDisplayField>Email_Invoice__c</errorDisplayField>
+    <errorMessage>You cannot select Email Invoice because the Payment Terms for this Account is one of the following:
+C$, F, FX, N, OB, S, Z, 02, 03, 07, 08, 1B, 11, 12, 13, 15, 17 or 18</errorMessage>
+</ValidationRule>

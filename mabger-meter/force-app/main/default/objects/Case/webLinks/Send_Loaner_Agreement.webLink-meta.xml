@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Loaner_Agreement</fullName>
+    <availability>online</availability>
+    <description>Emails out Loaner Agreement to contact in Case</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Send Loaner Agreement</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>https://composer.congamerge.com
+?serverUrl={!API.Partner_Server_URL_370}
+&amp;id={!Case.Id}
+
+
+&amp;EmailToId={!Contact.Id}
+&amp;EmailFromID=0D23t000000L0xI
+&amp;EmailRelatedToId={!Case.Id}
+&amp;EmailTemplateId=a1z3t000009JNB3AAO
+&amp;TemplateId=a283t000004WeLjAAK 
+
+&amp;DefaultPDF=1
+&amp;DS7=2
+&amp;SC0=1
+&amp;SC1=SalesforceFile</url>
+</WebLink>

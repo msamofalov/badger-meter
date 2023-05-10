@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Racine_Production_Leads_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Quality_Status__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Return_Type__c</columns>
+    <columns>Product_Line__c</columns>
+    <columns>Product_Type__c</columns>
+    <columns>Response_Received__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notContain</operation>
+        <value>Closed</value>
+    </filters>
+    <filters>
+        <field>Quality_Status__c</field>
+        <operation>contains</operation>
+        <value>OK to</value>
+    </filters>
+    <filters>
+        <field>PO_Number__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Racine - Production Leads</label>
+    <queue>Racine_Production_Leads</queue>
+</ListView>

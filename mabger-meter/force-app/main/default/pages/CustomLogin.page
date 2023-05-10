@@ -1,0 +1,75 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" controller="CustomLoginController" doctype="html-5.0"  lightningstylesheets="true">
+    
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <apex:stylesheet value="{!$Resource.BadgeMeterCss}"/>
+    </head>
+    
+    <body>
+        
+        <div class="page ">
+            
+            <c:CustomSiteHeader />
+            
+            <main class="content-wrapper">
+                <div class="page-section-gray page-section-separator-top">
+                    <div class="page-frame">
+                        <div class="layout-sidebar-quarter contact-us-layout" id="content-container">
+                            <section class="lsq-main contact-us-form landing-padding">
+                                <div id="contactUs-app" class="contact-us-form-child">
+                                    <apex:form styleClass="form-frame">
+                                        <apex:pageMessages />
+                                        <div valdr-type="Data">
+                                            <h1 class="heading1">Sign In</h1>
+                                            <p class="heading2">
+                                                Sign in with your Badger Meter Extranet account.
+                                            </p>
+                                            <div class="controls-group">
+                                                <div class="field-row">
+                                                    <div class="field-col half-width full-on-tablet">
+                                                        <label for="contact-first-name">Username</label>
+                                                        <div class="field-holder form-group" valdr-form-group="">
+                                                            <apex:input id="contact-Username" value="{!username}" styleClass="text-field"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="field-row">
+                                                    <div class="field-col half-width full-on-tablet">
+                                                        <label for="contact-first-name">Password</label>
+                                                        <a style="float:right" href="/CustomForgotPassword">
+                                                            Forgot Password?
+                                                        </a>
+                                                        <div class="field-holder form-group" valdr-form-group="">
+                                                            <apex:inputSecret id="contact-password" value="{!password}" styleClass="text-field"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="checkbox-wrapper">
+                                                    <label>
+                                                        <input type="checkbox" name="checkbox" value="true" />
+                                                        <span class="fake-box"></span>
+                                                        Remember me on this device.
+                                                    </label>
+                                                </div>
+                                                <div class="field-holder mobile-modal-footer" form-scroll="">
+                                                    <apex:commandButton action="{!login}" value="Sign In" styleClass="button-action"/>
+                                                    <label class="label-desktop-tablet-only" style="padding-left: 23px;" >Don't have an account?</label><apex:outputLink styleClass="label-desktop-tablet-only" value="/CustomRegistration?startURL={!startUrl}" style="padding-left: 13px;" >Register   ></apex:outputLink>
+                                                    <div class="line-brk-mobile-only" style="text-align: center;"><br></br><label >Don't have an account? </label><apex:outputLink value="/CustomRegistration?startURL={!startUrl}" >Register   ></apex:outputLink></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </apex:form>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+        </div>
+        
+        <c:CustomSiteFooter />
+        
+    </body>
+</apex:page>

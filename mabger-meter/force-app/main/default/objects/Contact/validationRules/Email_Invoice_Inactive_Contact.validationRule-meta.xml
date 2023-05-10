@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Invoice_Inactive_Contact</fullName>
+    <active>true</active>
+    <description>Email Invoice selection not allowed if Contact is INACTIVE</description>
+    <errorConditionFormula>AND
+(
+Inactive__c = True,  Email_Invoice__c = True
+)</errorConditionFormula>
+    <errorDisplayField>Inactive__c</errorDisplayField>
+    <errorMessage>You cannot select Email Invoice if the CONTACT is INACTIVE.  Uncheck the Inactive checkbox, then check Email Invoice.</errorMessage>
+</ValidationRule>

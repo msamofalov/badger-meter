@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BigMachines__iframe_resizing</fullName>
+    <availability>online</availability>
+    <description>Resizes the Oracle Quotes and Orders list, which is displayed in an iframe. The iframe is resized to the height of its contents, so that no scroll bar is needed.</description>
+    <displayType>link</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>iframe resizing</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(URLFOR($Site.Prefix) + &apos;/resource/iframe_resizing&apos;)}</url>
+</WebLink>

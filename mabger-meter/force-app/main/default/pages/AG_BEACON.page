@@ -1,0 +1,6 @@
+<apex:page standardController="Account" showHeader="false" docType="html-4.01-strict">
+<CRMC_PP:Grid ObjectName="BEACON_Service_Pricing__c" FKName="Account_ID__c" FKValue="{!Account.Id}"  DelayLoad="false"  ViewID="a2g3t000003x5RTAAY" 
+ EnableNewButton="true"  EnableNewInline="true"  EnableEdit="true"  EnableActions="true"  EnableFieldChooser="true" 
+ EnableStickyViews="true"  EnableToolbar="true"  EnableViews="false"  EnableFormatting="false"  EnableReadingPane="true" />
+<CRMC_PP:DrillUp />
+</apex:page>

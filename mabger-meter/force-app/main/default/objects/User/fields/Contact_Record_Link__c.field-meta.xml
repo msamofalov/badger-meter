@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Record_Link__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;https://badgermeter.lightning.force.com/lightning/r/Contact/&quot;+Contact.Id+&quot;/view&quot;, Contact.FirstName+&quot; &quot;+Contact.LastName+&quot;&apos;s Contact Record&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Contact Record Link</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

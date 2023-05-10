@@ -1,0 +1,21 @@
+<apex:page showHeader="false" controller="WidenSSOLoginController" action="{!authenticateAndRedirectToCommunityHome}">
+  <apex:form >
+    <!--apex:commandButton action="{!authenticateAndRedirectToCommunityHome}" value="Login to Widen DAM" rerender="redirectPanel,authScript"/><br/>
+    <apex:commandButton action="{!finishLoginFlow}" value="Finish Login"/><br/-->
+    <apex:actionFunction name="finishLogin" action="{!finishLoginFlow}"/>
+    <br/>
+    <apex:outputPanel id="redirectPanel">
+      <!--RedirectURL: <a href="{!RedirectURL}" target="_blank">{!RedirectURL}</a><br/-->
+      <script>
+        //console.log("Opening auth window...");
+        var authenticationWindow = window.open("{!RedirectURL}", "_blank");
+        setTimeout(function(){
+          //console.log("Closing auth window...");
+          authenticationWindow.close();
+          finishLogin();
+        }, 1000);
+      </script>
+    </apex:outputPanel>
+    
+  </apex:form>
+</apex:page>

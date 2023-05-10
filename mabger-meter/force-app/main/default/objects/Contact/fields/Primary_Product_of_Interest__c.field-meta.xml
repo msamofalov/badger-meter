@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Product_of_Interest__c</fullName>
+    <description>Pass-through field. Entered by customer on web, comes to SF via Pardot. Used for Lead Routing by LeadMethod.</description>
+    <externalId>false</externalId>
+    <label>Primary Product of Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Products_Brands_of_Interest</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mailing_Country_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK( MailingCountry )
+
+&amp;&amp; (NOT($Profile.Name = &apos;Partner Portal Profile1521817908041&apos;))</errorConditionFormula>
+    <errorDisplayField>MailingCountry</errorDisplayField>
+    <errorMessage>Enter Mailing Country</errorMessage>
+</ValidationRule>

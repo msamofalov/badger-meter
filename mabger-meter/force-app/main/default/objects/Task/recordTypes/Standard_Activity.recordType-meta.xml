@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Standard_Activity</fullName>
+    <active>true</active>
+    <label>Standard Activity</label>
+    <picklistValues>
+        <picklist>Data_Source__c</picklist>
+        <values>
+            <fullName>ACT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BPCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BigMachines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FourthShift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pivotal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>TDF</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Direction__c</picklist>
+        <values>
+            <fullName>Incoming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outgoing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Accuracy Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Credit Memo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interface - Technical Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interface Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loaner Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lunch %26 Learn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Outreach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove From Beacon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair %2F Estimate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair %2F Test</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Quote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serial Numbers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade%2FExchange-Loyalty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warranty Review</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

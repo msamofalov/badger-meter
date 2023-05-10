@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Shipping_Location__c</fullName>
+    <description>Determines which Customer&apos;s return shipping address to use on the RMA form.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(Account_Relationship_Ship_To__c), 
+Account.Name+BR()&amp; 
+&quot;Attn: &quot;&amp; Contact.FirstName&amp;&quot; &quot;+Contact.LastName&amp;BR()&amp; 
+Address__c&amp;BR()+ 
+City__c&amp;&quot;, &quot;&amp; State_Province__c&amp;BR()&amp; 
+Zip_Postal_Code__c&amp;BR(), 
+Account_Relationship_Ship_To__r.Ship_To_Number__c&amp; BR() &amp; 
+Account_Relationship_Ship_To__r.Ship_To_Name__c&amp; BR() &amp; 
+Account_Relationship_Ship_To__r.Partner_2_Shipping_Street__c&amp; BR() &amp; 
+Account_Relationship_Ship_To__r.Partner_2_Shipping_City__c&amp; &quot;, &quot; &amp; TEXT(Account_Relationship_Ship_To__r.Partner_2_Shipping_State__c)&amp; BR() &amp; 
+Account_Relationship_Ship_To__r.Partner_2_Shipping_Postal_Code__c&amp; BR() &amp; 
+TEXT(Account_Relationship_Ship_To__r.Partner_2_Shipping_Country__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Customer Shipping Location</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

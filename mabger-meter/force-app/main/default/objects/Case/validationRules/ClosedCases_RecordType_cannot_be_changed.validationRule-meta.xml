@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClosedCases_RecordType_cannot_be_changed</fullName>
+    <active>true</active>
+    <description>Prevent  closed Inquiry and Return cases from being changed to other record type.
+Only Salesforce Admins can change.</description>
+    <errorConditionFormula>AND(
+ISCHANGED( RecordTypeId ) ,
+
+OR (
+
+(PRIORVALUE(RecordTypeId) = &quot;01238000000RXeE&quot;),
+(PRIORVALUE(RecordTypeId) = &quot;01238000000Hvnu&quot;)
+),
+
+OR(
+
+ISPICKVAL( Status , &quot;Closed_Resolved&quot;),
+ISPICKVAL( Status , &quot;Closed - Unresolved&quot;),
+ISPICKVAL( Status , &quot;Closed&quot;)
+)
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Record Type cannot be changed for a closed case.</errorMessage>
+</ValidationRule>

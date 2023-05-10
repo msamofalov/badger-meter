@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Lines_added_TODAY</fullName>
+    <columns>NAME</columns>
+    <columns>ProductName__c</columns>
+    <columns>Item_Number__c</columns>
+    <columns>Original_Order_Number__c</columns>
+    <columns>Original_Order_Line_Number__c</columns>
+    <columns>Case__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Product Lines added TODAY</label>
+</ListView>

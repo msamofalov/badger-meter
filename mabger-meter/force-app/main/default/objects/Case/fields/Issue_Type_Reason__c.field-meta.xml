@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Issue_Type_Reason__c</fullName>
+    <description>Takes all quote and order inquiries and combines the Issue Type and Inquiry Reason fields into specific values used for the Case Backlog Dashboard.</description>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(Type,&quot;Quote&quot;),&quot;Quotes&quot;,
+   IF( ISPICKVAL(Type,&quot;Order&quot;),
+       CASE( Inquiry_Reason__c , 
+             &quot;Order Revision&quot;, &quot;Placing Order/Order Revision&quot;, 
+             &quot;Placing Order&quot;, &quot;Placing Order/Order Revision&quot;, 
+             &quot;Order Status&quot;, &quot;Order Status&quot;,
+             &quot;All Other Post-Order Inquiries&quot;),&quot;&quot;))</formula>
+    <label>Issue Type / Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

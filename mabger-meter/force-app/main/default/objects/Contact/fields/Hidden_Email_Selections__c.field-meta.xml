@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hidden_Email_Selections__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( INCLUDES(Email_Selections__c, &apos;Acknowledgment&apos;), &apos;Acknowledgment,&apos;, null) + 
+IF( INCLUDES(Email_Selections__c, &apos;Backlog Report&apos;), &apos;Backlog Report  ,&apos;, null) + 
+IF( INCLUDES(Email_Selections__c, &apos;Backlog Report (if data)&apos;), &apos;Backlog Report (if data),&apos;, null) + 
+IF( INCLUDES(Email_Selections__c, &apos;CERT&apos;), &apos;CERT,&apos;, null) + 
+IF( INCLUDES(Email_Selections__c, &apos;Packing List&apos;), &apos;Packing List,&apos;, null) + 
+IF( INCLUDES(Email_Selections__c, &apos;Prior Day Shipments Report&apos;), &apos;Prior Day Shipments Report  ,&apos;, null) + 
+IF( INCLUDES(Email_Selections__c, &apos;Prior Day Shipments Report (if data)&apos;), &apos;Prior Day Shipments Report (if data),&apos;, null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Hidden Email Selections</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

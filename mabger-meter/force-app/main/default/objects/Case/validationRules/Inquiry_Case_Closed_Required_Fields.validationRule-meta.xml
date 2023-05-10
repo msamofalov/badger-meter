@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inquiry_Case_Closed_Required_Fields</fullName>
+    <active>true</active>
+    <description>Before a Case is Closed, indicate an &quot;Account&quot;, &quot;Contact&quot;, &quot;Issue Type&quot;, &quot;Inquiry Reason&quot;, and &quot;Case Resolution.&quot;</description>
+    <errorConditionFormula>AND(
+OR(
+ISPICKVAL(Status, &quot;Action Completed&quot;),
+ISPICKVAL(Status, &quot;Closed&quot;)
+),
+RecordType.Name=&quot;Inquiry&quot;,
+TEXT(Case_Resolution__c) != &quot;SPAM&quot;,
+TEXT(Case_Resolution__c) != &quot;Duplicate Child Case&quot;,
+OR(
+ISBLANK(AccountId),
+ISBLANK(ContactId),
+ISBLANK(TEXT(Type)),
+ISBLANK(TEXT(Inquiry_Reason__c)),
+ISBLANK(TEXT(Case_Resolution__c))
+)
+)</errorConditionFormula>
+    <errorMessage>Before a Case is Closed, indicate an &quot;Account&quot;, &quot;Contact&quot;, &quot;Issue Type&quot;, &quot;Inquiry Reason&quot;, and &quot;Case Resolution.&quot;</errorMessage>
+</ValidationRule>

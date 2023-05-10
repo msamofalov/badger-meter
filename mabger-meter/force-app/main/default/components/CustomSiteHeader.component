@@ -1,0 +1,22 @@
+<apex:component >
+    <header class="page-header">
+        <div class="page-frame page-header-main">
+            <nav class="page-header-left">
+                <div class="page-header-logo">
+                    <a href="https://www.badgermeter.com/">
+                        <svg class="svg-bm-logo-white svg-dims">
+                            <apex:image url="https://www.badgermeter.com/clientcss/images/badgermimages/topnavbadgermeterlogo.gif" width="250" height="90"/>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+            <div class="page-header-right">
+                <div class="field-holder page-header-search-holder">
+                    <a class="page-header-link" href="http://www.badgermeter.com/">
+                        Return to badgermeter.com   >
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+</apex:component>

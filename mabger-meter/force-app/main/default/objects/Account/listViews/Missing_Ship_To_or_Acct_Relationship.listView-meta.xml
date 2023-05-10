@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Missing_Ship_To_or_Acct_Relationship</fullName>
+    <columns>Organization_Type__c</columns>
+    <columns>Active__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Customer_Number__c</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>Default_Ship_To__c</columns>
+    <columns>Default_Acct_Rel_Ship_To_Number__c</columns>
+    <columns>Default_Account_Relationship__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Number__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Update_Account_Relationship__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Ship To # &amp; Acct Relationship not match</label>
+</ListView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Products_for_Extranet__c</fullName>
+    <description>This Field is used to display what Products the Contact should have access to in the Extranet.  The data is controlled by Accounts.Products__c.</description>
+    <externalId>false</externalId>
+    <label>Products for Extranet</label>
+    <length>32000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Utility_East_Region_public</fullName>
+    <columns>Response_Received__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>Inquiry_Reason__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>Return_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>roeder,richards,lehman,stokes,steddick,Holley,vittori</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>RMA Completed,Closed_Resolved,Closed - Resolved,Closed - Unresolved,Action Completed,Closed</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Inquiry,Case.Invoice_Analysis</value>
+    </filters>
+    <label>Utility - East Region</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Customer_Service</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Customer_Service_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_Customer_Experience</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Inside_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Sales_Director</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Sales_Marketing_VP</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Sales_Support_Managers</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Utility_Customer_Service_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Utility_Customer_Service_Supervisor</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Utility_National_Sales_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Utility_Sales_Director</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

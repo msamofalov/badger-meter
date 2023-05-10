@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Number__c</fullName>
+    <description>Represents the LX Company Number
+10 - US
+14 - Europe
+28 - BM UK</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Represents the LX Company Number
+10 - US
+14 - Europe
+28 - BM UK</inlineHelpText>
+    <label>Company Number</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>10 - BADGER METER, INC. (US)</fullName>
+                <default>false</default>
+                <label>10 - BADGER METER, INC. (US)</label>
+            </value>
+            <value>
+                <fullName>14 - BADGER METER EUROPA GmbH (Germany)</fullName>
+                <default>false</default>
+                <label>14 - BADGER METER EUROPA GmbH (Germany)</label>
+            </value>
+            <value>
+                <fullName>28 - BADGER METER UK, LTD</fullName>
+                <default>false</default>
+                <label>28 - BADGER METER UK, LTD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JIRA_Engineering_is_Required</fullName>
+    <active>true</active>
+    <description>If JIRA Ticket Number has value then JIRA- Engineering Request checkbox is checked.</description>
+    <errorConditionFormula>IF( RecordType.Name = &quot;Inquiry&quot; ,
+AND(
+
+NOT(ISBLANK(  Ticket_Number__c )),
+ JIRA_Engineering_Request__c  = FALSE),FALSE)</errorConditionFormula>
+    <errorDisplayField>JIRA_Engineering_Request__c</errorDisplayField>
+    <errorMessage>JIRA - Engineering Request checkbox is required when Ticket Number is entered.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Contact_Company__c</columns>
+    <columns>Contact__c</columns>
+    <columns>Consolidate__c</columns>
+    <columns>Ship_To_All__c</columns>
+    <columns>Ship_To_1__c</columns>
+    <columns>Ship_To_2__c</columns>
+    <columns>Ship_To_3__c</columns>
+    <columns>Ship_To_4__c</columns>
+    <columns>Layout__c</columns>
+    <columns>Validate__c</columns>
+    <columns>Validated_Date__c</columns>
+    <columns>CSV__c</columns>
+    <columns>WRI__c</columns>
+    <columns>Xlsx__c</columns>
+    <columns>XML__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

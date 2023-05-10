@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default_Account_Relationship__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup the Account Relationship to determine the default ship to number. Used in a number of places: Asset, Opportunities, Credit, BigMachines.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Lookup the Account Relationship to determine the default ship to number.</inlineHelpText>
+    <label>Default Account Relationship</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.Id</field>
+            <operation>equals</operation>
+            <valueField>Account_Relationship__c.Partner_1__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account_Relationship__c</referenceTo>
+    <relationshipLabel>Accounts</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

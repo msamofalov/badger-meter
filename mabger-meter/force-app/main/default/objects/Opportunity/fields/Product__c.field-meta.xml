@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Lines of Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automotive Fluid Products</fullName>
+                <default>false</default>
+                <label>Automotive Fluid Products</label>
+            </value>
+            <value>
+                <fullName>BEACON AMA</fullName>
+                <default>false</default>
+                <label>BEACON AMA</label>
+            </value>
+            <value>
+                <fullName>Blancett</fullName>
+                <default>false</default>
+                <label>Blancett</label>
+            </value>
+            <value>
+                <fullName>Concrete Fluid Products</fullName>
+                <default>false</default>
+                <label>Concrete Fluid Products</label>
+            </value>
+            <value>
+                <fullName>Coriolis</fullName>
+                <default>false</default>
+                <label>Coriolis</label>
+            </value>
+            <value>
+                <fullName>Cox</fullName>
+                <default>false</default>
+                <label>Cox</label>
+            </value>
+            <value>
+                <fullName>Data Acquisition / Management</fullName>
+                <default>false</default>
+                <label>Data Acquisition / Management</label>
+            </value>
+            <value>
+                <fullName>Dynasonics</fullName>
+                <default>false</default>
+                <label>Dynasonics</label>
+            </value>
+            <value>
+                <fullName>E-Series Electronic</fullName>
+                <default>false</default>
+                <label>E-Series Electronic</label>
+            </value>
+            <value>
+                <fullName>Flo-Tech</fullName>
+                <default>false</default>
+                <label>Flo-Tech</label>
+            </value>
+            <value>
+                <fullName>Flow Dynamics Calibration Services</fullName>
+                <default>false</default>
+                <label>Flow Dynamics Calibration Services</label>
+            </value>
+            <value>
+                <fullName>Flow Dynamics Calibrator Products</fullName>
+                <default>false</default>
+                <label>Flow Dynamics Calibrator Products</label>
+            </value>
+            <value>
+                <fullName>Galaxy</fullName>
+                <default>false</default>
+                <label>Galaxy</label>
+            </value>
+            <value>
+                <fullName>Hedland</fullName>
+                <default>false</default>
+                <label>Hedland</label>
+            </value>
+            <value>
+                <fullName>HR-E</fullName>
+                <default>false</default>
+                <label>HR-E</label>
+            </value>
+            <value>
+                <fullName>Impeller</fullName>
+                <default>false</default>
+                <label>Impeller</label>
+            </value>
+            <value>
+                <fullName>Industrial Oval Gear (IOG)</fullName>
+                <default>false</default>
+                <label>Industrial Oval Gear (IOG)</label>
+            </value>
+            <value>
+                <fullName>Industrial Turbo</fullName>
+                <default>false</default>
+                <label>Industrial Turbo</label>
+            </value>
+            <value>
+                <fullName>ModMAG/M-Series</fullName>
+                <default>false</default>
+                <label>ModMAG/M-Series</label>
+            </value>
+            <value>
+                <fullName>Monitors / Accessories</fullName>
+                <default>false</default>
+                <label>Monitors / Accessories</label>
+            </value>
+            <value>
+                <fullName>Orion</fullName>
+                <default>false</default>
+                <label>Orion</label>
+            </value>
+            <value>
+                <fullName>Preso</fullName>
+                <default>false</default>
+                <label>Preso</label>
+            </value>
+            <value>
+                <fullName>ReadCenter</fullName>
+                <default>false</default>
+                <label>ReadCenter</label>
+            </value>
+            <value>
+                <fullName>Recordall</fullName>
+                <default>false</default>
+                <label>Recordall</label>
+            </value>
+            <value>
+                <fullName>Research Control Valves (RCV)</fullName>
+                <default>false</default>
+                <label>Research Control Valves (RCV)</label>
+            </value>
+            <value>
+                <fullName>Services / Technical Field Support</fullName>
+                <default>false</default>
+                <label>Services / Technical Field Support</label>
+            </value>
+            <value>
+                <fullName>Vision</fullName>
+                <default>false</default>
+                <label>Vision</label>
+            </value>
+            <value>
+                <fullName>Vortex</fullName>
+                <default>false</default>
+                <label>Vortex</label>
+            </value>
+            <value>
+                <fullName>Wyco Tool</fullName>
+                <default>false</default>
+                <label>Wyco Tool</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

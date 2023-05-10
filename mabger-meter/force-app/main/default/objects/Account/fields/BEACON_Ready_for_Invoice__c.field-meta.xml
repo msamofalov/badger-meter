@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BEACON_Ready_for_Invoice__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Identifies when initial training is completed, to be completed by the training group</inlineHelpText>
+    <label>Ready for Invoice</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Date</type>
+</CustomField>

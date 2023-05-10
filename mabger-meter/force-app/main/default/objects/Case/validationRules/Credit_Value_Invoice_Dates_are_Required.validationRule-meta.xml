@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Value_Invoice_Dates_are_Required</fullName>
+    <active>true</active>
+    <description>Credit Value and Invoice Date required when Case is a Credit Return type.
+Case Record Type : Return
+Return Type: Credit</description>
+    <errorConditionFormula>AND(
+         RecordType.Name = &quot;Return&quot;,
+         ISPICKVAL( Return_Type__c , &quot;Credit&quot;) ,
+         OR(
+         ISBLANK(  Credit_Value__c  ) ,
+         ISBLANK(  Invoice_Date__c ))
+)</errorConditionFormula>
+    <errorDisplayField>Credit_Value__c</errorDisplayField>
+    <errorMessage>Credit Value and Invoice Date are required.</errorMessage>
+</ValidationRule>

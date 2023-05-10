@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Matching_Domain__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field indicates that no match was found for the contact&apos;s email domain when they self-registered for access to the extranet.  When checked, this field will send out a rejection notice to the contact.  This field should not be checked manually.  It&apos;s only checked by automation when a user / contact self-registers for access to the extranet.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field indicates that no match was found for the contact&apos;s email domain when they self-registered for access to the extranet.  When checked, this field will send out a rejection notice to the contact.  This field should not be checked manually.</inlineHelpText>
+    <label>No Matching Domain</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

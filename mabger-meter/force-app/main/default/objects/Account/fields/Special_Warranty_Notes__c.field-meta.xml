@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Special_Warranty_Notes__c</fullName>
+    <description>As part of a large program, we are offering to a number of customers special (custom) warranties covering ORION Cellular endpoints. The term of the warranty is quite long and we need to be certain that the information can be readily identified by any concerned (i.e. by the legal department, sales, customer service, tech support, marketing, quality) even 10+ years down the road.</description>
+    <externalId>false</externalId>
+    <label>Special Warranty Notes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

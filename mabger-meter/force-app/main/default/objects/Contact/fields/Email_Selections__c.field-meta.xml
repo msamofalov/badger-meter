@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Selections__c</fullName>
+    <description>Selections determine whether the Contact will get emails for these reports and documents</description>
+    <externalId>false</externalId>
+    <inlineHelpText>You can make multiple selections.
+
+Note:
+Backlog Report and Prior Day Shipments Report will send email regardless whether there is data.
+Backlog Report (if data) and Prior Day Shipments Report (if data) will send an email ONLY if there is data.</inlineHelpText>
+    <label>Email Selections</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acknowledgment</fullName>
+                <default>false</default>
+                <label>Acknowledgment</label>
+            </value>
+            <value>
+                <fullName>Backlog Report</fullName>
+                <default>false</default>
+                <label>Backlog Report</label>
+            </value>
+            <value>
+                <fullName>Backlog Report (if data)</fullName>
+                <default>false</default>
+                <label>Backlog Report (if data)</label>
+            </value>
+            <value>
+                <fullName>Packing List</fullName>
+                <default>false</default>
+                <label>Packing List</label>
+            </value>
+            <value>
+                <fullName>Prior Day Shipments Report</fullName>
+                <default>false</default>
+                <label>Prior Day Shipments Report</label>
+            </value>
+            <value>
+                <fullName>Prior Day Shipments Report (if data)</fullName>
+                <default>false</default>
+                <label>Prior Day Shipments Report (if data)</label>
+            </value>
+            <value>
+                <fullName>AR statements</fullName>
+                <default>false</default>
+                <label>AR statements</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

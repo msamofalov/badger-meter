@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reject_Extranet_Access__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used to notify Contact that access to Extranet has been rejected.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Used to notify Contact that access to Extranet has been rejected.</inlineHelpText>
+    <label>Reject Extranet Access</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BigMachines__BigMachines_Linked_Username</fullName>
+    <active>true</active>
+    <description>Changing the Salesforce username will break the link this user has to Oracle CPQ Cloud.  In order to reestablish that link, a CPQ Cloud administrator will need to manually change the login of the CPQ Cloud user to match the new Salesforce username.</description>
+    <errorConditionFormula>AND(BigMachines__Provisioned__c, ISCHANGED(Username),  NOT(ISNEW()))</errorConditionFormula>
+    <errorMessage>It is highly recommended that you consult a Oracle CPQ Cloud administrator before changing the value of Username for this linked user.  To change the username, you must first deselect the checkbox &quot;Provisioned in Oracle CPQ Cloud&quot;.</errorMessage>
+</ValidationRule>

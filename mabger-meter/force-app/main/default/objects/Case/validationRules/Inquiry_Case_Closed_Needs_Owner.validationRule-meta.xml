@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inquiry_Case_Closed_Needs_Owner</fullName>
+    <active>true</active>
+    <description>Before a Case is Closed, ownership must be transferred to a user, not a queue. FCR code calculation risks error without this rule.</description>
+    <errorConditionFormula>AND( 
+OR( 
+ISPICKVAL(Status, &quot;Action Completed&quot;), 
+ISPICKVAL(Status, &quot;Closed&quot;) 
+), 
+RecordType.Name=&quot;Inquiry&quot;, 
+TEXT(Case_Resolution__c) != &quot;SPAM&quot;, 
+TEXT(Case_Resolution__c) != &quot;Duplicate Child Case&quot;, 
+LEFT(OwnerId,3) = &quot;00G&quot;)
+ /*owned by queue*/</errorConditionFormula>
+    <errorMessage>Before a Case is Closed, ownership must be transferred to a user, not a queue.</errorMessage>
+</ValidationRule>

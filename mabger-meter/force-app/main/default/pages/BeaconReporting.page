@@ -1,0 +1,345 @@
+<apex:page controller="BeaconReportingController" showHeader="false" sidebar="false">
+    
+    <apex:outputPanel rendered="{!userHasPermissionSet}">
+        <!--
+        Account is: <apex:outputText value="{!account.Name}"/><br/>
+        Start Date is: <apex:outputText value="{!startDate}"/><br/>
+        End Date is: <apex:outputText value="{!endDate}"/><br/>
+        Report Type is: <apex:outputText value="{!reportType}"/><br/>
+        Interval is: <apex:outputText value="{!interval}"/><br/>
+        -->
+        
+        <style>
+            .reportTable {
+                border-collapse:	collapse;
+                margin:				10px;
+            }
+            
+            .reportTable thead tr th {
+                padding:			10px;
+            }
+            
+            .reportTable thead tr th:not(:last-child) {
+                border-right:	1px solid grey;
+            }
+            
+            .reportTable tbody tr:not(.productRow) {
+                border-top:	1px solid grey;
+            }
+            
+            .reportTable tbody tr td:not(:last-child) {
+                border-right:	1px solid grey;
+            }
+            
+            .reportTable tbody tr td {
+                padding-top:		2px;
+                padding-bottom:		2px;
+                padding-left:		5px;
+                padding-right:		5px;
+                text-align: 		center;
+            }
+        </style>
+
+        <apex:outputPanel rendered="{!reportType == 'consumption'}">
+            <apex:outputPanel rendered="{!display == 'chart'}">
+                <!--
+                Displaying {!ReportTypeTitleLabel} {!IntervalTitleLabel} Report Type<br/>
+                Asset Count is: <apex:outputText value="{!assetNumbersLength}"/><br/>
+                Consumption Record Count is: <apex:outputText value="{!consumptionDataLength}"/><br/>
+                -->
+                <script type="text/javascript">
+                    var data = new Array();	
+                    <apex:repeat value="{!dataset}" var="interval">
+                        //console.log('Interval: {!interval}');
+                        var product = {};
+                        product['name'] = '{!interval}';
+                        <apex:repeat value="{!dataset[interval]}" var="product">
+                            //console.log('Consumption: {!dataset[interval][product].consumption}');
+                            product['{!product}'] = {!dataset[interval][product].consumption};
+                        </apex:repeat>
+                        data.push(product);
+                    </apex:repeat>
+                </script>
+                
+                <apex:chart height="{!chartHeight}" width="{!chartWidth}" data="data">
+                    <apex:legend position="bottom"/>
+                    <apex:axis type="Numeric" position="left" fields="{!products}" title="{!ReportTypeTitleLabel}" grid="true"/>
+                    <apex:axis type="Category" position="bottom" fields="name" title="{!IntervalLabel}">
+                        <apex:chartLabel rotate="315"/>
+                    </apex:axis>
+                    <apex:barSeries title="{!products}" orientation="vertical" axis="left" xField="name" yField="{!products}" stacked="true">
+                        <apex:chartTips height="50" width="100"/>
+                    </apex:barSeries>
+                </apex:chart>
+            </apex:outputPanel>
+            
+            <apex:outputPanel rendered="{!display == 'table'}">
+                
+                <apex:variable var="incrementCount" value="{!increment}"/>
+                
+                <table class="reportTable">
+                    <thead>
+                        <tr>
+                            <th>
+                                Product
+                            </th>
+                            <apex:repeat value="{!dataset}" var="interval">
+                                <th>
+                                    {!interval}
+                                </th>
+                            </apex:repeat>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <apex:repeat value="{!productsSet}" var="product">
+                            <tr class="productRow">
+                                <th>
+                                    {!product}
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Assets
+                                </td>
+                                <apex:repeat value="{!dataset}" var="interval">
+                                    <td>
+                                        {!dataset[interval][product].assetCount}
+                                    </td>
+                                </apex:repeat>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Purchased
+                                </td>
+                                <apex:repeat value="{!dataset}" var="interval">
+                                    <td>
+                                        {!dataset[interval][product].purchased}
+                                    </td>
+                                </apex:repeat>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Consumed
+                                </td>
+                                <apex:repeat value="{!dataset}" var="interval">
+                                    <td>
+                                        {!dataset[interval][product].consumption}
+                                    </td>
+                                </apex:repeat>
+                            </tr>
+                            <!--
+                            <tr>
+                                <td>
+                                    Purchased Cumulative
+                                </td>
+                                <apex:repeat value="{!dataset}" var="interval">
+                                    <td>
+                                        {!dataset[interval][product].purchasedCumulative}
+                                    </td>
+                                </apex:repeat>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    Consumed Cumulative
+                                </td>
+                                <apex:repeat value="{!dataset}" var="interval">
+                                    <td>
+                                        {!dataset[interval][product].consumptionCumulative}
+                                    </td>
+                                </apex:repeat>
+                            </tr>
+                            -->
+                            <tr>
+                                <td>
+                                    Remaining
+                                </td>
+                                <apex:repeat value="{!dataset}" var="interval">
+                                    <td>
+                                        {!dataset[interval][product].remaining}
+                                    </td>
+                                </apex:repeat>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                            </tr>
+                        </apex:repeat>
+                    </tbody>
+                </table>
+            </apex:outputPanel>
+
+            <script>
+                window.parent.postMessage(["stopLoading", "stopLoading"], "*");
+            </script>
+        </apex:outputPanel>
+        
+        
+        <apex:outputPanel rendered="{!reportType == 'consumptionDetail'}">
+
+            <!--script>
+                window.parent.postMessage(["totalDetailPages", {!totalDetailPages}], "*");
+            </script-->
+
+            <div>{!totalDetailItems} records. Displaying page {!pageNumber} of {!totalDetailPages}.</div>
+            
+            <table class="reportTable">
+                <thead>
+                    <tr>
+                        <th>Item #</th>
+                        <th>Description</th>
+                        <th>Asset Id</th>
+                        <th>Consumed Qty</th>
+                        <th>Consumed Date</th>
+                        <th>Status</th>
+                        <th>Cadence</th>
+                        <th>Tag#1</th>
+                        <th>Tag#2</th>
+                        <th>Route</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <apex:repeat value="{!consumptionDetails}" var="line">
+                        <tr>
+                            <td>{!line.ProductNumber}</td>
+                            <td><!--{!line.Consumption_Type__c}--></td>
+                            <td>{!line.SerialNumber}</td>
+                            <td>{!line.QuantityConsumed}</td>
+                            <td>{!line.yearAndMonth}</td>
+                            <td>{!line.Status}</td>
+                            <td>{!line.Cadence}</td>
+                            <td>{!line.Tag1}</td>
+                            <td>{!line.Tag2}</td>                    	
+                            <td>{!line.Route}</td>
+                        </tr>
+                    </apex:repeat>
+                </tbody>
+            </table>
+
+            <script>
+                window.parent.postMessage(["stopLoading", "stopLoading"], "*");
+            </script>
+        </apex:outputPanel>
+
+        <apex:outputPanel rendered="{!reportType == 'consumptionDetailBig'}">
+            <apex:outputPanel id="consumpptionDetailBigStatus">
+                <table>
+                    <tr>
+                        <th>Status:&nbsp;</th>
+                        <td>{!consumptionDetailReportProgress.Status}</td>
+                    </tr>
+                    <tr>
+                        <th>Progress:&nbsp;</th>
+                        <td>
+                            {!consumptionDetailReportProgress.Progress}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Report URL:&nbsp;</th>
+                        <td><a href="{!consumptionDetailReportProgress.ReportUrl}">{!consumptionDetailReportProgress.ReportUrl}</a></td>
+                    </tr>
+                </table>
+            </apex:outputPanel>
+
+            <apex:form >
+                <apex:actionPoller action="{!updateConsumptionDetailsReportProgress}" reRender="consumpptionDetailBigStatus" interval="5"/>
+            </apex:form>
+
+            <apex:outputPanel rendered="{!consumptionDetailReportProgress.Progress == 100}">
+                <script>
+                    window.parent.postMessage(["stopLoading", "stopLoading"], "*");
+                </script>
+            </apex:outputPanel>
+        </apex:outputPanel>
+        
+        
+        <apex:outputPanel rendered="{!reportType == 'purchaseHistory'}">
+            <table class="reportTable">
+                <thead>
+                    <tr>
+                        <th>Invoice Date</th>
+                        <th>Item Number</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Order #</th>
+                        <th>Line #</th>
+                        <th>Invoice #</th>
+                        <th>SC #</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <apex:repeat value="{!purchaseUnitLines}" var="line">
+                        <tr>
+                            <td>
+                                <apex:outputText value="{0, date, yyyy'-'MM'-'dd}">
+                                    <apex:param value="{!line.Purchase_Unit_Header__r.Invoice_Date__c}"/>
+                                </apex:outputText>
+                            </td>
+                            <td>{!line.Product__r.Name}</td>
+                            <td>{!line.Price__c}</td>
+                            <td>{!line.Quantity__c}</td>
+                            <td>{!line.Purchase_Unit_Header__r.Order_Number__c}</td>
+                            <td>{!line.Line_Number__c}</td>
+                            <td>{!line.Purchase_Unit_Header__r.Invoice_Number__c}</td>
+                            <td>{!line.Purchase_Unit_Header__r.Sales_Credit_Number__c}</td>
+                        </tr>
+                    </apex:repeat>
+                </tbody>
+            </table>
+
+            <script>
+                window.parent.postMessage(["stopLoading", "stopLoading"], "*");
+            </script>
+        </apex:outputPanel>
+        
+        <apex:outputPanel rendered="{!reportType == 'purchaseHistoryDistributorUD,IR'}">
+            <table class="reportTable">
+                <thead>
+                    <tr>
+                        <th>Ship-To #</th>
+                        <th>Ship-To Name</th>
+                        <th>Owner #</th>
+                        <th>Invoice Date</th>
+                        <th>Item Number</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Order #</th>
+                        <th>Line #</th>
+                        <th>Invoice #</th>
+                        <th>SC #</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <apex:repeat value="{!purchaseUnitLinesDistributor}" var="line">
+                        <tr>
+                            <td>{!line.Ship_To_Number__c}</td>
+                            <td>{!line.Ship_To_Name__c}</td>
+                            <td>{!line.Owner_Number__c}</td>
+                            <td>
+                                <apex:outputText value="{0, date, yyyy'-'MM'-'dd}">
+                                    <apex:param value="{!line.Purchase_Unit_Header__r.Invoice_Date__c}"/>
+                                </apex:outputText>
+                            </td>
+                            <td>{!line.Product__r.Name}</td>
+                            <td>{!line.Price__c}</td>
+                            <td>{!line.Quantity__c}</td>
+                            <td>{!line.Purchase_Unit_Header__r.Order_Number__c}</td>
+                            <td>{!line.Line_Number__c}</td>
+                            <td>{!line.Purchase_Unit_Header__r.Invoice_Number__c}</td>
+                            <td>{!line.Purchase_Unit_Header__r.Sales_Credit_Number__c}</td>
+                        </tr>
+                    </apex:repeat>
+                </tbody>
+            </table>
+
+            <script>
+                window.parent.postMessage(["stopLoading", "stopLoading"], "*");
+            </script>
+        </apex:outputPanel>
+    
+    </apex:outputPanel>
+
+    <apex:outputPanel rendered="{!NOT(userHasPermissionSet)}">
+        You do not have permission to view this resource.
+    </apex:outputPanel>
+</apex:page>
